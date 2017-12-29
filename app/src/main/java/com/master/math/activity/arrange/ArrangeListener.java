@@ -46,9 +46,9 @@ public class ArrangeListener extends DragListener{
                     if(!getValidator().validate(draggedItem)){
                         break;
                     }else{
-                        if((validator.getActionStep().getStep() == ActionStep.STEP_2 || validator.getActionStep().getStep() == ActionStep.STEP_5 || validator.getActionStep().getStep() == ActionStep.STEP_8)){
+                        if((validator.getActionStep().getStep() == ActionStep.STEP_2 || validator.getActionStep().getStep() == ActionStep.STEP_5 || validator.getActionStep().getStep() == ActionStep.STEP_8 || validator.getActionStep().getStep() == ActionStep.STEP_11)){
                             Util.showWithTextUnderlined(draggedItem.getItem(1),draggedItem.getItem(1).getText().toString());
-                        }else if((validator.getActionStep().getStep() == ActionStep.STEP_1 || validator.getActionStep().getStep() == ActionStep.STEP_4 || validator.getActionStep().getStep() == ActionStep.STEP_7)){
+                        }else if((validator.getActionStep().getStep() == ActionStep.STEP_1 || validator.getActionStep().getStep() == ActionStep.STEP_4 || validator.getActionStep().getStep() == ActionStep.STEP_7|| validator.getActionStep().getStep() == ActionStep.STEP_10)){
                             Util.showWithText(draggedItem.getItem(1),null);
                         }
                         processor.allowDrag(draggedItem);

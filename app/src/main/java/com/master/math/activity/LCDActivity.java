@@ -84,13 +84,17 @@ public class LCDActivity extends AppCompatActivity {
         if(getIntent().getStringExtra(NUM_4) != null){
             setLeft(false);
             denom4 = createTextView(getIntent().getStringExtra(NUM_4),mulTop4-50,mulLeft4);
+            Util.showWithTextUnderlined(denom4,denom4.getText().toString());
             setDenom4OnClick();
         }else{
             setLeft(true);
         }
         denom1 = createTextView(getIntent().getStringExtra(NUM_1),mulTop1-50,mulLeft1);
+        Util.showWithTextUnderlined(denom1,denom1.getText().toString());
         denom2 = createTextView(getIntent().getStringExtra(NUM_2),mulTop2-50,mulLeft2);
+        Util.showWithTextUnderlined(denom2,denom2.getText().toString());
         denom3 = createTextView(getIntent().getStringExtra(NUM_3),mulTop3-50,mulLeft3);
+        Util.showWithTextUnderlined(denom3,denom3.getText().toString());
         setDenom1OnClick();
         setDenom2OnClick();
         setDenom3OnClick();

@@ -21,19 +21,19 @@ public class ArrangeProcessor {
         this.validator = validator;
     }
     public void allowDrag(DraggedItem draggedItem){
-        if(validator.getActionStep().getStep() == ActionStep.STEP_1 || validator.getActionStep().getStep() == ActionStep.STEP_4 || validator.getActionStep().getStep() == ActionStep.STEP_7){
+        if(validator.getActionStep().getStep() == ActionStep.STEP_1 || validator.getActionStep().getStep() == ActionStep.STEP_4 || validator.getActionStep().getStep() == ActionStep.STEP_7 || validator.getActionStep().getStep() == ActionStep.STEP_10){
             Intent intent = new Intent(activity, FormActivity.class);
             intent.putExtra(FormActivity.OPERATION, FormActivity.OPERATION_DIVIDE);
             intent.putExtra(FormActivity.DIVIDE_NUM_1, draggedItem.getItem(0).getText().toString());
             intent.putExtra(FormActivity.DIVIDE_NUM_2, draggedItem.getItem(1).getText().toString());
             activity.startActivity(intent);
-        }else if(validator.getActionStep().getStep() == ActionStep.STEP_2 || validator.getActionStep().getStep() == ActionStep.STEP_5 || validator.getActionStep().getStep() == ActionStep.STEP_8){
+        }else if(validator.getActionStep().getStep() == ActionStep.STEP_2 || validator.getActionStep().getStep() == ActionStep.STEP_5 || validator.getActionStep().getStep() == ActionStep.STEP_8 || validator.getActionStep().getStep() == ActionStep.STEP_11){
             Intent intent = new Intent(activity, FormActivity.class);
             intent.putExtra(FormActivity.OPERATION, FormActivity.OPERATION_MULTIPLY);
             intent.putExtra(FormActivity.MULTIPLY_NUM_1, draggedItem.getItem(0).getText().toString());
             intent.putExtra(FormActivity.MULTIPLY_NUM_2, draggedItem.getItem(1).getText().toString());
             activity.startActivity(intent);
-        }else if(validator.getActionStep().getStep() == ActionStep.STEP_3 || validator.getActionStep().getStep() == ActionStep.STEP_6 || validator.getActionStep().getStep() == ActionStep.STEP_9){
+        }else{
             activity.setLCM(draggedItem);
         }
     }

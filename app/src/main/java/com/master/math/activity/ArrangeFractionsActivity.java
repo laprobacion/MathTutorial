@@ -23,6 +23,8 @@ import com.master.math.activity.multiply.MultiplyCache;
 import com.master.math.activity.util.DraggedItem;
 import com.master.math.activity.util.Util;
 
+import java.util.Arrays;
+
 import static com.master.math.activity.util.Util.createTextView;
 
 public class ArrangeFractionsActivity extends AppCompatActivity {
@@ -41,9 +43,10 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
     public static final int denom1Id=1001,denom2Id=2001,denom3Id=3001,denom4Id=4001;
     public static final int lcd1Id=1002,lcd2Id=2002,lcd3Id=3002,lcd4Id=4002;
     public static final int lcm1Id=1003,lcm2Id=2003,lcm3Id=3003,lcm4Id=4003;
+    public static final int arrange1Id=1004,arrange2Id=2004,arrange3Id=3004,arrange4Id=4004;
     public static int tvAnsId;
     private TextView tvAns,lcmDenom1,lcmDenom2,lcmDenom3,lcmDenom4,lcdDenom1,lcdDenom2,lcdDenom3,lcdDenom4,num1,denom1,num2,denom2,num3,denom3,num4,denom4;
-    private TextView arrange1,arrange2,arrange3,arrange4,getLCD;
+    private TextView arrange1,arrange2,arrange3,arrange4,label1,label2,label3,label4,getLCD;
     private Initializer initializer;
     private ArrangeValidator validator;
     private ArrangeProcessor processor;
@@ -82,7 +85,7 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
                 RelativeLayout.LayoutParams.WRAP_CONTENT);
         lp.height = 200;
         lp.width = 200;
-        lp.setMargins(ansLeft - 30,1300,0,0);
+        lp.setMargins(ansLeft - 70,1300,0,0);
 
         rl.setLayoutParams(lp);
         arrangeLayout.addView(rl);
@@ -173,12 +176,18 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         }
     }
     public void setLCM(DraggedItem draggedItem){
-        Util.showWithText(draggedItem.getItem(1),draggedItem.getItem(0).getText().toString());
+        if(validator.getActionStep().getStep() > ActionStep.STEP_10){
+            Util.showWithText(draggedItem.getItem(1),draggedItem.getItem(0).getText().toString());
+            draggedItem.getItem(1).setTextSize(40);
+        }else{
+            Util.showWithText(draggedItem.getItem(1),draggedItem.getItem(0).getText().toString());
+        }
         Util.showWithTextUnderlined(draggedItem.getItem(1),draggedItem.getItem(1).getText().toString());
         Util.hide(draggedItem.getItem(0));
         validator.getActionStep().increment();
-        if(validator.getActionStep().getStep() == ActionStep.STEP_10){
-
+        if((validator.getActionStep().getStep() == ActionStep.STEP_10 && denom4 == null) || validator.getActionStep().getStep() == ActionStep.STEP_13){
+            setArrange();
+            validator.getActionStep().setStep(ActionStep.STEP_13);
         }
     }
     private void setAns(){
@@ -190,8 +199,12 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
             ans = MultiplyCache.getInstance().getFinalAns();
         }
         Util.showWithText(tvAns, ans);
-        tvAns.setTextSize(70);
-        //tvAns.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
+        if(ans.length() == 2){
+            tvAns.setTextSize(50);
+        }else{
+            tvAns.setTextSize(70);
+        }
+
         validator.getActionStep().increment();
     }
     private void addLCDs(){
@@ -215,7 +228,115 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         validator = new ArrangeValidator();
         processor = new ArrangeProcessor(this,validator);
         initializer = new Initializer(new ArrangeListener(processor,validator));
-        initializer.setDraggables(num1,num2,num3,num4,denom1,denom2,denom3,denom4,lcdDenom1,lcdDenom2,lcdDenom3,lcdDenom4,lcmDenom1,lcmDenom2,lcmDenom3,lcmDenom4,tvAns);
+        initializer.setDraggables(num1,num2,num3,num4,denom1,denom2,denom3,denom4,lcdDenom1,
+                lcdDenom2,lcdDenom3,lcdDenom4,lcmDenom1,lcmDenom2,lcmDenom3,lcmDenom4,tvAns);
 
+    }
+
+    private void setArrange(){
+        int top = 700;
+        int labelTop = top - 60;
+        int arrangeLeft = 60;
+        label1 = createTextView(1, "1", 20,labelTop,left1,false,arrangeLayout,this);
+        arrange1 = createTextView(arrange1Id, " ", 70,top,left1-arrangeLeft,false,arrangeLayout,this);
+        Util.showWithBG(arrange1,this);
+        label2 = createTextView(2, "2", 20,labelTop,left2,false,arrangeLayout,this);
+        arrange2 = createTextView(arrange2Id, " ", 70,top,left2-arrangeLeft,false,arrangeLayout,this);
+        Util.showWithBG(arrange2,this);
+        label3 = createTextView(3, "3", 20,labelTop,left3,false,arrangeLayout,this);
+        arrange3 = createTextView(arrange3Id, " ", 70,top,left3-arrangeLeft,false,arrangeLayout,this);
+        Util.showWithBG(arrange3,this);
+        if(denom4 != null){
+            label4 = createTextView(4, "4", 20,labelTop,left4,false,arrangeLayout,this);
+            arrange4 = createTextView(arrange4Id, " ", 70,top,left4-arrangeLeft,false,arrangeLayout,this);
+            Util.showWithBG(arrange4,this);
+        }
+        initializer.setDraggables(arrange1,arrange2,arrange3,arrange4);
+        refreshNumDenom();
+        validator.getActionStep().increment();
+    }
+    private void refreshNumDenom(){
+        Util.showWithText(denom1,num1.getText().toString() + "/" + denom1.getText().toString());
+        denom1.setTextSize(40);
+        denom1.setLeft(left1 - 20);
+        Util.showWithText(denom2,num2.getText().toString() + "/" + denom2.getText().toString());
+        denom2.setTextSize(40);
+        denom2.setLeft(left2 - 20);
+        Util.showWithText(denom3,num3.getText().toString() + "/" + denom3.getText().toString());
+        denom3.setTextSize(40);
+        denom3.setLeft(left3 - 20);
+        Util.hide(num1);
+        Util.hide(num2);
+        Util.hide(num3);
+        if(denom4 != null){
+            Util.hide(num4);
+            Util.showWithText(denom4,num4.getText().toString() + "/" + denom4.getText().toString());
+            denom4.setTextSize(40);
+            denom4.setLeft(left4 - 20);
+        }
+        sortFractions();
+    }
+    private int[] sortOrder(){
+        int d1 = Integer.valueOf(lcmDenom1.getText().toString());
+        int d2 = Integer.valueOf(lcmDenom2.getText().toString());
+        int d3 = Integer.valueOf(lcmDenom3.getText().toString());
+        int d4 = 0;
+        int[] ints = null;
+        if(denom4 != null){
+            d4 = Integer.valueOf(lcmDenom4.getText().toString());
+            ints = new int[4];
+            ints[0] = d1;
+            ints[1] = d2;
+            ints[2] = d3;
+            ints[3] = d4;
+        }else{
+            ints = new int[3];
+            ints[0] = d1;
+            ints[1] = d2;
+            ints[2] = d3;
+        }
+        Arrays.sort(ints);
+        return ints;
+    }
+    private TextView[] setLCMDenoms(){
+        TextView [] lcms = new TextView[4];
+        lcms[0] = lcmDenom1;
+        lcms[1] = lcmDenom2;
+        lcms[2] = lcmDenom3;
+        lcms[3] = lcmDenom4;
+        return lcms;
+    }
+    private TextView[] setNumDenoms(){
+        TextView [] lcms = new TextView[4];
+        lcms[0] = denom1;
+        lcms[1] = denom2;
+        lcms[2] = denom3;
+        lcms[3] = denom4;
+        return lcms;
+    }
+    private void sortFractions(){
+        TextView [] lcms = new TextView[4];
+        int i = 0;
+        sort : for(int num : sortOrder()){
+            for( TextView tv : setLCMDenoms()){
+                if(tv != null && String.valueOf(num).equals(tv.getText().toString())){
+                    int id = tv.getId();
+                    if( id == lcm1Id ){
+                        lcms[i] = denom1;
+                    }else if(id == lcm2Id){
+                        lcms[i] = denom2;
+                    }else if(id == lcm3Id){
+                        lcms[i] = denom3;
+                    }else if(id == lcm4Id){
+                        lcms[i] = denom4;
+                    }
+                    if(i >= 3){
+                        break sort;
+                    }
+                    i++;
+                }
+            }
+        }
+        validator.setSorted(lcms);
     }
 }
