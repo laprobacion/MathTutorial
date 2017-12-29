@@ -78,7 +78,7 @@ public class CompareFractionProcessor implements Processor{
                 sign = R.id.equalSign;
             }
             if(sign == draggedItem.getItem(0).getId()){
-                Util.showWithText(compareLine,draggedItem.getItem(0).getText().toString());
+                Util.showWithText(compareLine,"  "+draggedItem.getItem(0).getText().toString()+" ");
                 validator.getActionStep().increment();
             }else{
                 greaterSign.startAnimation(shakeError());
