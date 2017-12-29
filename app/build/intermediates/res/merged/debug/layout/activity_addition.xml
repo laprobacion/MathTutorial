@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:id="@+id/parentAddition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.master.math.activity.AdditionActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ans1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintLeft_toRightOf="@+id/ans1"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/mulDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99"
+        android:textSize="30dp"
+        android:layout_marginStart="12dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/mulUp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/mulSymbol"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/mulSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="30dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mulDown"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:id="@+id/mulUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99"
+        android:textSize="30dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/mulDown"
+        android:layout_marginTop="41dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/mulDown"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ans1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numDown1"
+        app:layout_constraintTop_toBottomOf="@+id/numDown1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numDown1" />
+
+    <TextView
+        android:id="@+id/topNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="40dp"
+        android:layout_marginStart="3dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/numUp4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numUp2"
+        app:layout_constraintTop_toTopOf="@+id/numUp4"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:id="@+id/topNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="40dp"
+        android:layout_marginStart="11dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/numUp4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/numUp4"
+        app:layout_constraintLeft_toRightOf="@+id/topNum3"
+        android:layout_marginLeft="11dp" />
+
+    <TextView
+        android:id="@+id/topNum3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="40dp"
+        android:layout_marginStart="51dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/numUp4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/numUp4"
+        app:layout_constraintLeft_toRightOf="@+id/mulDown"
+        android:layout_marginLeft="51dp" />
+
+    <TextView
+        android:id="@+id/ans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numDown2"
+        app:layout_constraintTop_toBottomOf="@+id/numDown2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numDown2" />
+
+    <TextView
+        android:id="@+id/ans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numDown3"
+        app:layout_constraintTop_toBottomOf="@+id/numDown3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numDown3" />
+
+    <TextView
+        android:id="@+id/ans4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numDown4"
+        app:layout_constraintTop_toBottomOf="@+id/numDown4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numDown4" />
+    <TextView
+        android:id="@+id/numDown1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        android:layout_marginStart="1dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/numUp1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/numDown2"
+        android:layout_marginLeft="1dp" />
+    <TextView
+        android:id="@+id/numDown2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numUp2"
+        app:layout_constraintTop_toBottomOf="@+id/numUp2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numUp2" />
+
+    <TextView
+        android:id="@+id/numDown3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numUp3"
+        app:layout_constraintTop_toBottomOf="@+id/numUp3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numUp3" />
+
+    <TextView
+        android:id="@+id/numDown4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numUp4"
+        app:layout_constraintTop_toBottomOf="@+id/numUp4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numUp4" />
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="60dp"
+        android:layout_marginStart="10dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/popup"
+        android:layout_marginTop="75dp"
+        app:layout_constraintTop_toBottomOf="@+id/mulDown"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintLeft_toLeftOf="@+id/lineAdd"
+        android:layout_marginLeft="10dp" />
+
+
+
+    <TextView
+        android:id="@+id/numUp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/numDown1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/numUp2"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/numDown1" />
+
+    <TextView
+        android:id="@+id/numUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        android:layout_marginStart="1dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/numUp3"
+        app:layout_constraintLeft_toRightOf="@+id/numUp3"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:id="@+id/numUp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintRight_toLeftOf="@+id/topNum2"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/lineAdd"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="6dp" />
+
+    <TextView
+        android:id="@+id/numUp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="60dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="1dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/numUp4"
+        app:layout_constraintLeft_toRightOf="@+id/numUp4"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:id="@+id/lineAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="________"
+        android:textSize="60dp"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/plus"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp" />
+    <RelativeLayout
+        android:id="@+id/draggedAnswerWindow"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:background="@drawable/bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/winAns2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="60dp"
+            android:layout_alignBaseline="@+id/winAns1"
+            android:layout_alignBottom="@+id/winAns1"
+            android:layout_toLeftOf="@+id/winAns1"
+            android:layout_toStartOf="@+id/winAns1" />
+
+        <TextView
+            android:id="@+id/winAns1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60dp"
+            android:text="0"
+            android:layout_marginRight="23dp"
+            android:layout_marginEnd="23dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="@+id/topNum1"
+        app:layout_constraintRight_toLeftOf="@+id/topNum1"
+        app:layout_constraintTop_toBottomOf="@+id/mulSymbol"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TextView
+            android:id="@+id/formula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginStart="46dp"
+            android:gravity="center"
+            android:text="99 x 99 ="
+            android:textSize="60dp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/userAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/formula"
+            android:layout_alignBottom="@+id/formula"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textSize="60dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

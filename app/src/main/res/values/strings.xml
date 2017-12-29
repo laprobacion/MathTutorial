@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Math</string>
+    <string name="title_activity_fraction">FractionActivity</string>
+</resources>
