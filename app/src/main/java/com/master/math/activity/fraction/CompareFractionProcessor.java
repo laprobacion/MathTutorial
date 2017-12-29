@@ -10,6 +10,7 @@ import com.master.math.activity.FormActivity;
 import com.master.math.activity.base.ActionStep;
 import com.master.math.activity.base.Initializer;
 import com.master.math.activity.base.Processor;
+import com.master.math.activity.multiply.MultiplyCache;
 import com.master.math.activity.util.DraggedItem;
 import com.master.math.activity.util.Util;
 
@@ -94,6 +95,9 @@ public class CompareFractionProcessor implements Processor{
     public void execute(){
         String formula = draggedItem.getItem(0).getText().toString() + " x " + draggedItem.getItem(1).getText().toString() + " = ";
         int ans = Integer.valueOf(draggedItem.getItem(0).getText().toString()) * Integer.valueOf(draggedItem.getItem(1).getText().toString());
+        if(MultiplyCache.getInstance().getFinalAns() == null){
+            return;
+        }
         if(isFirst){
             Util.showWithText(multiplyFormula1, formula);
             Util.showWithText(multiplyAns1, String.valueOf(ans));

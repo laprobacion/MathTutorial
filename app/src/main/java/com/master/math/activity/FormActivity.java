@@ -53,6 +53,24 @@ public class FormActivity extends AppCompatActivity {
         }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_DIVIDE)){
             setDivide();
         }
+
+        //XXX: IMPORTANT! - FOR FASTER DEMO PURPOSE ONLY. - COMMENT OUT THIS CODE WHEN GO LIVE.
+        setHint();
+    }
+    private void setHint(){
+        if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
+            userAns.setHint(String.valueOf(num1 * num2));
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD)){
+            userAns.setHint(getIntent().getStringExtra(LCD_ANS));
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_DIVIDE)){
+            int ans = 0;
+            if(Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_1)) > Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_2))){
+                ans = Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_1)) / Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_2));
+            }else{
+                ans = Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_2)) / Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_1));
+            }
+            userAns.setHint(String.valueOf(ans));
+        }
     }
     private void setDivide(){
         Intent intent = getIntent();

@@ -32,9 +32,6 @@ public class ArrangeListener extends DragListener{
             case DragEvent.ACTION_DRAG_ENTERED:
                 draggedItem.add(1,(TextView) v);
                 ((TextView) v).setVisibility(View.INVISIBLE);
-                if(((TextView) v).getBackground() != null){
-                    ((TextView) v).setBackground(null);
-                }
                 v.invalidate();
                 break;
             case DragEvent.ACTION_DRAG_EXITED:

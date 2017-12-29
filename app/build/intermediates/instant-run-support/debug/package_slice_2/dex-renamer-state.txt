@@ -1,4 +1,4 @@
-#Fri Dec 29 11:47:46 SGT 2017
+#Fri Dec 29 16:51:25 SGT 2017
 base.0=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2
 renamed.0=classes.dex
 file.0=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2\\classes.dex
