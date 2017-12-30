@@ -90,6 +90,11 @@ public class FormActivity extends AppCompatActivity {
         Util.showWithText(formula, intent.getStringExtra(LCD_DENOMINATORS) + " = ");
         setFormClick();
         Util.showWithText(open,"Open Scratch.");
+        if(intent.getStringExtra(LCD_DENOMINATORS).length() > 11){
+            formula.setTextSize(50);
+        }else{
+            formula.setTextSize(60);
+        }
         open.setTextSize(30);
         setOpenOnClick();
     }

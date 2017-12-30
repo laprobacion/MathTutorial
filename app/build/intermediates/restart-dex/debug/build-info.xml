@@ -6,25 +6,25 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1514538694620"
+    timestamp="1514593090719"
     token="-8262874443354492066"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="232" />
+        duration="1077" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="14" />
+        duration="27" />
     <task
         name="verifier"
-        duration="4" />
+        duration="10" />
 
     <artifact
-        location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
 
     <build
@@ -78,7 +78,15 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514537577630"
+        timestamp="1514538694620"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1514589877490"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -86,18 +94,10 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514538592945"
+        timestamp="1514593090719"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1514538694620"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
     </build>
 

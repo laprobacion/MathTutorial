@@ -24,6 +24,7 @@ import com.master.math.activity.util.DraggedItem;
 import com.master.math.activity.util.Util;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 import static com.master.math.activity.util.Util.createTextView;
 
@@ -176,13 +177,12 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         }
     }
     public void setLCM(DraggedItem draggedItem){
-        if(validator.getActionStep().getStep() > ActionStep.STEP_10){
+        if(validator.getActionStep().getStep() > ActionStep.STEP_11){
             Util.showWithText(draggedItem.getItem(1),draggedItem.getItem(0).getText().toString());
             draggedItem.getItem(1).setTextSize(40);
         }else{
-            Util.showWithText(draggedItem.getItem(1),draggedItem.getItem(0).getText().toString());
+            Util.showWithTextUnderlined(draggedItem.getItem(1),draggedItem.getItem(0).getText().toString());
         }
-        Util.showWithTextUnderlined(draggedItem.getItem(1),draggedItem.getItem(1).getText().toString());
         Util.hide(draggedItem.getItem(0));
         validator.getActionStep().increment();
         if((validator.getActionStep().getStep() == ActionStep.STEP_10 && denom4 == null) || validator.getActionStep().getStep() == ActionStep.STEP_13){
@@ -276,67 +276,67 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         }
         sortFractions();
     }
-    private int[] sortOrder(){
-        int d1 = Integer.valueOf(lcmDenom1.getText().toString());
-        int d2 = Integer.valueOf(lcmDenom2.getText().toString());
-        int d3 = Integer.valueOf(lcmDenom3.getText().toString());
-        int d4 = 0;
-        int[] ints = null;
+    private TextView[] sortOrder(){
+        TextView[] tvs = null;
         if(denom4 != null){
-            d4 = Integer.valueOf(lcmDenom4.getText().toString());
-            ints = new int[4];
-            ints[0] = d1;
-            ints[1] = d2;
-            ints[2] = d3;
-            ints[3] = d4;
+            tvs = new TextView[4];
+            tvs[3] = lcmDenom4;
         }else{
-            ints = new int[3];
-            ints[0] = d1;
-            ints[1] = d2;
-            ints[2] = d3;
+            tvs = new TextView[3];
         }
-        Arrays.sort(ints);
-        return ints;
+        tvs[0] = lcmDenom1;
+        tvs[1] = lcmDenom2;
+        tvs[2] = lcmDenom3;
+
+        Arrays.sort(tvs,new TVTextComparator());
+        return tvs;
     }
-    private TextView[] setLCMDenoms(){
-        TextView [] lcms = new TextView[4];
-        lcms[0] = lcmDenom1;
-        lcms[1] = lcmDenom2;
-        lcms[2] = lcmDenom3;
-        lcms[3] = lcmDenom4;
-        return lcms;
+    class TVTextComparator implements Comparator<TextView> {
+        @Override
+        public int compare(TextView lhs, TextView rhs) {
+            return lhs.getText().toString().compareTo(rhs.getText().toString());
+        }
     }
+
     private TextView[] setNumDenoms(){
-        TextView [] lcms = new TextView[4];
+        TextView [] lcms = null;
+        if(denom4 != null){
+            lcms = new TextView[4];
+            lcms[3] = denom4;
+        }else{
+            lcms = new TextView[3];
+        }
         lcms[0] = denom1;
         lcms[1] = denom2;
         lcms[2] = denom3;
-        lcms[3] = denom4;
         return lcms;
     }
     private void sortFractions(){
         TextView [] lcms = new TextView[4];
+        TextView [] sorted = sortOrder();
         int i = 0;
-        sort : for(int num : sortOrder()){
-            for( TextView tv : setLCMDenoms()){
-                if(tv != null && String.valueOf(num).equals(tv.getText().toString())){
-                    int id = tv.getId();
-                    if( id == lcm1Id ){
-                        lcms[i] = denom1;
-                    }else if(id == lcm2Id){
-                        lcms[i] = denom2;
-                    }else if(id == lcm3Id){
-                        lcms[i] = denom3;
-                    }else if(id == lcm4Id){
-                        lcms[i] = denom4;
-                    }
-                    if(i >= 3){
-                        break sort;
-                    }
-                    i++;
+        sort : for(TextView tv1 : sorted){
+            sort2 : for( TextView tv2 : setNumDenoms()){
+                        int id = tv1.getId();
+                        if( id == lcm1Id ){
+                            lcms[i] = denom1;
+                            i++;
+                            break sort2;
+                        }else if(id == lcm2Id){
+                            lcms[i] = denom2;
+                            i++;
+                            break sort2;
+                        }else if(id == lcm3Id){
+                            lcms[i] = denom3;
+                            i++;
+                            break sort2;
+                        }else if(id == lcm4Id){
+                            lcms[i] = denom4;
+                            i++;
+                            break sort2;
+                        }
                 }
             }
-        }
         validator.setSorted(lcms);
     }
 }
