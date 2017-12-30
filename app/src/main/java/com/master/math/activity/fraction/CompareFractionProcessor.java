@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.master.math.R;
 import com.master.math.activity.FormActivity;
+import com.master.math.activity.addition.AdditionCache;
 import com.master.math.activity.base.ActionStep;
 import com.master.math.activity.base.Initializer;
 import com.master.math.activity.base.Processor;
@@ -95,7 +96,7 @@ public class CompareFractionProcessor implements Processor{
     public void execute(){
         String formula = draggedItem.getItem(0).getText().toString() + " x " + draggedItem.getItem(1).getText().toString() + " = ";
         int ans = Integer.valueOf(draggedItem.getItem(0).getText().toString()) * Integer.valueOf(draggedItem.getItem(1).getText().toString());
-        if(MultiplyCache.getInstance().getFinalAns() == null){
+        if(MultiplyCache.getInstance().getFinalAns() == null && AdditionCache.get().getFinalAnswer() == null){
             return;
         }
         if(isFirst){
