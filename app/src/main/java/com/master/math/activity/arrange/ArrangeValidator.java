@@ -10,11 +10,7 @@ import com.master.math.activity.base.Validator;
 import static com.master.math.activity.util.Util.shakeError;
 
 public class ArrangeValidator extends Validator{
-    private TextView[] sorted;
 
-    public void setSorted(TextView[] sorted) {
-        this.sorted = sorted;
-    }
 
     @Override
     public boolean startValidate() {
@@ -90,32 +86,6 @@ public class ArrangeValidator extends Validator{
             }
             get(ArrangeFractionsActivity.tvAnsId).startAnimation(shakeError());
             get(ArrangeFractionsActivity.lcm4Id).startAnimation(shakeError());
-        }else if(getActionStep().getStep() == ActionStep.STEP_13){
-            if(get1Id() == sorted[0].getId() && get2Id() == ArrangeFractionsActivity.arrange1Id){
-                return true;
-            }
-            sorted[0].startAnimation(shakeError());
-            get(ArrangeFractionsActivity.arrange1Id).startAnimation(shakeError());
-        }else if(getActionStep().getStep() == ActionStep.STEP_14){
-            if(get1Id() == sorted[1].getId() && get2Id() == ArrangeFractionsActivity.arrange2Id){
-                return true;
-            }
-            sorted[1].startAnimation(shakeError());
-            get(ArrangeFractionsActivity.arrange2Id).startAnimation(shakeError());
-        }else if(getActionStep().getStep() == ActionStep.STEP_15){
-            if(get1Id() == sorted[2].getId() && get2Id() == ArrangeFractionsActivity.arrange3Id){
-                return true;
-            }
-            sorted[2].startAnimation(shakeError());
-            get(ArrangeFractionsActivity.arrange3Id).startAnimation(shakeError());
-        }else if(getActionStep().getStep() == ActionStep.STEP_16){
-            if(sorted[3] != null) {
-                if (get1Id() == sorted[3].getId() && get2Id() == ArrangeFractionsActivity.arrange4Id) {
-                    return true;
-                }
-                sorted[3].startAnimation(shakeError());
-                get(ArrangeFractionsActivity.arrange4Id).startAnimation(shakeError());
-            }
         }
         return false;
     }

@@ -24,8 +24,10 @@ public abstract class Validator {
 
     public void removeListeners(){
         for(TextView v : draggableItems){
-            v.setOnTouchListener(null);
-            v.setOnDragListener(null);
+            if(v != null){
+                v.setOnTouchListener(null);
+                v.setOnDragListener(null);
+            }
         }
     }
     protected TextView get1(){
