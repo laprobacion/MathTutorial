@@ -30,6 +30,10 @@ public abstract class Validator {
             }
         }
     }
+    public void removeListeners(TextView v){
+        v.setOnTouchListener(null);
+        v.setOnDragListener(null);
+    }
     protected TextView get1(){
         return this.draggedItem.getItem(0);
     }

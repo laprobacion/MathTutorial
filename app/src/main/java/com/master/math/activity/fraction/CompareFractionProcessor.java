@@ -122,6 +122,8 @@ public class CompareFractionProcessor implements Processor{
             validator.getActionStep().increment();
             multiplyFormula2.setOnClickListener(null);
         }
+        validator.removeListeners(draggedItem.getItem(0));
+        validator.removeListeners(draggedItem.getItem(1));
     }
 
     private boolean isFirst(DraggedItem draggedItem){

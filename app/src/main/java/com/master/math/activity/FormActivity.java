@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.master.math.R;
@@ -21,7 +22,7 @@ import static com.master.math.activity.util.Util.shakeError;
 
 public class FormActivity extends AppCompatActivity {
 
-    ConstraintLayout form;
+    RelativeLayout form;
     TextView formula,open,doneClick;
     EditText userAns;
     private int num1;
@@ -48,13 +49,15 @@ public class FormActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_form);
-        form = (ConstraintLayout) findViewById(R.id.parentForm);
+        form = (RelativeLayout)findViewById(R.id.parentForm);
         formula = Util.getTextViewWithFont(this,R.id.formula);
         doneClick = Util.getTextViewWithFont(this, R.id.doneClick);
         open = Util.getTextViewWithFontInvisible(this,R.id.open);
         userAns = Util.getEditTextWithFont(this,R.id.userAns);
+        setPosition();
         MultiplyCache.getInstance().setFinalAns(null);
         DivideCache.get().clear();
+
         if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
             setMultiply();
         }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD)){
@@ -71,6 +74,13 @@ public class FormActivity extends AppCompatActivity {
 
         //XXX: IMPORTANT! - FOR FASTER DEMO PURPOSE ONLY. - COMMENT OUT THIS CODE WHEN GO LIVE.
         setHint();
+    }
+    private void setPosition(){
+        ((RelativeLayout.LayoutParams) userAns.getLayoutParams()).setMargins(720,450,0,0);
+        ((RelativeLayout.LayoutParams) formula.getLayoutParams()).setMargins(100,500,0,0);
+        ((RelativeLayout.LayoutParams) doneClick.getLayoutParams()).setMargins(750,400,0,0);
+        ((RelativeLayout.LayoutParams) open.getLayoutParams()).setMargins(300,700,0,0);
+
     }
     private void setAddition(){
         Intent intent = getIntent();
@@ -104,7 +114,7 @@ public class FormActivity extends AppCompatActivity {
         formulaTxt = "Skip count by (" + intent.getStringExtra(LCD_NEXT_DENOMINATOR) + ") \n next to " + intent.getStringExtra(LCD_NEXT_CURRENT_SKIPCOUNT) + " is ? ";
         Util.showWithText(formula, formulaTxt + " = ");
         formula.setTextSize(30);
-        formula.setTop(300);
+        ((RelativeLayout.LayoutParams) userAns.getLayoutParams()).setMargins(740,450,0,0);
         Util.hide(open);
         setFormClick();
     }
@@ -204,26 +214,35 @@ public class FormActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    private void validate(){
+        if(isCorrect()){
+            if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
+                MultiplyCache.getInstance().setFinalAns(String.valueOf(getUserAns()));
+            }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD)){
+                LCDCache.get().setFinished(true);
+            }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_DIVIDE)){
+                DivideCache.get().setAns(Integer.valueOf(userAns.getText().toString().trim()));
+            }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD_NEXT)){
+                LCDCache.get().setLCDNextFinished(true);
+            }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_ADDITION)){
+                AdditionCache.get().setFinalAnswer(userAns.getText().toString().trim());
+            }
+            finish();
+        }else{
+            userAns.startAnimation(shakeError());
+        }
+    }
     private void setFormClick(){
         form.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isCorrect()){
-                    if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
-                        MultiplyCache.getInstance().setFinalAns(String.valueOf(getUserAns()));
-                    }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD)){
-                        LCDCache.get().setFinished(true);
-                    }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_DIVIDE)){
-                        DivideCache.get().setAns(Integer.valueOf(userAns.getText().toString().trim()));
-                    }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD_NEXT)){
-                        LCDCache.get().setLCDNextFinished(true);
-                    }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_ADDITION)){
-                        AdditionCache.get().setFinalAnswer(userAns.getText().toString().trim());
-                    }
-                    finish();
-                }else{
-                    userAns.startAnimation(shakeError());
-                }
+                validate();
+            }
+        });
+        doneClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                validate();
             }
         });
     }

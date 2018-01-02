@@ -64,6 +64,13 @@ public class MultiplyProcessor implements Processor {
         this.initializer.setDraggables(num1,num2,num3,ans1,ans2,num4,topNum,topNum2,topNum3,totalAns1,totalAns2,totalAns3,totalAns4,finalAnswerGroup1,add);
         setNumbers(i);
         renderPopupWindow(null, false);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MultiplyProcessor.this.activity.finish();
+
+            }
+        });
 
     }
     private void setFormulaPopAnswer(int ans){
@@ -87,10 +94,6 @@ public class MultiplyProcessor implements Processor {
                 if(isUpperOrLowerZero()){
                     MultiplyCache.getInstance().setFinalAns(getFinalValue());
                     Util.showWithText(add,"Done!");
-                    setAddOnClick();
-                }else{
-                    Util.showWithText(add,"add");
-                    setAddOnClick();
                 }
                 this.validator.removeListeners();
             }
@@ -107,22 +110,7 @@ public class MultiplyProcessor implements Processor {
         int fin = upper + lower;
         return String.valueOf(fin);
     }
-    private void setAddOnClick(){
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(MultiplyCache.getInstance().getFinalAns() == null){
-                    AdditionCache.get().clear();
-                    AdditionCache.get().setNumbers(addString(finalAnswerGroup1.getText().toString()),addString(totalAns3.getText().toString()));
-                    AdditionCache.get().setMultiplyNumbers(num1.getText().toString() + num2.getText().toString(),num4.getText().toString() + num3.getText().toString());
-                    activity.startActivity(new Intent(activity, AdditionActivity.class));
-                }else{
-                    activity.finish();
-                }
 
-            }
-        });
-    }
     private String addString(String num){
         if(num.length() == 3){
             return " " + num;
@@ -305,7 +293,6 @@ public class MultiplyProcessor implements Processor {
         if(num4.getVisibility() == View.INVISIBLE){
             MultiplyCache.getInstance().setFinalAns(finalAnswerGroup1.getText().toString());
             Util.showWithText(add,"Done!");
-            setAddOnClick();
             this.validator.removeListeners();
         }
     }

@@ -15,22 +15,30 @@ public class CompareFractionValidator extends Validator{
 
 
     public boolean startValidate(){
-        if(step.getStep() == ActionStep.STEP_1){
-            boolean flag = validateStep(R.id.num1, R.id.denom2);
-            if(flag){
+        if(step.getStep() == ActionStep.STEP_1 || step.getStep() == ActionStep.STEP_2){
+            if(get1Id() == R.id.num1 && get2Id() == R.id.denom2){
                 return true;
-            }else{
-                get(R.id.num1).startAnimation(shakeError());
+            }
+            if(get1Id() == R.id.denom2 && get2Id() == R.id.num1){
+                return true;
+            }
+            if(get1Id() == R.id.num2 && get2Id() == R.id.denom1){
+                return true;
+            }
+            if(get1Id() == R.id.denom1 && get2Id() == R.id.num2){
+                return true;
+            }
+            if (get1Id() == R.id.denom1) {
+                get(R.id.num2).startAnimation(shakeError());
+            }
+            if (get1Id() == R.id.num2) {
+                get(R.id.denom1).startAnimation(shakeError());
+            }
+            if (get1Id() == R.id.num1) {
                 get(R.id.denom2).startAnimation(shakeError());
             }
-        }
-        if(step.getStep() == ActionStep.STEP_2){
-            boolean flag = validateStep(R.id.num2, R.id.denom1);
-            if(flag){
-                return true;
-            }else{
-                get(R.id.num2).startAnimation(shakeError());
-                get(R.id.denom1).startAnimation(shakeError());
+            if (get1Id() == R.id.denom2) {
+                get(R.id.num1).startAnimation(shakeError());
             }
         }
         if(step.getStep() == ActionStep.STEP_3){

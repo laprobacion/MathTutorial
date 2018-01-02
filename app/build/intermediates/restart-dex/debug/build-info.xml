@@ -6,22 +6,22 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1514870730170"
+    timestamp="1514872981075"
     token="-8262874443354492066"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1289" />
+        duration="1059" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="43" />
+        duration="46" />
     <task
         name="verifier"
-        duration="19" />
+        duration="26" />
 
     <artifact
         location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514869933603"
+        timestamp="1514871375753"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\outputs\apk\app-debug.apk"
@@ -78,7 +78,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514870067694"
+        timestamp="1514872102435"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -86,15 +86,18 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514870691324"
+        timestamp="1514872729886"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514870730170"
+        timestamp="1514872981075"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
