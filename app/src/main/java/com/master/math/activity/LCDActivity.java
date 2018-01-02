@@ -235,7 +235,7 @@ public class LCDActivity extends AppCompatActivity {
         });
     }
     private void shakeErrorSelected(TextView tv){
-        tv.startAnimation(shakeError());
+        shakeError(tv);
         tv.setTextColor(Color.argb(255, 255, 255, 255));
     }
     private boolean isSelectedCorrect(){

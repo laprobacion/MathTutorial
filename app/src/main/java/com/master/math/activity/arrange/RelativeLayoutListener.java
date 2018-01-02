@@ -113,30 +113,30 @@ public class RelativeLayoutListener implements View.OnDragListener, View.OnTouch
             if(draggedItem.getItem(0).getId() == sorted[0].getId() && draggedItem.getItem(1).getId() == id){
                 return true;
             }
-            sorted[0].startAnimation(shakeError());
-            get(id).startAnimation(shakeError());
+            shakeError(sorted[0]);
+            shakeError(get(id));
         }else if(actionStep.getStep() == ActionStep.STEP_14){
             int id = ArrangeFractionsActivity.arrange2Id;
             if(draggedItem.getItem(0).getId() == sorted[1].getId() && draggedItem.getItem(1).getId() == id){
                 return true;
             }
-            sorted[1].startAnimation(shakeError());
-            get(ArrangeFractionsActivity.arrange2Id).startAnimation(shakeError());
+            shakeError(sorted[1]);
+            shakeError(get(ArrangeFractionsActivity.arrange2Id));
         }else if(actionStep.getStep() == ActionStep.STEP_15){
             int id = ArrangeFractionsActivity.arrange3Id;
             if(draggedItem.getItem(0).getId() == sorted[2].getId() && draggedItem.getItem(1).getId() == id){
                 return true;
             }
-            sorted[2].startAnimation(shakeError());
-            get(ArrangeFractionsActivity.arrange3Id).startAnimation(shakeError());
+            shakeError(sorted[2]);
+            shakeError(get(ArrangeFractionsActivity.arrange3Id));
         }else if(actionStep.getStep() == ActionStep.STEP_16){
             int id = ArrangeFractionsActivity.arrange4Id;
             if(sorted[3] != null) {
                 if (draggedItem.getItem(0).getId() == sorted[3].getId() && draggedItem.getItem(1).getId() == id) {
                     return true;
                 }
-                sorted[3].startAnimation(shakeError());
-                get(ArrangeFractionsActivity.arrange4Id).startAnimation(shakeError());
+                shakeError(sorted[3]);
+                shakeError(get(ArrangeFractionsActivity.arrange4Id));
             }
         }
         return false;

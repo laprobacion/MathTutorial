@@ -216,7 +216,10 @@ public class Util {
             }
         }
     }
-    public static TranslateAnimation shakeError() {
+    public static TranslateAnimation shakeError(View v) {
+        if(v.getVisibility() == View.VISIBLE){
+            v.startAnimation(Util.getInstance().animate);
+        }
         return Util.getInstance().animate;
     }
 

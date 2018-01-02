@@ -229,7 +229,7 @@ public class FormActivity extends AppCompatActivity {
             }
             finish();
         }else{
-            userAns.startAnimation(shakeError());
+            shakeError(userAns);
         }
     }
     private void setFormClick(){

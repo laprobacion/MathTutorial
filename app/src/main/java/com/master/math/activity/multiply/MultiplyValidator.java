@@ -11,6 +11,7 @@ import com.master.math.activity.util.DraggedItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.master.math.activity.util.Util.DOUBLE_SPACES;
 import static com.master.math.activity.util.Util.shakeError;
 
 public class MultiplyValidator extends Validator{
@@ -22,16 +23,15 @@ public class MultiplyValidator extends Validator{
             if(get1Id() == R.id.num2 && get2Id() == R.id.num3){
                 return true;
             }
-            get(R.id.num2).startAnimation(shakeError());
-            get(R.id.num3).startAnimation(shakeError());
-        }
-        if(step.getStep() == ActionStep.STEP_2){
+            shakeError(get(R.id.num2));
+            shakeError(get(R.id.num3));
+        }else if(step.getStep() == ActionStep.STEP_2){
             if(isBoxedEmpty()){
                 if(get1Id() == R.id.num1 && get2Id() == R.id.num3){
                     return true;
                 }
-                get(R.id.num1).startAnimation(shakeError());
-                get(R.id.num3).startAnimation(shakeError());
+                shakeError(get(R.id.num1));
+                shakeError(get(R.id.num3));
             }else{
                 if(get1Id() == R.id.ans2 && get(R.id.topNum).getBackground() !=null && get2Id() == R.id.topNum){
                     return true;
@@ -39,78 +39,66 @@ public class MultiplyValidator extends Validator{
                 boolean flag1 = false;
                 boolean flag2 = false;
                 if(get1Id() == R.id.ans2){
-                    get(R.id.ans2).startAnimation(shakeError());
-                    if(get(R.id.topNum).getVisibility() == View.VISIBLE){
-                        get(R.id.topNum).startAnimation(shakeError());
-                    }
+                    shakeError(get(R.id.ans2));
+                    shakeError(get(R.id.topNum));
                     flag1 = true;
                 }
                 if(get1Id() == R.id.ans1 && get2Id() == R.id.totalAns1){
                     return true;
                 }
                 if(get1Id() == R.id.ans1){
-                    get(R.id.ans1).startAnimation(shakeError());
-                    get(R.id.totalAns1).startAnimation(shakeError());
+                    shakeError(get(R.id.ans1));
+                    shakeError(get(R.id.totalAns1));
                     flag1 = true;
                 }
                 if(!flag1 && !flag2){
-                    get(R.id.ans2).startAnimation(shakeError());
-                    if(get(R.id.topNum).getVisibility() == View.VISIBLE){
-                        get(R.id.topNum).startAnimation(shakeError());
+                    shakeError(get(R.id.ans2));
+                    shakeError(get(R.id.ans1));
+                    if(get(R.id.topNum).getText().toString().equals(DOUBLE_SPACES)){
+                        shakeError(get(R.id.topNum));
                     }
-                    if(get(R.id.ans1).getVisibility() == View.VISIBLE){
-                        get(R.id.ans1).startAnimation(shakeError());
+                    if(get(R.id.totalAns1).getText().toString().equals(DOUBLE_SPACES)){
+                        shakeError(get(R.id.totalAns1));
                     }
-                    get(R.id.totalAns1).startAnimation(shakeError());
                 }
             }
-        }
-        if(step.getStep() == ActionStep.STEP_3){
+        }else if(step.getStep() == ActionStep.STEP_3){
             if(firstCarryTopNumEmpty()){
                 if(get1Id() == R.id.ans2 && get2Id() == R.id.totalAns2){
                     return true;
                 }
-                get(R.id.ans2).startAnimation(shakeError());
-                get(R.id.totalAns2).startAnimation(shakeError());
+                shakeError(get(R.id.ans2));
+                shakeError(get(R.id.totalAns2));
             }else{
                 if(get1Id() == R.id.ans2 && get2Id() == R.id.topNum2){
                     return true;
                 }
-                if(get(R.id.topNum2).getVisibility() == View.VISIBLE){
-                    get(R.id.topNum2).startAnimation(shakeError());
-                }
+                shakeError(get(R.id.topNum2));
             }
             if(get(R.id.totalAns2).getBackground() != null && get1Id() == R.id.ans2 && get2Id() == R.id.totalAns2){
                 return true;
             }
-            if(get(R.id.totalAns2).getBackground() != null && get1Id() == R.id.ans2 ){
-                if(get(R.id.ans2).getVisibility() == View.VISIBLE){
-                    get(R.id.ans2).startAnimation(shakeError());
-                }
-                get(R.id.totalAns2).startAnimation(shakeError());
-            }
-        }
-        if(step.getStep() == ActionStep.STEP_4){
+            shakeError(get(R.id.ans2));
+            shakeError(get(R.id.totalAns2));
+        }else if(step.getStep() == ActionStep.STEP_4){
             if(get1Id() == R.id.ans2 && get2Id() == R.id.totalAns2){
                 return true;
             }
-            get(R.id.ans2).startAnimation(shakeError());
-            get(R.id.totalAns2).startAnimation(shakeError());
-        }
-        if(step.getStep() == ActionStep.STEP_5){
+            shakeError(get(R.id.ans2));
+            shakeError(get(R.id.totalAns2));
+        }else if(step.getStep() == ActionStep.STEP_5){
             if(get1Id() == R.id.num2 && get2Id() == R.id.num4){
                 return true;
             }
-            get(R.id.num2).startAnimation(shakeError());
-            get(R.id.num4).startAnimation(shakeError());
-        }
-        if(step.getStep() == ActionStep.STEP_6){
+            shakeError(get(R.id.num2));
+            shakeError(get(R.id.num4));
+        }else if(step.getStep() == ActionStep.STEP_6){
             if(isBoxedEmpty()){
                 if(get1Id() == R.id.num1 && get2Id() == R.id.num4){
                     return true;
                 }
-                get(R.id.num1).startAnimation(shakeError());
-                get(R.id.num4).startAnimation(shakeError());
+                shakeError(get(R.id.num1));
+                shakeError(get(R.id.num4));
             }else{
                 if(get1Id() == R.id.ans2 && get(R.id.topNum3).getBackground() !=null && get2Id() == R.id.topNum3){
                     return true;
@@ -118,43 +106,39 @@ public class MultiplyValidator extends Validator{
                 boolean flag1 = false;
                 boolean flag2 = false;
                 if(get1Id() == R.id.ans2 && get2Id() != R.id.topNum3){
-                    get(R.id.ans2).startAnimation(shakeError());
-                    if(get(R.id.topNum3).getVisibility() == View.VISIBLE){
-                        get(R.id.topNum3).startAnimation(shakeError());
-                    }
+                    shakeError(get(R.id.ans2));
+                    shakeError(get(R.id.topNum3));
+
                     flag1 = true;
                 }
                 if(get1Id() == R.id.ans1 && get2Id() == R.id.totalAns3){
                     return true;
                 }
                 if(get1Id() == R.id.ans1 && get2Id() != R.id.totalAns3 ){
-                    get(R.id.ans1).startAnimation(shakeError());
-                    get(R.id.totalAns3).startAnimation(shakeError());
+                    shakeError(get(R.id.ans1));
+                    shakeError(get(R.id.totalAns3));
                     flag2 = true;
                 }
                 if(!flag1 && !flag2){
-                    get(R.id.ans2).startAnimation(shakeError());
-                    if(get(R.id.topNum3).getVisibility() == View.VISIBLE){
-                        get(R.id.topNum3).startAnimation(shakeError());
-                    }
-                    get(R.id.ans1).startAnimation(shakeError());
-                    get(R.id.totalAns3).startAnimation(shakeError());
+                    shakeError(get(R.id.ans2));
+                    shakeError(get(R.id.topNum3));
+                    shakeError(get(R.id.ans1));
+                    shakeError(get(R.id.totalAns3));
                 }
             }
-        }
-        if(step.getStep() == ActionStep.STEP_7){
+        }else if(step.getStep() == ActionStep.STEP_7){
             if(get1Id() == R.id.num1 && get2Id() == R.id.num4){
                 return true;
             }
-            get(R.id.num1).startAnimation(shakeError());
-            get(R.id.num4).startAnimation(shakeError());
-        }
-        if(step.getStep() == ActionStep.STEP_8){
+            shakeError(get(R.id.num1));
+            shakeError(get(R.id.num4));
+        }else if(step.getStep() == ActionStep.STEP_8){
             if(get1Id() == R.id.ans2 && get2Id() == R.id.totalAns4){
                 return true;
             }
-            get(R.id.ans2).startAnimation(shakeError());
-            get(R.id.totalAns4).startAnimation(shakeError());
+            shakeError(get(R.id.ans2));
+            shakeError(get(R.id.totalAns4));
+
         }
         return false;
     }

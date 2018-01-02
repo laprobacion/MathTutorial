@@ -6,25 +6,25 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1514872981075"
+    timestamp="1514883040861"
     token="-8262874443354492066"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1059" />
+        duration="433" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="46" />
+        duration="11" />
     <task
         name="verifier"
-        duration="26" />
+        duration="3" />
 
     <artifact
-        location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
 
     <build
@@ -78,29 +78,32 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514872102435"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
         timestamp="1514872729886"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1514872981075"
+        timestamp="1514881837184"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
+            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1514883040861"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
     </build>
 

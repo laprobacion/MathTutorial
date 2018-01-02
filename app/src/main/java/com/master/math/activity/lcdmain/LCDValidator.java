@@ -15,21 +15,21 @@ public class LCDValidator extends Validator{
                 return true;
             }
             if(get1Id() == R.id.finalDenom1 && get2Id() != R.id.denom1){
-                get(R.id.denom1).startAnimation(shakeError());
+                shakeError(get(R.id.denom1));
             }
 
             if(get1Id() == R.id.finalDenom2 && get2Id() == R.id.denom2){
                 return true;
             }
             if(get1Id() == R.id.finalDenom2 && get2Id() != R.id.denom2){
-                get(R.id.denom2).startAnimation(shakeError());
+                shakeError(get(R.id.denom2));
             }
 
             if(get1Id() == R.id.finalDenom3 && get2Id() == R.id.denom3){
                 return true;
             }
             if(get1Id() == R.id.finalDenom3 && get2Id() != R.id.denom3){
-                get(R.id.denom3).startAnimation(shakeError());
+                shakeError(get(R.id.denom3));
             }
         }
         return false;

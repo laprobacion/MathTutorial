@@ -29,48 +29,48 @@ public class CompareFractionValidator extends Validator{
                 return true;
             }
             if (get1Id() == R.id.denom1) {
-                get(R.id.num2).startAnimation(shakeError());
+                shakeError(get(R.id.num2));
             }
             if (get1Id() == R.id.num2) {
-                get(R.id.denom1).startAnimation(shakeError());
+                shakeError(get(R.id.denom1));
             }
             if (get1Id() == R.id.num1) {
-                get(R.id.denom2).startAnimation(shakeError());
+                shakeError(get(R.id.denom2));
             }
             if (get1Id() == R.id.denom2) {
-                get(R.id.num1).startAnimation(shakeError());
+                shakeError(get(R.id.num1));
             }
         }
         if(step.getStep() == ActionStep.STEP_3){
             boolean flag1 = false,flag2 = false,flag3 = false;
             if(get1Id() == R.id.greaterSign && get2Id() != R.id.compareLine){
-                get1().startAnimation(shakeError());
-                get(R.id.compareLine).startAnimation(shakeError());
+                shakeError(get1());
+                shakeError(get(R.id.compareLine));
                 flag1 = true;
             }
             if(get1Id() == R.id.greaterSign && get2Id() == R.id.compareLine){
                 return true;
             }
             if(get1Id() == R.id.lessSign && get2Id() != R.id.compareLine){
-                get1().startAnimation(shakeError());
-                get(R.id.compareLine).startAnimation(shakeError());
+                shakeError(get1());
+                shakeError(get(R.id.compareLine));
                 flag2 = true;
             }
             if(get1Id() == R.id.lessSign && get2Id() == R.id.compareLine){
                 return true;
             }
             if(get1Id() == R.id.equalSign && get2Id() != R.id.compareLine){
-                get1().startAnimation(shakeError());
-                get(R.id.compareLine).startAnimation(shakeError());
+                shakeError(get1());
+                shakeError(get(R.id.compareLine));
                 flag3 = true;
             }
             if(get1Id() == R.id.equalSign && get2Id() == R.id.compareLine){
                 return true;
             }
             if(!flag1 && !flag2 && !flag3){
-                get(R.id.greaterSign).startAnimation(shakeError());
-                get(R.id.lessSign).startAnimation(shakeError());
-                get(R.id.equalSign).startAnimation(shakeError());
+                shakeError(get(R.id.greaterSign));
+                shakeError(get(R.id.lessSign));
+                shakeError(get(R.id.equalSign));
             }
             if(get1Id() == R.id.compareLine){
                 return false;
@@ -84,15 +84,15 @@ public class CompareFractionValidator extends Validator{
             return true;
         }
         if(get1Id() == num){
-            get1().startAnimation(shakeError());
-            get(denom).startAnimation(shakeError());
+            shakeError(get1());
+            shakeError(get(denom));
         }
         if(get1Id() == denom && get2Id() == num){
             return true;
         }
         if(get1Id() == denom){
-            get1().startAnimation(shakeError());
-            get(num).startAnimation(shakeError());
+            shakeError(get1());
+            shakeError(get(num));
         }
         return false;
     }

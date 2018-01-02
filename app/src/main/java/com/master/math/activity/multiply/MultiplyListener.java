@@ -26,7 +26,7 @@ public class MultiplyListener extends DragListener{
                 break;
             case DragEvent.ACTION_DRAG_ENTERED:
                 draggedItem.add(1,(TextView) v);
-                ((TextView) v).setVisibility(View.INVISIBLE);
+                //((TextView) v).setVisibility(View.INVISIBLE);
                 v.invalidate();
                 break;
             case DragEvent.ACTION_DRAG_EXITED:

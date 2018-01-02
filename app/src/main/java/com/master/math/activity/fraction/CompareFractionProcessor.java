@@ -92,9 +92,9 @@ public class CompareFractionProcessor implements Processor{
                 validator.getActionStep().increment();
                 validator.removeListeners();
             }else{
-                greaterSign.startAnimation(shakeError());
-                lessSign.startAnimation(shakeError());
-                equalSign.startAnimation(shakeError());
+                shakeError(greaterSign);
+                shakeError(lessSign);
+                shakeError(equalSign);
             }
         }
 

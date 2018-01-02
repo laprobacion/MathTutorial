@@ -159,7 +159,7 @@ public class AdditionProcessor implements Processor{
       return popup.getVisibility() == View.VISIBLE;
     }
     public void shakeUserAns(){
-        userAns.startAnimation(shakeError());
+        shakeError(userAns);
     }
     public void setWindowAnswers(){
         String strAns = String.valueOf(formulaAns);
