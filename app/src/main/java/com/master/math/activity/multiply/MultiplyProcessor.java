@@ -93,7 +93,7 @@ public class MultiplyProcessor implements Processor {
                 Util.showWithText(totalAns3, totalAns3Holder);
                 if(isUpperOrLowerZero()){
                     MultiplyCache.getInstance().setFinalAns(getFinalValue());
-                    Util.showWithText(add,"Done!");
+                    Util.showWithText(add,"OK");
                 }
                 this.validator.removeListeners();
             }
@@ -292,7 +292,7 @@ public class MultiplyProcessor implements Processor {
         this.validator.getActionStep().setStep(ActionStep.STEP_5);
         if(num4.getVisibility() == View.INVISIBLE){
             MultiplyCache.getInstance().setFinalAns(finalAnswerGroup1.getText().toString());
-            Util.showWithText(add,"Done!");
+            Util.showWithText(add,"OK");
             this.validator.removeListeners();
         }
     }

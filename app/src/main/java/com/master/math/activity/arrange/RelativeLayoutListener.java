@@ -41,10 +41,12 @@ public class RelativeLayoutListener implements View.OnDragListener, View.OnTouch
 
     DraggedRelativeLayout draggedItem;
     ActionStep actionStep;
-    public RelativeLayoutListener(ActionStep actionStep){
+    ArrangeProcessor processor;
+    public RelativeLayoutListener(ActionStep actionStep,ArrangeProcessor processor){
         draggables = new ArrayList<RelativeLayout>();
         draggedItem = new DraggedRelativeLayout();
         this.actionStep = actionStep;
+        this.processor = processor;
     }
 
     @Override
@@ -133,6 +135,7 @@ public class RelativeLayoutListener implements View.OnDragListener, View.OnTouch
             int id = ArrangeFractionsActivity.arrange4Id;
             if(sorted[3] != null) {
                 if (draggedItem.getItem(0).getId() == sorted[3].getId() && draggedItem.getItem(1).getId() == id) {
+                    this.processor.finish();
                     return true;
                 }
                 shakeError(sorted[3]);

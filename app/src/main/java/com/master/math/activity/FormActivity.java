@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
@@ -52,8 +54,29 @@ public class FormActivity extends AppCompatActivity {
         form = (RelativeLayout)findViewById(R.id.parentForm);
         formula = Util.getTextViewWithFont(this,R.id.formula);
         doneClick = Util.getTextViewWithFont(this, R.id.doneClick);
+        Util.showWithFadedText(doneClick,"OK");
         open = Util.getTextViewWithFontInvisible(this,R.id.open);
         userAns = Util.getEditTextWithFont(this,R.id.userAns);
+        userAns.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(userAns.getText().toString().trim().length() > 0){
+                    Util.showWithText(doneClick,"OK");
+                }else{
+                    Util.showWithFadedText(doneClick,"OK");
+                }
+            }
+        });
         setPosition();
         MultiplyCache.getInstance().setFinalAns(null);
         DivideCache.get().clear();
@@ -111,7 +134,7 @@ public class FormActivity extends AppCompatActivity {
     private void setLCDNext(){
         Intent intent = getIntent();
         String formulaTxt = "";
-        formulaTxt = "Skip count by (" + intent.getStringExtra(LCD_NEXT_DENOMINATOR) + ") \n next to " + intent.getStringExtra(LCD_NEXT_CURRENT_SKIPCOUNT) + " is ? ";
+        formulaTxt = "Skip count by " + intent.getStringExtra(LCD_NEXT_DENOMINATOR) + " \n next to " + intent.getStringExtra(LCD_NEXT_CURRENT_SKIPCOUNT) + " is ? ";
         Util.showWithText(formula, formulaTxt + " = ");
         formula.setTextSize(30);
         ((RelativeLayout.LayoutParams) userAns.getLayoutParams()).setMargins(740,450,0,0);
@@ -135,9 +158,11 @@ public class FormActivity extends AppCompatActivity {
     private void setLCD(){
         Intent intent = getIntent();
         Util.showWithText(formula, intent.getStringExtra(LCD_DENOMINATORS) + " = ");
+        ((RelativeLayout.LayoutParams) doneClick.getLayoutParams()).setMargins(830,400,0,0);
+        ((RelativeLayout.LayoutParams) userAns.getLayoutParams()).setMargins(820,450,0,0);
         setFormClick();
         Util.showWithText(open,"Open Scratch.");
-        if(intent.getStringExtra(LCD_DENOMINATORS).length() > 11){
+        if(intent.getStringExtra(LCD_DENOMINATORS).length() > 10){
             formula.setTextSize(50);
         }else{
             formula.setTextSize(60);

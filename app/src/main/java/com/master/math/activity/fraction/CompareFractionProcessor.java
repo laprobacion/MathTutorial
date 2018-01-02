@@ -89,6 +89,8 @@ public class CompareFractionProcessor implements Processor{
             }
             if(sign == draggedItem.getItem(0).getId()){
                 Util.showWithText(compareLine,"  "+draggedItem.getItem(0).getText().toString()+" ");
+                RelativeLayout parent = activity.findViewById(R.id.parentFraction);
+                Util.createTextView(1,"Finished.",40,1000,350,false,parent,activity);
                 validator.getActionStep().increment();
                 validator.removeListeners();
             }else{
@@ -143,7 +145,7 @@ public class CompareFractionProcessor implements Processor{
 
     }
     private void setPositions(){
-        RelativeLayout parent = activity.findViewById(R.id.parentFraction);
+
         ((RelativeLayout.LayoutParams) num1.getLayoutParams()).setMargins(250,250,0,0);
         ((RelativeLayout.LayoutParams) num2.getLayoutParams()).setMargins(750,250,0,0);
         ((RelativeLayout.LayoutParams) line1.getLayoutParams()).setMargins(200,280,0,0);
@@ -157,6 +159,7 @@ public class CompareFractionProcessor implements Processor{
 
         ((RelativeLayout.LayoutParams) multiplyFormula1.getLayoutParams()).setMargins(160,100,0,0);
         ((RelativeLayout.LayoutParams) multiplyFormula2.getLayoutParams()).setMargins(800,100,0,0);
+
     }
 
     private void setMultiplyFormula11OnClick(){

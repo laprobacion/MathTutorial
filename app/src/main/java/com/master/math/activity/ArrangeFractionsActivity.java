@@ -274,7 +274,7 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         }
         validator = new ArrangeValidator();
         processor = new ArrangeProcessor(this,validator);
-        layoutListener = new RelativeLayoutListener(validator.getActionStep());
+        layoutListener = new RelativeLayoutListener(validator.getActionStep(),processor);
         initializer = new Initializer(new ArrangeListener(processor,validator));
         initializer.setDraggables(num1,num2,num3,num4,denom1,denom2,denom3,denom4,lcdDenom1,
                 lcdDenom2,lcdDenom3,lcdDenom4,lcmDenom1,lcmDenom2,lcmDenom3,lcmDenom4,tvAns);

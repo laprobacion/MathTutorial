@@ -3,11 +3,14 @@ package com.master.math.activity.arrange;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.widget.RelativeLayout;
 
+import com.master.math.R;
 import com.master.math.activity.ArrangeFractionsActivity;
 import com.master.math.activity.FormActivity;
 import com.master.math.activity.base.ActionStep;
 import com.master.math.activity.util.DraggedItem;
+import com.master.math.activity.util.Util;
 
 public class ArrangeProcessor {
 
@@ -36,5 +39,9 @@ public class ArrangeProcessor {
         }else{
             activity.setLCM(draggedItem);
         }
+    }
+    public void finish(){
+        RelativeLayout parent = (RelativeLayout)activity.findViewById(R.id.arrangeLayout);
+        Util.createTextView(1,"Finished.",40,200,350,false,parent,activity);
     }
 }

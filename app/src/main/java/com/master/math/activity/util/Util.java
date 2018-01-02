@@ -158,6 +158,13 @@ public class Util {
         tv.setBackground(null);
         tv.invalidate();
     }
+    public static void showWithFadedText(TextView tv, String txt){
+        tv.setText(txt == null ? tv.getText().toString() : txt);
+        tv.setTextColor(Color.argb(150, 255, 255, 255));
+        tv.setVisibility(View.VISIBLE);
+        tv.setBackground(null);
+        tv.invalidate();
+    }
     public static void showWithTextUnderlined(TextView tv, String txt){
         SpannableString content = new SpannableString(txt);
         content.setSpan(new UnderlineSpan(), 0, txt.length(), 0);
