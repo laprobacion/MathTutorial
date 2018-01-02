@@ -1,5 +1,6 @@
 package com.master.math.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +44,7 @@ public class LCDActivity extends AppCompatActivity {
     private TextView selected1,selected2,selected3,selected4,lcd,denom1,denom2,denom3,denom4;
     private RelativeLayout lcdLayout;
     private int intLCD;
+    private TextView clickedItem;
     private void setLeft(boolean isThree){
         if(isThree){
             mulLeft1 = 250;
@@ -76,7 +78,10 @@ public class LCDActivity extends AppCompatActivity {
             );
         }
 
-
+        setDenom1OnClick();
+        setDenom2OnClick();
+        setDenom3OnClick();
+        setDenom4OnClick();
         isTooLarge();
     }
 
@@ -85,7 +90,13 @@ public class LCDActivity extends AppCompatActivity {
             setLeft(false);
             denom4 = createTextView(getIntent().getStringExtra(NUM_4),mulTop4-50,mulLeft4);
             Util.showWithTextUnderlined(denom4,denom4.getText().toString());
-            setDenom4OnClick();
+            denom4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openScratch(denom4.getText().toString(), mul4);
+                    clickedItem = denom4;
+                }
+            });
         }else{
             setLeft(true);
         }
@@ -95,9 +106,37 @@ public class LCDActivity extends AppCompatActivity {
         Util.showWithTextUnderlined(denom2,denom2.getText().toString());
         denom3 = createTextView(getIntent().getStringExtra(NUM_3),mulTop3-50,mulLeft3);
         Util.showWithTextUnderlined(denom3,denom3.getText().toString());
-        setDenom1OnClick();
-        setDenom2OnClick();
-        setDenom3OnClick();
+        denom1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openScratch(denom1.getText().toString(), mul1);
+                clickedItem = denom1;
+            }
+        });
+        denom2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openScratch(denom2.getText().toString(), mul2);
+                clickedItem = denom2;
+            }
+        });
+        denom3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openScratch(denom3.getText().toString(), mul3);
+                clickedItem = denom3;
+            }
+        });
+
+    }
+    private void openScratch(String denom, int multiplier){
+        int ans = Integer.valueOf(denom) * multiplier;
+        Intent intent = new Intent(this,FormActivity.class);
+        intent.putExtra(FormActivity.OPERATION, FormActivity.OPERATION_LCD_NEXT);
+        intent.putExtra(FormActivity.LCD_NEXT_ANS, String.valueOf(ans));
+        intent.putExtra(FormActivity.LCD_NEXT_CURRENT_SKIPCOUNT, String.valueOf(Integer.valueOf(denom) * (multiplier - 1)));
+        intent.putExtra(FormActivity.LCD_NEXT_DENOMINATOR, denom);
+        startActivity(intent);
     }
     private TextView createTextView(String str,int top, int left){
         TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
@@ -219,84 +258,81 @@ public class LCDActivity extends AppCompatActivity {
         }
     }
     private void setDenom1OnClick(){
-        denom1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
-                tv.setTextSize(40);
-                int num = Integer.valueOf(denom1.getText().toString()) * mul1;
-                Util.showWithText(tv,String.valueOf(num));
-                RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                        RelativeLayout.LayoutParams.WRAP_CONTENT,
-                        RelativeLayout.LayoutParams.WRAP_CONTENT);
-                lp.setMargins(mulLeft1,mulTop1+=100,0,0);
-                mul1++;
-                tv.setLayoutParams(lp);
-                lcdLayout.addView(tv);
-                createOnClickListener(tv);
-            }
-        });
+        TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
+        tv.setTextSize(40);
+        int num = Integer.valueOf(denom1.getText().toString()) * mul1;
+        Util.showWithText(tv,String.valueOf(num));
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins(mulLeft1,mulTop1+=100,0,0);
+        mul1++;
+        tv.setLayoutParams(lp);
+        lcdLayout.addView(tv);
+        createOnClickListener(tv);
     }
 
     private void setDenom2OnClick(){
-        denom2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
-                tv.setTextSize(40);
-                int num = Integer.valueOf(denom2.getText().toString()) * mul2;
-                Util.showWithText(tv,String.valueOf(num));
-                RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                        RelativeLayout.LayoutParams.WRAP_CONTENT,
-                        RelativeLayout.LayoutParams.WRAP_CONTENT);
-                lp.setMargins(mulLeft2,mulTop2+=100,0,0);
-                mul2++;
-                tv.setLayoutParams(lp);
-                lcdLayout.addView(tv);
-                createOnClickListener(tv);
-            }
-        });
+        TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
+        tv.setTextSize(40);
+        int num = Integer.valueOf(denom2.getText().toString()) * mul2;
+        Util.showWithText(tv,String.valueOf(num));
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins(mulLeft2,mulTop2+=100,0,0);
+        mul2++;
+        tv.setLayoutParams(lp);
+        lcdLayout.addView(tv);
+        createOnClickListener(tv);
     }
 
     private void setDenom3OnClick(){
-        denom3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
-                tv.setTextSize(40);
-                int num = Integer.valueOf(denom3.getText().toString()) * mul3;
-                Util.showWithText(tv,String.valueOf(num));
-                RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                        RelativeLayout.LayoutParams.WRAP_CONTENT,
-                        RelativeLayout.LayoutParams.WRAP_CONTENT);
-                lp.setMargins(mulLeft3,mulTop3+=100,0,0);
-                mul3++;
-                tv.setLayoutParams(lp);
-                lcdLayout.addView(tv);
-                createOnClickListener(tv);
-            }
-        });
+        TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
+        tv.setTextSize(40);
+        int num = Integer.valueOf(denom3.getText().toString()) * mul3;
+        Util.showWithText(tv,String.valueOf(num));
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins(mulLeft3,mulTop3+=100,0,0);
+        mul3++;
+        tv.setLayoutParams(lp);
+        lcdLayout.addView(tv);
+        createOnClickListener(tv);
     }
     private void setDenom4OnClick(){
         if(denom4 == null){
             return;
         }
-        denom4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
-                tv.setTextSize(40);
-                int num = Integer.valueOf(denom4.getText().toString()) * mul4;
-                Util.showWithText(tv,String.valueOf(num));
-                RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                        RelativeLayout.LayoutParams.WRAP_CONTENT,
-                        RelativeLayout.LayoutParams.WRAP_CONTENT);
-                lp.setMargins(mulLeft4,mulTop4+=100,0,0);
-                mul4++;
-                tv.setLayoutParams(lp);
-                lcdLayout.addView(tv);
-                createOnClickListener(tv);
+        TextView tv = Util.getTextViewWithFont(new TextView(LCDActivity.this));
+        tv.setTextSize(40);
+        int num = Integer.valueOf(denom4.getText().toString()) * mul4;
+        Util.showWithText(tv,String.valueOf(num));
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+        lp.setMargins(mulLeft4,mulTop4+=100,0,0);
+        mul4++;
+        tv.setLayoutParams(lp);
+        lcdLayout.addView(tv);
+        createOnClickListener(tv);
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        if(LCDCache.get().isLCDNextFinished() && clickedItem != null){
+            if(clickedItem == denom1){
+                setDenom1OnClick();
+            }else if(clickedItem == denom2){
+                setDenom2OnClick();
+            }else if(clickedItem == denom3){
+                setDenom3OnClick();
+            }else if(clickedItem == denom4){
+                setDenom4OnClick();
             }
-        });
+            LCDCache.get().setLCDNextFinished(false);
+        }
     }
 }

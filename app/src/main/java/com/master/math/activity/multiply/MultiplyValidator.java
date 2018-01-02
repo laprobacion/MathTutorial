@@ -58,7 +58,9 @@ public class MultiplyValidator extends Validator{
                     if(get(R.id.topNum).getVisibility() == View.VISIBLE){
                         get(R.id.topNum).startAnimation(shakeError());
                     }
-                    get(R.id.ans1).startAnimation(shakeError());
+                    if(get(R.id.ans1).getVisibility() == View.VISIBLE){
+                        get(R.id.ans1).startAnimation(shakeError());
+                    }
                     get(R.id.totalAns1).startAnimation(shakeError());
                 }
             }

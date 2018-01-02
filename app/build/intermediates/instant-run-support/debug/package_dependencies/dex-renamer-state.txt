@@ -1,4 +1,4 @@
-#Sat Dec 30 10:05:15 SGT 2017
+#Tue Jan 02 12:27:46 SGT 2018
 file.2=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_060a7d02e691074cd5b154b5b1f0d7f7fa88fe6f\\classes.dex
 base.2=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_060a7d02e691074cd5b154b5b1f0d7f7fa88fe6f
 file.1=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_366a9b4b520732d545688f8b175dceb5c72adf55\\classes.dex

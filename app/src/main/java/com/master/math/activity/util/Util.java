@@ -115,7 +115,7 @@ public class Util {
         return fractions;
     }
     public static String[] generateProperFractions(){
-        String numerator = generate2DigsRandomNumbers(50);
+        String numerator = generateRandomNumbers(false);
         String denominator = generate2DigsRandomNumbers(70);
         while(true){
             if(Integer.valueOf(numerator) > Integer.valueOf(denominator)){

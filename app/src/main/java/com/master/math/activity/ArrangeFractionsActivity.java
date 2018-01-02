@@ -14,6 +14,7 @@ import com.master.math.activity.arrange.ArrangeCache;
 import com.master.math.activity.arrange.ArrangeListener;
 import com.master.math.activity.arrange.ArrangeProcessor;
 import com.master.math.activity.arrange.ArrangeValidator;
+import com.master.math.activity.arrange.ProperFraction;
 import com.master.math.activity.arrange.RelativeLayoutListener;
 import com.master.math.activity.base.ActionStep;
 import com.master.math.activity.base.Initializer;
@@ -24,8 +25,13 @@ import com.master.math.activity.multiply.MultiplyCache;
 import com.master.math.activity.util.DraggedItem;
 import com.master.math.activity.util.Util;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import static com.master.math.activity.util.Util.createTextView;
 
@@ -110,6 +116,12 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
                 startActivity(setIntent());
             }
         });
+        ansLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(setIntent());
+            }
+        });
     }
 
     private RelativeLayout createRelativeLayout(int left, int top,boolean withBG){
@@ -151,16 +163,39 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         intent.putExtra(FormActivity.LCD_ANS,String.valueOf(lcd));
         return intent;
     }
+
+    private List<ProperFraction> generate4UniqueLCDFraction(){
+        List<ProperFraction> properFractions = new ArrayList<ProperFraction>();
+        properFractions.add(new ProperFraction(Util.generate1ProperFraction()));
+        int count = 1;
+        outer : while(true){
+            ProperFraction fraction = new ProperFraction(Util.generate1ProperFraction());
+            inner : for(ProperFraction f : properFractions){
+                if(f.getDenominator().equals(fraction.getDenominator())){
+                    continue outer;
+                }
+            }
+            if(count == 4){
+                break outer;
+            }else{
+                properFractions.add(fraction);
+                count++;
+            }
+        }
+        return properFractions;
+    }
     private void initializeFractions(){
+        List<ProperFraction> properFractions = generate4UniqueLCDFraction();
+        //Generate Random number, if it is even, generate 3 fractions else, generate 4 fractions.
         if((Integer.valueOf(Util.generate2DigsRandomNumbers(10)) % 2) == 0){
             setLeft(true);
         }else{
             setLeft(false);
-            createCustomTextView4(Util.generate1ProperFraction());
+            createCustomTextView4(properFractions.get(0));
         }
-        createCustomTextView1(Util.generate1ProperFraction());
-        createCustomTextView2(Util.generate1ProperFraction());
-        createCustomTextView3(Util.generate1ProperFraction());
+        createCustomTextView1(properFractions.get(1));
+        createCustomTextView2(properFractions.get(2));
+        createCustomTextView3(properFractions.get(3));
         if(denom4 != null){
             lcd = Util.findLCD(
                     Integer.valueOf(denom1.getText().toString()),
@@ -186,6 +221,7 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
             Util.hide(getLCD);
             setAns();
             addLCDs();
+            ansLayout.setOnClickListener(null);
         }
     }
     public void setLCM(DraggedItem draggedItem){
@@ -205,6 +241,9 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
             ans = String.valueOf(DivideCache.get().getAns());
         } else {
             ans = MultiplyCache.getInstance().getFinalAns();
+        }
+        if(ans == null){
+            return;
         }
         Util.showWithText(tvAns, ans);
         if(ans.length() == 2){
@@ -337,13 +376,13 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         layoutListener.setSorted(lcms);
     }
 
-    private void createCustomTextView1(String[] fraction){
+    private void createCustomTextView1(ProperFraction fraction){
         groupLayout1 = createRelativeLayout(left1-50, numTop,false);
         groupLayout1Id = View.generateViewId();
         groupLayout1.setId(groupLayout1Id);
         num1 = Util.getTextViewWithFont(new TextView(this));
         num1.setTextSize(50);
-        Util.showWithTextUnderlined(num1,fraction[0]);
+        Util.showWithTextUnderlined(num1,fraction.getNumerator());
         num1Id = View.generateViewId();
         num1.setId(num1Id);
         RelativeLayout.LayoutParams lpt = new RelativeLayout.LayoutParams(
@@ -355,7 +394,7 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
 
         denom1 = Util.getTextViewWithFont(new TextView(this));
         denom1.setTextSize(50);
-        Util.showWithText(denom1,fraction[1]);
+        Util.showWithText(denom1,fraction.getDenominator());
         denom1Id = View.generateViewId();
         denom1.setId(denom1Id);
         RelativeLayout.LayoutParams lpd = new RelativeLayout.LayoutParams(
@@ -368,13 +407,13 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
 
     }
 
-    private void createCustomTextView2(String[] fraction){
+    private void createCustomTextView2(ProperFraction fraction){
         groupLayout2 = createRelativeLayout(left2-50, numTop,false);
         groupLayout2Id = View.generateViewId();
         groupLayout2.setId(groupLayout2Id);
         num2 = Util.getTextViewWithFont(new TextView(this));
         num2.setTextSize(50);
-        Util.showWithTextUnderlined(num2,fraction[0]);
+        Util.showWithTextUnderlined(num2,fraction.getNumerator());
         num2Id = View.generateViewId();
         num2.setId(num2Id);
         RelativeLayout.LayoutParams lpt = new RelativeLayout.LayoutParams(
@@ -386,7 +425,7 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
 
         denom2 = Util.getTextViewWithFont(new TextView(this));
         denom2.setTextSize(50);
-        Util.showWithText(denom2,fraction[1]);
+        Util.showWithText(denom2,fraction.getDenominator());
         denom2Id = View.generateViewId();
         denom2.setId(denom2Id);
         RelativeLayout.LayoutParams lpd = new RelativeLayout.LayoutParams(
@@ -397,13 +436,13 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         denom2.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         groupLayout2.addView(denom2);
     }
-    private void createCustomTextView3(String[] fraction){
+    private void createCustomTextView3(ProperFraction fraction){
         groupLayout3 = createRelativeLayout(left3-50, numTop,false);
         groupLayout3Id = View.generateViewId();
         groupLayout3.setId(groupLayout3Id);
         num3 = Util.getTextViewWithFont(new TextView(this));
         num3.setTextSize(50);
-        Util.showWithTextUnderlined(num3,fraction[0]);
+        Util.showWithTextUnderlined(num3,fraction.getNumerator());
         num3Id = View.generateViewId();
         num3.setId(num3Id);
         RelativeLayout.LayoutParams lpt = new RelativeLayout.LayoutParams(
@@ -415,7 +454,7 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
 
         denom3 = Util.getTextViewWithFont(new TextView(this));
         denom3.setTextSize(50);
-        Util.showWithText(denom3,fraction[1]);
+        Util.showWithText(denom3,fraction.getDenominator());
         denom3Id = View.generateViewId();
         denom3.setId(denom3Id);
         RelativeLayout.LayoutParams lpd = new RelativeLayout.LayoutParams(
@@ -426,13 +465,13 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
         denom3.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         groupLayout3.addView(denom3);
     }
-    private void createCustomTextView4(String[] fraction){
+    private void createCustomTextView4(ProperFraction fraction){
         groupLayout4 = createRelativeLayout(left4-50, numTop, false);
         groupLayout4Id = View.generateViewId();
         groupLayout4.setId(groupLayout4Id);
         num4 = Util.getTextViewWithFont(new TextView(this));
         num4.setTextSize(50);
-        Util.showWithTextUnderlined(num4,fraction[0]);
+        Util.showWithTextUnderlined(num4,fraction.getNumerator());
         num4Id = View.generateViewId();
         num4.setId(num4Id);
         RelativeLayout.LayoutParams lpt = new RelativeLayout.LayoutParams(
@@ -444,7 +483,7 @@ public class ArrangeFractionsActivity extends AppCompatActivity {
 
         denom4 = Util.getTextViewWithFont(new TextView(this));
         denom4.setTextSize(50);
-        Util.showWithText(denom4,fraction[1]);
+        Util.showWithText(denom4,fraction.getDenominator());
         denom4Id = View.generateViewId();
         denom4.setId(denom4Id);
         RelativeLayout.LayoutParams lpd = new RelativeLayout.LayoutParams(

@@ -20,7 +20,6 @@ import static com.master.math.activity.util.Util.shakeError;
 public class MultiplyActivity extends AppCompatActivity  {
 
     MultiplyProcessor processor;
-    RelativeLayout parentMultiply;
     TextView formulaPop;
     EditText userAns;
     @Override
@@ -29,7 +28,6 @@ public class MultiplyActivity extends AppCompatActivity  {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_multiply);
         userAns = (EditText) findViewById(R.id.userAns);
-        parentMultiply = (RelativeLayout) findViewById(R.id.parentMultiply);
         formulaPop = Util.getTextViewWithFont(this,R.id.formulaPop);
         AdditionCache.get().clear();
         //MultiplyCache.getInstance().setNums(1,0,0,1);
@@ -39,40 +37,19 @@ public class MultiplyActivity extends AppCompatActivity  {
             processor = new MultiplyProcessor(this,getAssets());
         }
 
-        parentMultiply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(processor.isPopupMultiplyVisible()) {
-                    if(validateInput() && processor.isFormulaPopAnsCorrect()) {
-                        processor.renderPopupWindow(null,false);
-                        processor.renderAnswerWindow(true);
-                    }else{
-                        userAns.startAnimation(shakeError());
-                    }
-                }
-            }
-        });
-
     }
 
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        if(AdditionCache.get().getFinalAnswer() !=null){
-            finish();
+        if(processor.isReady()){
+            processor.next();
         }
     }
 
-    private boolean validateInput(){
-        try{
-            if(userAns.getText().toString().trim().equals("")) {
-               return false;
-            }
-            int i = 1 + Integer.valueOf(userAns.getText().toString());
-        }catch (NumberFormatException e){
-            return false;
-        }
-        return true;
+    @Override
+    public void onBackPressed() {
+        MultiplyCache.getInstance().clear();
+        super.onBackPressed();
     }
-
 }

@@ -6,6 +6,7 @@ import java.util.List;
 public class LCDCache {
     private static LCDCache _this;
     private boolean isFinished;
+    private boolean isLCDNextFinished;
     private LCDCache(){}
     private List<String[]> fractions;
     public static LCDCache get(){
@@ -26,5 +27,13 @@ public class LCDCache {
 
     public void setFractions(List<String[]> fractions) {
         this.fractions = fractions;
+    }
+
+    public boolean isLCDNextFinished() {
+        return isLCDNextFinished;
+    }
+
+    public void setLCDNextFinished(boolean LCDNextFinished) {
+        isLCDNextFinished = LCDNextFinished;
     }
 }

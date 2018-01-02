@@ -100,12 +100,12 @@
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\small_bg.png",
-        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\drawable\\small_bg.png"
-    },
-    {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\small_bg.png",
+        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\drawable\\small_bg.png"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",

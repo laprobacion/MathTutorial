@@ -4,6 +4,7 @@ package com.master.math.activity.fraction;
 import com.master.math.R;
 import com.master.math.activity.base.ActionStep;
 import com.master.math.activity.base.Validator;
+import com.master.math.activity.util.DraggedItem;
 
 import static com.master.math.activity.util.Util.shakeError;
 
@@ -91,5 +92,9 @@ public class CompareFractionValidator extends Validator{
     @Override
     public boolean isFinished() {
         return this.step.getStep() == ActionStep.STEP_4;
+    }
+
+    public DraggedItem getDraggedItem(){
+        return this.draggedItem;
     }
 }

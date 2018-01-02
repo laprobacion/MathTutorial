@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.master.math.R;
+import com.master.math.activity.addition.AdditionCache;
 import com.master.math.activity.divide.DivideCache;
 import com.master.math.activity.lcd.LCDCache;
 import com.master.math.activity.util.Util;
@@ -21,20 +22,27 @@ import static com.master.math.activity.util.Util.shakeError;
 public class FormActivity extends AppCompatActivity {
 
     ConstraintLayout form;
-    TextView formula,open;
+    TextView formula,open,doneClick;
     EditText userAns;
     private int num1;
     private int num2;
-    public static final String MULTIPLY_NUM_1 = "NUM1";
-    public static final String MULTIPLY_NUM_2 = "NUM2";
-    public static final String DIVIDE_NUM_1 = "NUM1";
-    public static final String DIVIDE_NUM_2 = "NUM2";
+    public static final String MULTIPLY_NUM_1 = "MULTIPLY_NUM_1";
+    public static final String MULTIPLY_NUM_2 = "MULTIPLY_NUM_2";
+    public static final String ADDITION_NUM_1 = "ADDITION_NUM_1";
+    public static final String ADDITION_NUM_2 = "ADDITION_NUM_2";
+    public static final String DIVIDE_NUM_1 = "DIVIDE_NUM_1";
+    public static final String DIVIDE_NUM_2 = "DIVIDE_NUM_2";
     public static final String LCD_ANS = "LCD_ANS";
     public static final String LCD_DENOMINATORS = "LCD_DENOMINATORS";
+    public static final String LCD_NEXT_ANS = "LCD_NEXT_ANS";
+    public static final String LCD_NEXT_DENOMINATOR = "LCD_NEXT_DENOMINATOR";
+    public static final String LCD_NEXT_CURRENT_SKIPCOUNT = "LCD_NEXT_CURRENT_SKIPCOUNT";
     public static final String OPERATION = "OPERATION";
+    public static final String OPERATION_LCD_NEXT = "LCDNEXT";
     public static final String OPERATION_LCD = "LCD";
     public static final String OPERATION_MULTIPLY = "MULTIPLY";
     public static final String OPERATION_DIVIDE = "DIVIDE";
+    public static final String OPERATION_ADDITION = "ADDITION";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +50,7 @@ public class FormActivity extends AppCompatActivity {
         setContentView(R.layout.activity_form);
         form = (ConstraintLayout) findViewById(R.id.parentForm);
         formula = Util.getTextViewWithFont(this,R.id.formula);
+        doneClick = Util.getTextViewWithFont(this, R.id.doneClick);
         open = Util.getTextViewWithFontInvisible(this,R.id.open);
         userAns = Util.getEditTextWithFont(this,R.id.userAns);
         MultiplyCache.getInstance().setFinalAns(null);
@@ -52,10 +61,23 @@ public class FormActivity extends AppCompatActivity {
             setLCD();
         }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_DIVIDE)){
             setDivide();
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD_NEXT)){
+            LCDCache.get().setLCDNextFinished(false);
+            setLCDNext();
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_ADDITION)){
+            AdditionCache.get().clear();
+            setAddition();
         }
 
         //XXX: IMPORTANT! - FOR FASTER DEMO PURPOSE ONLY. - COMMENT OUT THIS CODE WHEN GO LIVE.
         setHint();
+    }
+    private void setAddition(){
+        Intent intent = getIntent();
+        num1 = Integer.valueOf(intent.getStringExtra(ADDITION_NUM_1));
+        num2 = Integer.valueOf(intent.getStringExtra(ADDITION_NUM_2));
+        Util.showWithText(formula, num1 + " + " + num2 + "  = ");
+        setFormClick();
     }
     private void setHint(){
         if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
@@ -70,8 +92,23 @@ public class FormActivity extends AppCompatActivity {
                 ans = Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_2)) / Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_1));
             }
             userAns.setHint(String.valueOf(ans));
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD_NEXT)){
+            userAns.setHint(getIntent().getStringExtra(LCD_NEXT_ANS));
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_ADDITION)){
+            userAns.setHint(String.valueOf(num1 + num2));
         }
     }
+    private void setLCDNext(){
+        Intent intent = getIntent();
+        String formulaTxt = "";
+        formulaTxt = "Skip count by (" + intent.getStringExtra(LCD_NEXT_DENOMINATOR) + ") \n next to " + intent.getStringExtra(LCD_NEXT_CURRENT_SKIPCOUNT) + " is ? ";
+        Util.showWithText(formula, formulaTxt + " = ");
+        formula.setTextSize(30);
+        formula.setTop(300);
+        Util.hide(open);
+        setFormClick();
+    }
+
     private void setDivide(){
         Intent intent = getIntent();
         String formulaTxt = "";
@@ -178,6 +215,10 @@ public class FormActivity extends AppCompatActivity {
                         LCDCache.get().setFinished(true);
                     }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_DIVIDE)){
                         DivideCache.get().setAns(Integer.valueOf(userAns.getText().toString().trim()));
+                    }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD_NEXT)){
+                        LCDCache.get().setLCDNextFinished(true);
+                    }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_ADDITION)){
+                        AdditionCache.get().setFinalAnswer(userAns.getText().toString().trim());
                     }
                     finish();
                 }else{
@@ -200,6 +241,11 @@ public class FormActivity extends AppCompatActivity {
             }else{
                 ans = Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_2)) / Integer.valueOf(getIntent().getStringExtra(DIVIDE_NUM_1));
             }
+            return ans == getUserAns();
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD_NEXT)){
+            return Integer.valueOf(getIntent().getStringExtra(LCD_NEXT_ANS)) == getUserAns();
+        }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_ADDITION)){
+            int ans = num1 + num2;
             return ans == getUserAns();
         }
         return false;
