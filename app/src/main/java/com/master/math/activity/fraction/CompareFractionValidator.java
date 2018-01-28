@@ -10,8 +10,8 @@ import static com.master.math.activity.util.Util.shakeError;
 
 public class CompareFractionValidator extends Validator{
 
-
-    public CompareFractionValidator(){    }
+    private CompareFractionProcessor processor;
+    public CompareFractionValidator(CompareFractionProcessor processor){ this.processor = processor;   }
 
 
     public boolean startValidate(){
@@ -30,15 +30,19 @@ public class CompareFractionValidator extends Validator{
             }
             if (get1Id() == R.id.denom1) {
                 shakeError(get(R.id.num2));
+                processor.clickHelp(0);
             }
             if (get1Id() == R.id.num2) {
                 shakeError(get(R.id.denom1));
+                processor.clickHelp(0);
             }
             if (get1Id() == R.id.num1) {
                 shakeError(get(R.id.denom2));
+                processor.clickHelp(0);
             }
             if (get1Id() == R.id.denom2) {
                 shakeError(get(R.id.num1));
+                processor.clickHelp(0);
             }
         }
         if(step.getStep() == ActionStep.STEP_3){
@@ -47,6 +51,7 @@ public class CompareFractionValidator extends Validator{
                 shakeError(get1());
                 shakeError(get(R.id.compareLine));
                 flag1 = true;
+
             }
             if(get1Id() == R.id.greaterSign && get2Id() == R.id.compareLine){
                 return true;
@@ -71,6 +76,7 @@ public class CompareFractionValidator extends Validator{
                 shakeError(get(R.id.greaterSign));
                 shakeError(get(R.id.lessSign));
                 shakeError(get(R.id.equalSign));
+                processor.clickHelp(0);
             }
             if(get1Id() == R.id.compareLine){
                 return false;

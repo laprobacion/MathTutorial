@@ -1,6 +1,7 @@
 package com.master.math.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,11 +17,13 @@ import com.master.math.R;
 import com.master.math.activity.addition.AdditionCache;
 import com.master.math.activity.divide.DivideCache;
 import com.master.math.activity.lcd.LCDCache;
+import com.master.math.activity.util.SaveState;
 import com.master.math.activity.util.Util;
 
 import com.master.math.activity.multiply.MultiplyCache;
 
 import static com.master.math.activity.util.Util.shakeError;
+import static com.master.math.activity.util.Util.showGif;
 
 public class FormActivity extends AppCompatActivity {
 
@@ -189,8 +192,10 @@ public class FormActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
                     setMultiplyOnClick();
+                    showGif(0,FormActivity.this);
                 }else if(getIntent().getStringExtra(OPERATION).equals(OPERATION_LCD)){
                     setLCDOpenOnClick();
+                    showGif(0,FormActivity.this);
                 }
                 finish();
             }
@@ -254,6 +259,10 @@ public class FormActivity extends AppCompatActivity {
             }
             finish();
         }else{
+            if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
+                SaveState.get(this).incrementMultiplicationMistakes();
+            }
+            userAns.setTextColor(Color.RED);
             shakeError(userAns);
         }
     }

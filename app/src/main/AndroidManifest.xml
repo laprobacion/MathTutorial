@@ -26,7 +26,13 @@
         <activity android:name=".activity.LCDMainActivity" />
         <activity android:name=".activity.LCDActivity" />
         <activity android:name=".activity.ArrangeFractionsActivity" />
-        <activity android:name=".activity.DivideActivity"></activity>
+        <activity android:name=".activity.DivideActivity" />
+        <activity android:name=".activity.LessonActivity" />
+        <activity android:name=".activity.ComparingActivity" />
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.SeatworkActivity" />
+        <activity android:name=".activity.StatsActivity"></activity>
     </application>
 
 </manifest>

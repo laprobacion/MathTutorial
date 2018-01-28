@@ -9,70 +9,52 @@ import android.view.Window;
 import android.widget.Button;
 
 import com.master.math.R;
+import com.master.math.activity.util.SaveState;
 import com.master.math.activity.util.Util;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button seatwork, stats;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         Util.setAsset(getAssets());
-        Button btnCompareFraction = (Button) findViewById(R.id.btnCompareFraction);
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/EraserDust.ttf");
-        btnCompareFraction.setTypeface(typeface);
-        btnCompareFraction.setText("Compare Fractions");
-        btnCompareFraction.setOnClickListener(new View.OnClickListener() {
+
+        Button lesson = (Button) findViewById(R.id.lesson);
+        lesson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, FractionActivity.class));
+                startActivity(new Intent(MainActivity.this, LessonActivity.class));
             }
         });
 
-        Button btnLCD = (Button) findViewById(R.id.btnLCD);
-        btnLCD.setTypeface(typeface);
-        btnLCD.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, LCDMainActivity.class));
-            }
-        });
+        seatwork = (Button) findViewById(R.id.seatwork);
+        stats = (Button) findViewById(R.id.stats);
+        setSeatWorkClick();
 
-        Button add = (Button) findViewById(R.id.add);
-        add.setTypeface(typeface);
-        add.setOnClickListener(new View.OnClickListener() {
+        stats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AdditionActivity.class));
+                startActivity(new Intent(MainActivity.this, StatsActivity.class));
             }
         });
+    }
 
-        Button multiply = (Button) findViewById(R.id.multiply);
-        multiply.setTypeface(typeface);
-        multiply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MultiplyActivity.class));
-            }
-        });
-
-        Button arrange = (Button) findViewById(R.id.arrange);
-        arrange.setTypeface(typeface);
-        arrange.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ArrangeFractionsActivity.class));
-            }
-        });
-
-        Button divide = (Button) findViewById(R.id.divide);
-        divide.setTypeface(typeface);
-        divide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DivideActivity.class));
-            }
-        });
+    public void setSeatWorkClick(){
+        if(SaveState.get(this).isSimilarNumeratorDone() && SaveState.get(this).isSimilarDenominatorDone() && SaveState.get(this).isDissimilarFractionDone()){
+            seatwork.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(MainActivity.this, SeatworkActivity.class));
+                }
+            });
+        }
+    }
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        setSeatWorkClick();
     }
 }

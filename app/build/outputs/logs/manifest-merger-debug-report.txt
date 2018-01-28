@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifes
 		INJECTED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:5:5-30:19
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:5:5-36:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Frank\.android\build-cache\dcbb2ffb61c6eb62d7c966ab0403c96d8b2e7850\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Frank\.android\build-cache\54b227c0b6183faa8bb74d8e10925971d750b4a6\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Frank\.android\build-cache\5d5519ff8d63becdbd23480ffb583378769fada0\output\AndroidManifest.xml:29:5-20
@@ -86,9 +86,33 @@ ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifes
 	android:name
 		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:28:19-68
 activity#com.master.math.activity.DivideActivity
-ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:29:9-70
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:29:9-61
 	android:name
 		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:29:19-58
+activity#com.master.math.activity.LessonActivity
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:30:9-61
+	android:name
+		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:30:19-58
+activity#com.master.math.activity.ComparingActivity
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:31:9-64
+	android:name
+		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:31:19-61
+activity#com.master.math.activity.HelpActivity
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:32:9-59
+	android:name
+		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:32:19-56
+activity#com.master.math.activity.MessageActivity
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:33:9-62
+	android:name
+		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:33:19-59
+activity#com.master.math.activity.SeatworkActivity
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:34:9-63
+	android:name
+		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:34:19-60
+activity#com.master.math.activity.StatsActivity
+ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:35:9-69
+	android:name
+		ADDED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml:35:19-57
 uses-sdk
 INJECTED from C:\Users\Frank\AndroidStudioProjects\Math\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Frank\.android\build-cache\dcbb2ffb61c6eb62d7c966ab0403c96d8b2e7850\output\AndroidManifest.xml:5:5-7:41
@@ -104,6 +128,7 @@ MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Frank\
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Frank\.android\build-cache\685001e6d84cac698ec7c84cd89e7cf107a9d5c8\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Frank\.android\build-cache\1d2ac8bd517e0b3cfc682e0a73becd3a82b38ac4\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Frank\.android\build-cache\dde1af5cbe2dcf892f964aed01b61cd82191defb\output\AndroidManifest.xml:21:5-23:58
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Frank\.android\build-cache\16e957f747edccead5ff2bb40df86310cd2397e9\output\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Frank\.android\build-cache\54b227c0b6183faa8bb74d8e10925971d750b4a6\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion

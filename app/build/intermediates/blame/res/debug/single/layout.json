@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -28,12 +28,16 @@
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_seatwork.xml",
+        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_seatwork.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\54b227c0b6183faa8bb74d8e10925971d750b4a6\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
@@ -52,12 +56,12 @@
         "source": "C:\\Users\\Frank\\.android\\build-cache\\54b227c0b6183faa8bb74d8e10925971d750b4a6\\output\\res\\layout\\design_navigation_item.xml"
     },
     {
-        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lcd.xml",
         "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_lcd.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
@@ -66,6 +70,14 @@
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_stats.xml",
+        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_stats.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lesson.xml",
+        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_lesson.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
@@ -148,6 +160,10 @@
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message.xml",
+        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_message.xml"
+    },
+    {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
@@ -166,6 +182,10 @@
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_comparing.xml",
+        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_comparing.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
@@ -218,6 +238,10 @@
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\54b227c0b6183faa8bb74d8e10925971d750b4a6\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_help.xml",
+        "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_help.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",

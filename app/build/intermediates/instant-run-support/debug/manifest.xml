@@ -37,6 +37,12 @@
         <activity android:name="com.master.math.activity.LCDActivity" />
         <activity android:name="com.master.math.activity.ArrangeFractionsActivity" />
         <activity android:name="com.master.math.activity.DivideActivity" />
+        <activity android:name="com.master.math.activity.LessonActivity" />
+        <activity android:name="com.master.math.activity.ComparingActivity" />
+        <activity android:name="com.master.math.activity.HelpActivity" />
+        <activity android:name="com.master.math.activity.MessageActivity" />
+        <activity android:name="com.master.math.activity.SeatworkActivity" />
+        <activity android:name="com.master.math.activity.StatsActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

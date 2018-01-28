@@ -1,6 +1,7 @@
 package com.master.math.activity.util;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.BlurMaskFilter;
 import android.graphics.Color;
@@ -16,6 +17,8 @@ import android.widget.TextView;
 
 import com.master.math.R;
 import com.master.math.activity.ArrangeFractionsActivity;
+import com.master.math.activity.ComparingActivity;
+import com.master.math.activity.HelpActivity;
 
 
 import java.util.ArrayList;
@@ -45,9 +48,9 @@ public class Util {
         Random rand = new Random();
         Integer  n = 0;
         if(!includeZero){
-            n = rand.nextInt(9) + 1;
+            n = rand.nextInt(12) + 1;
         }else{
-            n = rand.nextInt(9);
+            n = rand.nextInt(12);
         }
         return n.toString();
     }
@@ -116,10 +119,10 @@ public class Util {
     }
     public static String[] generateProperFractions(){
         String numerator = generateRandomNumbers(false);
-        String denominator = generate2DigsRandomNumbers(70);
+        String denominator = generateRandomNumbers(false);
         while(true){
             if(Integer.valueOf(numerator) > Integer.valueOf(denominator)){
-                denominator = generate2DigsRandomNumbers(75);
+                denominator = generateRandomNumbers(false);
             }else{
                 break;
             }
@@ -318,5 +321,11 @@ public class Util {
         Arrays.sort(ints);
         int divisible = (lcd / ints[0]);
         return !(divisible > 1 && divisible < 15);
+    }
+
+    public static void showGif(int gifIntId, Activity activity){
+            Intent intent = new Intent(activity, HelpActivity.class);
+            intent.putExtra(HelpActivity.GIF_ID, String.valueOf(gifIntId));
+            activity.startActivity(intent);
     }
 }

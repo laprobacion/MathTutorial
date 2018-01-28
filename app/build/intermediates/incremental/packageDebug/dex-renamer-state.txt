@@ -1,4 +1,4 @@
-#Tue Jan 02 13:36:19 SGT 2018
+#Sun Jan 28 11:15:38 SGT 2018
 base.0=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d8ff628c1f40d79d2a094874c54dee5270f047f3
 renamed.1=classes2.dex
 renamed.0=classes.dex
