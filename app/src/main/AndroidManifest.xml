@@ -13,14 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".activity.MainActivity">
-        </activity>
+        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.MultiplyActivity" />
         <activity
             android:name=".activity.FractionActivity"
             android:label="@string/title_activity_fraction"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-            <activity android:name=".activity.AdditionActivity" />
+        <activity android:name=".activity.AdditionActivity" />
         <activity android:name=".activity.FormActivity" />
         <activity android:name=".activity.LCDMainActivity" />
         <activity android:name=".activity.LCDActivity" />
@@ -28,18 +27,21 @@
         <activity android:name=".activity.DivideActivity" />
         <activity android:name=".activity.LessonActivity" />
         <activity android:name=".activity.LoginRegisterActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.ComparingActivity" />
         <activity android:name=".activity.HelpActivity" />
         <activity android:name=".activity.MessageActivity" />
         <activity android:name=".activity.SeatworkActivity" />
         <activity android:name=".activity.StatsActivity" />
+        <activity android:name=".activity.Fraction2Activity" />
+        <activity android:name=".activity.Form2Activity" />
+        <activity android:name=".Help2Activity"></activity>
     </application>
 
 </manifest>

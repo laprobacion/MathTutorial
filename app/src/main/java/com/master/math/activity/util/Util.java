@@ -135,19 +135,19 @@ public class Util {
     }
     public static EditText getEditTextWithFont(Activity activity,int id){
         EditText et = (EditText) activity.findViewById(id);
-        et.setTypeface(Typeface.createFromAsset(instanceAsset,"fonts/EraserDust.ttf"));
+        //et.setTypeface(Typeface.createFromAsset(instanceAsset,"fonts/EraserDust.ttf"));
         return et;
     }
     public static TextView getTextViewWithFont(Activity activity,int id){
         TextView tv =(TextView) activity.findViewById(id);
-        tv.setTypeface(Typeface.createFromAsset(instanceAsset,"fonts/EraserDust.ttf"));
-        tv.setTextColor(Color.argb(255, 255, 255, 255));
+        //tv.setTypeface(Typeface.createFromAsset(instanceAsset,"fonts/EraserDust.ttf"));
+        //tv.setTextColor(Color.argb(255, 255, 255, 255));
         return tv;
     }
 
     public static TextView getTextViewWithFont(TextView tv){
-        tv.setTypeface(Typeface.createFromAsset(instanceAsset,"fonts/EraserDust.ttf"));
-        tv.setTextColor(Color.argb(255, 255, 255, 255));
+        //tv.setTypeface(Typeface.createFromAsset(instanceAsset,"fonts/EraserDust.ttf"));
+        //tv.setTextColor(Color.argb(255, 255, 255, 255));
         return tv;
     }
     public static TextView getTextViewWithFontInvisible(Activity activity,int id){
@@ -157,14 +157,14 @@ public class Util {
     }
     public static void showWithText(TextView tv, String txt){
         tv.setText(txt == null ? tv.getText().toString() : txt);
-        tv.setTextColor(Color.argb(255, 255, 255, 255));
+        //tv.setTextColor(Color.argb(255, 255, 255, 255));
         tv.setVisibility(View.VISIBLE);
         tv.setBackground(null);
         tv.invalidate();
     }
     public static void showWithFadedText(TextView tv, String txt){
         tv.setText(txt == null ? tv.getText().toString() : txt);
-        tv.setTextColor(Color.argb(150, 255, 255, 255));
+        //tv.setTextColor(Color.argb(150, 255, 255, 255));
         tv.setVisibility(View.VISIBLE);
         tv.setBackground(null);
         tv.invalidate();
@@ -173,19 +173,19 @@ public class Util {
         SpannableString content = new SpannableString(txt);
         content.setSpan(new UnderlineSpan(), 0, txt.length(), 0);
         tv.setText(content);
-        tv.setTextColor(Color.argb(255, 255, 255, 255));
+        //tv.setTextColor(Color.argb(255, 255, 255, 255));
         tv.setVisibility(View.VISIBLE);
         tv.setBackground(null);
         tv.invalidate();
     }
     public static void showWithBG(TextView tv, Activity activity){
         showWithText(tv,DOUBLE_SPACES);
-        tv.setBackground(activity.getResources().getDrawable(R.drawable.text_bg));
+        //tv.setBackground(activity.getResources().getDrawable(R.drawable.text_bg));
         tv.invalidate();
     }
     public static void showWithTextBG(TextView tv,Activity activity){
         showWithText(tv,tv.getText().toString());
-        tv.setBackground(activity.getResources().getDrawable(R.drawable.text_bg));
+        //tv.setBackground(activity.getResources().getDrawable(R.drawable.text_bg));
         tv.invalidate();
     }
     public static void removeListeners(TextView tv){

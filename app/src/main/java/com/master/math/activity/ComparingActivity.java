@@ -43,7 +43,8 @@ public class ComparingActivity extends AppCompatActivity {
                 lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,FractionActivity.ACTIVITY_LESSON);
                 lesson1Intent.putExtra(FractionActivity.ACTIVITY_LESSON,FractionActivity.LESSON_1);
                 startActivity(lesson1Intent);
-                showGif(0,ComparingActivity.this);
+                showGif(R.drawable.sdstep,ComparingActivity.this);
+                showGif(R.drawable.sdintro,ComparingActivity.this);
             }
         });
     }

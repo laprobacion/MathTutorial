@@ -13,7 +13,7 @@ public class HelpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help);
+        setContentView(R.layout.activity_help2);
         TextView closeText = (TextView) findViewById(R.id.closeText);
         pl.droidsonroids.gif.GifImageView gif = (pl.droidsonroids.gif.GifImageView) findViewById(R.id.gif);
         int gifID = R.drawable.cat;

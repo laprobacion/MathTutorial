@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_form.xml",
@@ -20,16 +20,16 @@
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\notification_template_part_time.xml"
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_text_input_password_icon.xml"
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_menu.xml",
@@ -134,6 +134,14 @@
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_form2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_form2.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_help2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_help2.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
@@ -250,6 +258,10 @@
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login_register.xml",
         "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_login_register.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fraction2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_fraction2.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",

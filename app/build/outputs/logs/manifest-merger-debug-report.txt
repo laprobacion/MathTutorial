@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:9:5-43:19
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:9:5-45:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.android\build-cache\a9342e197297649e6b450107d08d6d3d8f5de5be\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\8efc690a897f84a5f4adc899b655cf7d39ed7716\output\AndroidManifest.xml:29:5-20
@@ -52,87 +52,99 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.a
 	android:theme
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:15:9-59
 activity#com.master.math.activity.MainActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:16:9-17:20
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:16:9-59
 	android:name
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:16:19-56
 activity#com.master.math.activity.MultiplyActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:18:9-63
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:17:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:18:19-60
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:17:19-60
 activity#com.master.math.activity.FractionActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:19:9-22:66
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:18:9-21:66
 	android:label
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:21:13-60
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:20:13-60
 	android:theme
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:22:13-63
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:21:13-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:20:13-54
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:19:13-54
 activity#com.master.math.activity.AdditionActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:23:13-67
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:22:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:23:23-64
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:22:19-60
 activity#com.master.math.activity.FormActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:24:9-59
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:23:9-59
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:24:19-56
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:23:19-56
 activity#com.master.math.activity.LCDMainActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:25:9-62
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:24:9-62
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:25:19-59
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:24:19-59
 activity#com.master.math.activity.LCDActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:26:9-58
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:25:9-58
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:26:19-55
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:25:19-55
 activity#com.master.math.activity.ArrangeFractionsActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:27:9-71
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:26:9-71
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:27:19-68
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:26:19-68
 activity#com.master.math.activity.DivideActivity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:27:9-61
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:27:19-58
+activity#com.master.math.activity.LessonActivity
 ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:28:9-61
 	android:name
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:28:19-58
-activity#com.master.math.activity.LessonActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:29:9-61
-	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:29:19-58
 activity#com.master.math.activity.LoginRegisterActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:30:9-36:20
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:30:19-65
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:29:19-65
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:31:9-35:25
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:32:13-65
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:32:21-62
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:34:13-73
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:34:23-70
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.master.math.activity.RegisterActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:37:9-62
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:36:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:37:19-60
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:36:19-60
 activity#com.master.math.activity.ComparingActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:38:9-64
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:37:9-64
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:38:19-61
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:37:19-61
 activity#com.master.math.activity.HelpActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:39:9-59
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:38:9-59
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:39:19-56
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:38:19-56
 activity#com.master.math.activity.MessageActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:40:9-62
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:39:9-62
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:40:19-59
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:39:19-59
 activity#com.master.math.activity.SeatworkActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:41:9-63
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:40:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:41:19-60
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:40:19-60
 activity#com.master.math.activity.StatsActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:42:9-60
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:41:9-60
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:42:19-57
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:41:19-57
+activity#com.master.math.activity.Fraction2Activity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:42:9-64
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:42:19-61
+activity#com.master.math.activity.Form2Activity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:43:9-60
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:43:19-57
+activity#com.master.math.Help2Activity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:44:9-60
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:44:19-48
 uses-sdk
 INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.android\build-cache\a9342e197297649e6b450107d08d6d3d8f5de5be\output\AndroidManifest.xml:5:5-7:41

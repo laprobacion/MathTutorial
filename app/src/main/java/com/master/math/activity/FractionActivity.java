@@ -23,7 +23,7 @@ public class FractionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_fraction);
+        setContentView(R.layout.activity_fraction2);
         String type = getIntent().getStringExtra(ACTIVITY_TYPE);
         if(type.equals(ACTIVITY_LESSON)){
             if(getIntent().getStringExtra(ACTIVITY_LESSON).equals(LESSON_1)){

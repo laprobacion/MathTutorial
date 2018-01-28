@@ -27,7 +27,7 @@ import static com.master.math.activity.util.Util.showGif;
 
 public class FormActivity extends AppCompatActivity {
 
-    RelativeLayout form;
+    RelativeLayout form;ConstraintLayout form2;
     TextView formula,open,doneClick;
     EditText userAns;
     private int num1;
@@ -53,8 +53,8 @@ public class FormActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_form);
-        form = (RelativeLayout)findViewById(R.id.parentForm);
+        setContentView(R.layout.activity_form2);
+        form = (RelativeLayout)findViewById(R.id.parentForm);//form2 = (ConstraintLayout) findViewById(R.id.parentForm);
         formula = Util.getTextViewWithFont(this,R.id.formula);
         doneClick = Util.getTextViewWithFont(this, R.id.doneClick);
         Util.showWithFadedText(doneClick,"OK");
@@ -80,7 +80,7 @@ public class FormActivity extends AppCompatActivity {
                 }
             }
         });
-        setPosition();
+        //setPosition();
         MultiplyCache.getInstance().setFinalAns(null);
         DivideCache.get().clear();
 
@@ -178,7 +178,7 @@ public class FormActivity extends AppCompatActivity {
         num1 = Integer.valueOf(intent.getStringExtra(MULTIPLY_NUM_1));
         num2 = Integer.valueOf(intent.getStringExtra(MULTIPLY_NUM_2));
         Util.showWithText(formula, num1 + " x " + num2 + "  = ");
-        setFormClick();
+        //setFormClick();
         if(intent.getStringExtra(MULTIPLY_NUM_1).length() == 2 || intent.getStringExtra(MULTIPLY_NUM_2).length() == 2){
             Util.showWithText(open,"Open Scratch.");
             open.setTextSize(30);

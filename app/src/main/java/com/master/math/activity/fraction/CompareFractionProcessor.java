@@ -53,7 +53,7 @@ public class CompareFractionProcessor implements Processor{
     public void clickHelp(int gifId){
         if(isLesson){
             if(lesson.equals(FractionActivity.LESSON_1)){
-                showGif(R.drawable.cat,activity);
+                showGif(R.drawable.sdstep,activity);
             }else if(lesson.equals(FractionActivity.LESSON_2)){
 
             }
@@ -157,10 +157,12 @@ public class CompareFractionProcessor implements Processor{
         this.initializer.setDraggables(num1,num2,denom1,denom2,greaterSign,lessSign,equalSign,compareLine);
         this.validator.addDraggableItems();
         setFractions(null,null,null,null);
-        setPositions();
+        //setPositions();
         setMultiplyFormula11OnClick(isHide);
         setMultiplyFormula12OnClick(isHide);
     }
+
+
 
     public void showPopup(DraggedItem draggedItem){
         this.draggedItem = draggedItem;
@@ -243,12 +245,12 @@ public class CompareFractionProcessor implements Processor{
         if(isFirst){
             Util.showWithText(multiplyFormula1, formula + String.valueOf(ans));
             multiplyAns1.setText(String.valueOf(ans));
-            ((RelativeLayout.LayoutParams) multiplyFormula1.getLayoutParams()).setMargins(110,100,0,0);
+            //((RelativeLayout.LayoutParams) multiplyFormula1.getLayoutParams()).setMargins(110,100,0,0);
             validator.getActionStep().increment();
             multiplyFormula1.setOnClickListener(null);
         }else{
             Util.showWithText(multiplyFormula2, formula + String.valueOf(ans));
-            ((RelativeLayout.LayoutParams) multiplyFormula2.getLayoutParams()).setMargins(600,100,0,0);
+            //((RelativeLayout.LayoutParams) multiplyFormula2.getLayoutParams()).setMargins(600,100,0,0);
             multiplyAns2.setText(String.valueOf(ans));
             validator.getActionStep().increment();
             multiplyFormula2.setOnClickListener(null);

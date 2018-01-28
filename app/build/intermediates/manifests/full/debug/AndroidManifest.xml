@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="24"
+        android:minSdkVersion="23"
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -23,8 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
-        <activity android:name="com.master.math.activity.MainActivity" >
-        </activity>
+        <activity android:name="com.master.math.activity.MainActivity" />
         <activity android:name="com.master.math.activity.MultiplyActivity" />
         <activity
             android:name="com.master.math.activity.FractionActivity"
@@ -50,6 +49,9 @@
         <activity android:name="com.master.math.activity.MessageActivity" />
         <activity android:name="com.master.math.activity.SeatworkActivity" />
         <activity android:name="com.master.math.activity.StatsActivity" />
+        <activity android:name="com.master.math.activity.Fraction2Activity" />
+        <activity android:name="com.master.math.activity.Form2Activity" />
+        <activity android:name="com.master.math.Help2Activity" />
     </application>
 
 </manifest>
