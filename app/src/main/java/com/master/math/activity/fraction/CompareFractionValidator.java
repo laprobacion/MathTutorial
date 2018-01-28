@@ -1,17 +1,24 @@
 package com.master.math.activity.fraction;
 
 
+import android.app.Activity;
+
 import com.master.math.R;
 import com.master.math.activity.base.ActionStep;
 import com.master.math.activity.base.Validator;
 import com.master.math.activity.util.DraggedItem;
+import com.master.math.activity.util.Util;
 
 import static com.master.math.activity.util.Util.shakeError;
 
 public class CompareFractionValidator extends Validator{
 
     private CompareFractionProcessor processor;
-    public CompareFractionValidator(CompareFractionProcessor processor){ this.processor = processor;   }
+    private Activity activity;
+    public CompareFractionValidator(CompareFractionProcessor processor, Activity activity){
+        this.processor = processor;
+        this.activity = activity;
+    }
 
 
     public boolean startValidate(){
@@ -30,7 +37,8 @@ public class CompareFractionValidator extends Validator{
             }
             if (get1Id() == R.id.denom1) {
                 shakeError(get(R.id.num2));
-                processor.clickHelp(0);
+                // processor.clickHelp(0); Remove all click help
+                Util.showGif(R.drawable.cat,this.activity);
             }
             if (get1Id() == R.id.num2) {
                 shakeError(get(R.id.denom1));

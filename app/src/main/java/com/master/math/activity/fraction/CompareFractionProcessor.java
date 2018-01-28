@@ -52,7 +52,12 @@ public class CompareFractionProcessor implements Processor{
     String activityType;
     public void clickHelp(int gifId){
         if(isLesson){
-            showGif(gifId,activity);
+            if(lesson.equals(FractionActivity.LESSON_1)){
+                showGif(R.drawable.cat,activity);
+            }else if(lesson.equals(FractionActivity.LESSON_2)){
+
+            }
+
         }
     }
     public void setLesson1(){
@@ -147,7 +152,7 @@ public class CompareFractionProcessor implements Processor{
         greaterSign = Util.getTextViewWithFont(activity, R.id.greaterSign);
         lessSign = Util.getTextViewWithFont(activity, R.id.lessSign);
         equalSign = Util.getTextViewWithFont(activity, R.id.equalSign);
-        this.validator = new CompareFractionValidator(this);
+        this.validator = new CompareFractionValidator(this,activity);
         this.initializer = new Initializer(new CompareFractionListener(this, validator));
         this.initializer.setDraggables(num1,num2,denom1,denom2,greaterSign,lessSign,equalSign,compareLine);
         this.validator.addDraggableItems();
