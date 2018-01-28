@@ -26,6 +26,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.UUID;
 
 public class Util {
     public static final String DOUBLE_SPACES = "  ";
@@ -321,6 +322,9 @@ public class Util {
         Arrays.sort(ints);
         int divisible = (lcd / ints[0]);
         return !(divisible > 1 && divisible < 15);
+    }
+    public static String generateId(){
+        return UUID.randomUUID().toString();
     }
 
     public static void showGif(int gifIntId, Activity activity){

@@ -1,7 +1,4 @@
-#Sun Jan 28 16:43:26 SGT 2018
-base.0=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d8ff628c1f40d79d2a094874c54dee5270f047f3
-renamed.1=classes2.dex
+#Sun Jan 28 22:22:31 SGT 2018
+base.0=D\:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_83edeb3955017d6a37d1d12e406128fefd258493\\classes.dex
-base.1=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_83edeb3955017d6a37d1d12e406128fefd258493
-file.0=C\:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d8ff628c1f40d79d2a094874c54dee5270f047f3\\classes.dex
+file.0=D\:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

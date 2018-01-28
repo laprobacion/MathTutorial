@@ -10,6 +10,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -23,11 +24,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity android:name="com.master.math.activity.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="com.master.math.activity.MultiplyActivity" />
         <activity
@@ -41,6 +37,14 @@
         <activity android:name="com.master.math.activity.ArrangeFractionsActivity" />
         <activity android:name="com.master.math.activity.DivideActivity" />
         <activity android:name="com.master.math.activity.LessonActivity" />
+        <activity android:name="com.master.math.activity.LoginRegisterActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.master.math.activity.RegisterActivity" />
         <activity android:name="com.master.math.activity.ComparingActivity" />
         <activity android:name="com.master.math.activity.HelpActivity" />
         <activity android:name="com.master.math.activity.MessageActivity" />

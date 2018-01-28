@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.master.math">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,29 +14,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".activity.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.MultiplyActivity" />
         <activity
             android:name=".activity.FractionActivity"
             android:label="@string/title_activity_fraction"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".activity.AdditionActivity" />
+            <activity android:name=".activity.AdditionActivity" />
         <activity android:name=".activity.FormActivity" />
         <activity android:name=".activity.LCDMainActivity" />
         <activity android:name=".activity.LCDActivity" />
         <activity android:name=".activity.ArrangeFractionsActivity" />
         <activity android:name=".activity.DivideActivity" />
         <activity android:name=".activity.LessonActivity" />
+        <activity android:name=".activity.LoginRegisterActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity"/>
         <activity android:name=".activity.ComparingActivity" />
         <activity android:name=".activity.HelpActivity" />
         <activity android:name=".activity.MessageActivity" />
         <activity android:name=".activity.SeatworkActivity" />
-        <activity android:name=".activity.StatsActivity"></activity>
+        <activity android:name=".activity.StatsActivity" />
     </application>
 
 </manifest>
