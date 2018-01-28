@@ -328,4 +328,24 @@ public class Util {
             intent.putExtra(HelpActivity.GIF_ID, String.valueOf(gifIntId));
             activity.startActivity(intent);
     }
+    public static List<Integer> generate4UniqueNumbers(){
+        List<Integer> numbers = new ArrayList<Integer>();
+        numbers.add(Integer.valueOf(generateRandomNumbers(false)));
+        while(true){
+            int random = Integer.valueOf(generateRandomNumbers(false));
+            boolean hasDup = false;
+            for(Integer i : numbers){
+                if(i == random){
+                    hasDup = true;
+                }
+            }
+            if(!hasDup){
+                numbers.add(random);
+                if(numbers.size() == 4){
+                    break;
+                }
+            }
+        }
+        return numbers;
+    }
 }

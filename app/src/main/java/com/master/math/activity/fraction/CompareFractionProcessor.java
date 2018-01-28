@@ -25,6 +25,8 @@ import com.master.math.activity.util.Item;
 import com.master.math.activity.util.SaveState;
 import com.master.math.activity.util.Util;
 
+import java.util.List;
+
 import static com.master.math.activity.util.Util.shakeError;
 import static com.master.math.activity.util.Util.showGif;
 
@@ -81,6 +83,8 @@ public class CompareFractionProcessor implements Processor{
         activityType = FractionActivity.ACTIVITY_LESSON;
         isLesson = true;
         lesson = FractionActivity.LESSON_3;
+        List<Integer> nums = Util.generate4UniqueNumbers();
+        setFractions(String.valueOf(nums.get(0)),String.valueOf(nums.get(1)),String.valueOf(nums.get(2)),String.valueOf(nums.get(3)));
         skip.setVisibility(View.INVISIBLE);
     }
     public void setSeatwork(String lesson){
@@ -104,7 +108,8 @@ public class CompareFractionProcessor implements Processor{
             multiplyFormula1.setVisibility(View.INVISIBLE);
             multiplyFormula2.setVisibility(View.INVISIBLE);
         }else if(lesson.equals(FractionActivity.LESSON_3)){
-
+            List<Integer> nums = Util.generate4UniqueNumbers();
+            setFractions(String.valueOf(nums.get(0)),String.valueOf(nums.get(1)),String.valueOf(nums.get(2)),String.valueOf(nums.get(3)));
         }
         activityType = FractionActivity.ACTIVITY_SEATWORK;
         help.setVisibility(View.INVISIBLE);

@@ -7,9 +7,10 @@ import android.content.Context;
 
 import com.master.math.activity.FractionActivity;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -17,9 +18,12 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 
 public class SaveState implements Serializable{
+    private Map<String, String> storage;
     private int correctAns;
     private int multiplicationMistakes;
     private List<Item> items;
@@ -31,7 +35,7 @@ public class SaveState implements Serializable{
     public List<Item> getItems(){
         return items;
     }
-    public int getMultiplicationMistakes(){return multiplicationMistakes;}
+    private int getMultiplicationMistakes(){return multiplicationMistakes;}
     public void startSeatwork(){
         multiplicationMistakes = 0;
         items = new ArrayList<Item>();
@@ -64,7 +68,7 @@ public class SaveState implements Serializable{
         }
         return true;
     }
-    public int getCorrectAns() {        return correctAns;    }
+    private int getCorrectAns() {        return correctAns;    }
 
     public void incrementCorrectAns() {        this.correctAns++;    }
     public void incrementMultiplicationMistakes() {        this.multiplicationMistakes++;    }
@@ -91,64 +95,127 @@ public class SaveState implements Serializable{
     private static SaveState _this;
     public void setSimilarDenominatorDone(Context context){
         isSimilarDenominatorDone = true;
-        correctAns = 0;
+        clearAns();
         save(context);
     }
     public void setSimilarNumeratorDone(Context context){
         isSimilarNumeratorDone = true;
-        correctAns = 0;
+        clearAns();
         save(context);
     }
     public void setDissimilarFractionDone(Context context){
         isDissimilarFractionDone = true;
-        correctAns = 0;
+        clearAns();
         save(context);
     }
     public boolean isSimilarDenominatorDone(){
+        isSimilarDenominatorDone = Boolean.valueOf(this.storage.get("isSimilarDenominatorDone"));
+        if(this.storage.get("isSimilarDenominatorDone") != null){
+            return Boolean.valueOf(this.storage.get("isSimilarDenominatorDone"));
+        }
         return isSimilarDenominatorDone;
     }
     public boolean isSimilarNumeratorDone(){
+        isSimilarNumeratorDone = Boolean.valueOf(this.storage.get("isSimilarNumeratorDone"));
+        if(this.storage.get("isSimilarNumeratorDone") != null){
+            return Boolean.valueOf(this.storage.get("isSimilarNumeratorDone"));
+        }
         return isSimilarNumeratorDone;
     }
     public boolean isDissimilarFractionDone(){
+        isDissimilarFractionDone = Boolean.valueOf(this.storage.get("isDissimilarFractionDone"));
+        if(this.storage.get("isDissimilarFractionDone") != null){
+            return Boolean.valueOf(this.storage.get("isDissimilarFractionDone"));
+        }
         return isDissimilarFractionDone;
     }
 
     public static SaveState get(Context context){
         if(_this == null){
-            SaveState e = load(context);
-            if(e == null){
-                _this = new SaveState();
-            }else{
-                _this = e;
-            }
+            _this = new SaveState();
         }
+        _this.load(context);
         return _this;
     }
+    private static String FILENAME = "storage_math";
+    public String getTimeSpentString(){
+        if(this.storage.get("getTimeSpent") != null){
+            return this.storage.get("getTimeSpent");
+        }
+        return "";
+    }
+    public int getMultiplicationMistakeCount(){
+        if(this.storage.get("getMultiplicationMistakes") != null){
+            return Integer.valueOf(this.storage.get("getMultiplicationMistakes"));
+        }
+        return 0;
+    }
+    public int getCorrectAnswerCount(){
+        if(this.storage.get("getNumberOfCorrectAnswers") != null){
+            return Integer.valueOf(this.storage.get("getNumberOfCorrectAnswers"));
+        }
+        return 0;
+    }
+    private int getNumberOfCorrectAnswers(){
+        int ctr = 0;
+        if(this.getItems() == null){
+            return 0;
+        }
+        for(Item i : this.getItems()){
+            if(i.isCorrect()){
+                ctr++;
+            }
+        }
+        return ctr;
+    }
+    private String getTimeSpent(){
+        if (this.startTime == null || this.endTime == null) {
+            return "";
+        }
+        Date start = this.startTime;
+        Date end = this.endTime;
+        long diff = end.getTime() - start.getTime();
 
-    public void save(Context context){
+        long diffSeconds = diff / 1000 % 60;
+        long diffMinutes = diff / (60 * 1000) % 60;
+        long diffHours = diff / (60 * 60 * 1000) % 24;
+        long diffDays = diff / (24 * 60 * 60 * 1000);
+
+        return " " + Math.abs(diffSeconds) + " seconds";
+    }
+
+    public void save(Context context) {
+        load(context);
         try {
-            FileOutputStream fos = context.openFileOutput("Storage", Context.MODE_PRIVATE);
-            ObjectOutputStream out = new ObjectOutputStream(fos);
-            out.writeObject(this);
-            out.close();
+            FileOutputStream fos = context.getApplicationContext().openFileOutput(FILENAME, Context.MODE_PRIVATE);
+
+            fos.write(String.valueOf("isSimilarDenominatorDone;" + String.valueOf(isSimilarDenominatorDone) + "\n").getBytes());
+            fos.write(String.valueOf("isSimilarNumeratorDone;" + String.valueOf(isSimilarNumeratorDone)+ "\n").getBytes());
+            fos.write(String.valueOf("isDissimilarFractionDone;" + String.valueOf(isDissimilarFractionDone)+ "\n").getBytes());
+            fos.write(String.valueOf("getNumberOfCorrectAnswers;" + String.valueOf(getNumberOfCorrectAnswers())+ "\n").getBytes());
+            fos.write(String.valueOf("getMultiplicationMistakes;" + String.valueOf(getMultiplicationMistakes())+ "\n").getBytes());
+            fos.write(String.valueOf("getTimeSpent;" + getTimeSpent()).getBytes());
             fos.close();
-        } catch (Exception i) {
-            i.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
-    private static SaveState load(Context context){
-        SaveState e = null;
+    public Map<String, String> load(Context context) {
+        Map<String, String> storage = new Hashtable<String, String>();
         try {
-            FileInputStream fis = context.openFileInput("Storage");
-            ObjectInputStream in = new ObjectInputStream(fis);
-            e = (SaveState) in.readObject();
-            in.close();
-            fis.close();
-        } catch (Exception i) {
-            i.printStackTrace();
+            FileInputStream fis = context.getApplicationContext().openFileInput(FILENAME);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader bufferedReader = new BufferedReader(isr);
+
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                storage.put(line.split(";")[0],line.split(";")[1]);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        return e;
+        this.storage = storage;
+        return storage;
     }
 }
