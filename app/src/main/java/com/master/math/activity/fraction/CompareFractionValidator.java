@@ -37,8 +37,8 @@ public class CompareFractionValidator extends Validator{
             }
             if (get1Id() == R.id.denom1) {
                 shakeError(get(R.id.num2));
-                // processor.clickHelp(0); Remove all click help
-                Util.showGif(R.drawable.cat,this.activity);
+                processor.clickHelp(0); //Remove all click help
+                //Util.showGif(R.drawable.cat,this.activity);
             }
             if (get1Id() == R.id.num2) {
                 shakeError(get(R.id.denom1));
@@ -50,6 +50,14 @@ public class CompareFractionValidator extends Validator{
             }
             if (get1Id() == R.id.denom2) {
                 shakeError(get(R.id.num1));
+                processor.clickHelp(0);
+            }
+            // if dragged is not a number
+            if (get1Id() == R.id.compareLine || get1Id() == R.id.greaterSign || get1Id() == R.id.lessSign || get1Id() == R.id.equalSign) {
+                shakeError(get(R.id.num1));
+                shakeError(get(R.id.num2));
+                shakeError(get(R.id.denom1));
+                shakeError(get(R.id.denom2));
                 processor.clickHelp(0);
             }
         }

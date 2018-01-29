@@ -16,7 +16,7 @@ public class ComparingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comparing);
+        setContentView(R.layout.activity_comparing2);
 
         similarDenominators = (Button) findViewById(R.id.similarDenominators);
         similarNumerators = (Button) findViewById(R.id.similarNumerators);
@@ -39,6 +39,7 @@ public class ComparingActivity extends AppCompatActivity {
         similarDenominators.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                showGif(R.drawable.outro,ComparingActivity.this);
                 Intent lesson1Intent = new Intent(ComparingActivity.this, FractionActivity.class);
                 lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,FractionActivity.ACTIVITY_LESSON);
                 lesson1Intent.putExtra(FractionActivity.ACTIVITY_LESSON,FractionActivity.LESSON_1);
@@ -51,31 +52,41 @@ public class ComparingActivity extends AppCompatActivity {
 
     private void setSecondOnclick(){
         if(SaveState.get(this).isSimilarDenominatorDone()){
+            similarNumerators.setBackgroundColor(similarNumerators.getContext().getResources().getColor(R.color.colorPrimaryDark));
             similarNumerators.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    showGif(R.drawable.outro,ComparingActivity.this);
                     Intent lesson1Intent = new Intent(ComparingActivity.this, FractionActivity.class);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,FractionActivity.ACTIVITY_LESSON);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_LESSON,FractionActivity.LESSON_2);
                     startActivity(lesson1Intent);
-                    showGif(0,ComparingActivity.this);
+                    showGif(R.drawable.snstep,ComparingActivity.this);
+                    showGif(R.drawable.snintro,ComparingActivity.this);
                 }
             });
+        } else {
+            similarNumerators.setBackgroundColor(similarNumerators.getContext().getResources().getColor(R.color.colorPrimaryDarkFaded));
         }
     }
 
     private void setThirdOnclick(){
         if(SaveState.get(this).isSimilarNumeratorDone()){
+            dissimilarFractions.setBackgroundColor(dissimilarFractions.getContext().getResources().getColor(R.color.colorPrimaryDark));
             dissimilarFractions.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    showGif(R.drawable.outro,ComparingActivity.this);
                     Intent lesson1Intent = new Intent(ComparingActivity.this, FractionActivity.class);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,FractionActivity.ACTIVITY_LESSON);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_LESSON,FractionActivity.LESSON_3);
                     startActivity(lesson1Intent);
-                    showGif(0,ComparingActivity.this);
+                    showGif(R.drawable.dfstep1,ComparingActivity.this);
+                    showGif(R.drawable.dfintro,ComparingActivity.this);
                 }
             });
+        } else {
+            dissimilarFractions.setBackgroundColor(dissimilarFractions.getContext().getResources().getColor(R.color.colorPrimaryDarkFaded));
         }
     }
 }

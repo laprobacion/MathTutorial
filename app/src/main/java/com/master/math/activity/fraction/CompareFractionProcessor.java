@@ -51,13 +51,46 @@ public class CompareFractionProcessor implements Processor{
     String lesson;
     String activityType;
     public void clickHelp(int gifId){
-        if(isLesson){
-            if(lesson.equals(FractionActivity.LESSON_1)){
-                showGif(R.drawable.sdstep,activity);
-            }else if(lesson.equals(FractionActivity.LESSON_2)){
+        if (activityType != FractionActivity.ACTIVITY_SEATWORK) {
+            if (isLesson) {
+                if (lesson.equals(FractionActivity.LESSON_1)) {
+                    showGif(R.drawable.sdstep, activity);
+                } else if (lesson.equals(FractionActivity.LESSON_2)) {
+                    showGif(R.drawable.snstep, activity);
+                } else if (lesson.equals(FractionActivity.LESSON_3)) {
+                    if (multiplyAns1.getVisibility() == View.VISIBLE) {
+                        if (multiplyAns2.getVisibility() == View.VISIBLE) { // if all multiply answer is visible
+                            showGif(R.drawable.dfstep4, activity);
+                        } else { // if one multiply answer is visible
+                            showGif(R.drawable.dfstep3, activity);
+                        }
+                    } else if (multiplyAns2.getVisibility() == View.VISIBLE) {
+                        if (multiplyAns1.getVisibility() == View.VISIBLE) { // if all multiply answer is visible
+                            showGif(R.drawable.dfstep4, activity);
+                        } else { // if one multiply answer is visible
+                            showGif(R.drawable.dfstep3, activity);
+                        }
+                    } else { // if no multiply answers is visible
+                        showGif(R.drawable.dfstep1, activity);
+                    }
 
+                }
             }
-
+        }
+    }
+    public void autoHelp(){ // for lesson 3 only
+        if (activityType != FractionActivity.ACTIVITY_SEATWORK) {
+            if (isLesson) {
+                if (lesson.equals(FractionActivity.LESSON_3)) {
+                    if (multiplyAns1.getVisibility() == View.VISIBLE) {
+                        showGif(R.drawable.dfstep4, activity);
+                    } else if (multiplyAns2.getVisibility() == View.VISIBLE) {
+                        showGif(R.drawable.dfstep4, activity);
+                    } else { // if no multiply answers is visible
+                        showGif(R.drawable.dfstep3, activity);
+                    }
+                }
+            }
         }
     }
     public void setLesson1(){
@@ -92,8 +125,8 @@ public class CompareFractionProcessor implements Processor{
         setFractions(String.valueOf(nums.get(0)),String.valueOf(nums.get(1)),String.valueOf(nums.get(2)),String.valueOf(nums.get(3)));
         skip.setVisibility(View.INVISIBLE);
     }
-    public void setSeatwork(String lesson){
-        this.lesson = lesson;
+    public void setSeatwork(String seatwork){
+        this.lesson = seatwork;
         if(lesson.equals(FractionActivity.LESSON_1)){
             String [] first = Util.generateProperFractions();
             String [] sec = Util.generateProperFractions();
@@ -172,6 +205,7 @@ public class CompareFractionProcessor implements Processor{
             intent.putExtra(FormActivity.OPERATION,FormActivity.OPERATION_MULTIPLY);
             intent.putExtra(FormActivity.MULTIPLY_NUM_1,draggedItem.getItem(0).getText().toString());
             intent.putExtra(FormActivity.MULTIPLY_NUM_2,draggedItem.getItem(1).getText().toString());
+            autoHelp();
             this.activity.startActivity(intent);
             setReady(true);
         }else{
@@ -238,25 +272,35 @@ public class CompareFractionProcessor implements Processor{
     }
     public void execute(){
         String formula = draggedItem.getItem(0).getText().toString() + " x " + draggedItem.getItem(1).getText().toString() + " = ";
-        int ans = Integer.valueOf(draggedItem.getItem(0).getText().toString()) * Integer.valueOf(draggedItem.getItem(1).getText().toString());
-        if(MultiplyCache.getInstance().getFinalAns() == null){
-            return;
+        try {
+            int ans = Integer.valueOf(draggedItem.getItem(0).getText().toString()) * Integer.valueOf(draggedItem.getItem(1).getText().toString());
+
+            if (MultiplyCache.getInstance().getFinalAns() == null) {
+                return;
+            }
+            if (isFirst) {
+                //Util.showWithText(multiplyFormula1, formula + String.valueOf(ans));
+                multiplyAns1.setText(String.valueOf(ans));
+                Util.showWithText(multiplyAns1, String.valueOf(ans));
+                //((RelativeLayout.LayoutParams) multiplyFormula1.getLayoutParams()).setMargins(110,100,0,0);
+                validator.getActionStep().increment();
+                multiplyFormula1.setOnClickListener(null);
+                //Util.showGif(R.drawable.dfstep3,activity);
+            } else {
+                //Util.showWithText(multiplyFormula2, formula + String.valueOf(ans));
+                //((RelativeLayout.LayoutParams) multiplyFormula2.getLayoutParams()).setMargins(600,100,0,0);
+                multiplyAns2.setText(String.valueOf(ans));
+                Util.showWithText(multiplyAns2, String.valueOf(ans));
+                validator.getActionStep().increment();
+                multiplyFormula2.setOnClickListener(null);
+                //Util.showGif(R.drawable.dfstep4,activity);
+            }
+            validator.removeListeners(draggedItem.getItem(0));
+            validator.removeListeners(draggedItem.getItem(1));
         }
-        if(isFirst){
-            Util.showWithText(multiplyFormula1, formula + String.valueOf(ans));
-            multiplyAns1.setText(String.valueOf(ans));
-            //((RelativeLayout.LayoutParams) multiplyFormula1.getLayoutParams()).setMargins(110,100,0,0);
-            validator.getActionStep().increment();
-            multiplyFormula1.setOnClickListener(null);
-        }else{
-            Util.showWithText(multiplyFormula2, formula + String.valueOf(ans));
-            //((RelativeLayout.LayoutParams) multiplyFormula2.getLayoutParams()).setMargins(600,100,0,0);
-            multiplyAns2.setText(String.valueOf(ans));
-            validator.getActionStep().increment();
-            multiplyFormula2.setOnClickListener(null);
+        catch (Exception NumberFormatException) {
+            // wrong drag
         }
-        validator.removeListeners(draggedItem.getItem(0));
-        validator.removeListeners(draggedItem.getItem(1));
     }
 
     private boolean isFirst(DraggedItem draggedItem){

@@ -10,190 +10,160 @@
     tools:context="com.master.math.activity.Fraction2Activity">
 
     <TextView
-        android:id="@+id/multiplyFormula1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="99 x 99 ="
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        android:textColor="@color/colorPrimaryDark"/>
-
-    <TextView
         android:id="@+id/multiplyAns1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="99"
-        android:textSize="30dp"
-        app:layout_constraintStart_toEndOf="@+id/multiplyFormula1"
-        app:layout_constraintTop_toTopOf="parent"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_marginEnd="48dp"
+        android:text="99"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/num1"
+        app:layout_constraintEnd_toEndOf="@+id/line1"
+        app:layout_constraintStart_toStartOf="@+id/line1" />
 
     <TextView
         android:id="@+id/num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="99"
-        android:textSize="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multiplyFormula1"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_marginBottom="24dp"
+        android:text="99"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line1"
+        app:layout_constraintEnd_toEndOf="@+id/line1"
+        app:layout_constraintStart_toStartOf="@+id/line1" />
 
     <TextView
         android:id="@+id/line1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:text="___"
-        android:textSize="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multiplyFormula1"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="___"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/compareLine"
+        app:layout_constraintEnd_toStartOf="@+id/compareLine"
+        app:layout_constraintTop_toTopOf="@+id/compareLine" />
 
     <TextView
         android:id="@+id/denom1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="99"
-        android:textSize="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num1"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:text="99"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/line1"
+        app:layout_constraintStart_toStartOf="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
 
     <TextView
         android:id="@+id/compareLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="176dp"
+
+        android:layout_marginTop="128dp"
         android:text="___"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="60dp"
-        app:layout_constraintEnd_toStartOf="@+id/denom2"
-        app:layout_constraintStart_toEndOf="@+id/denom1"
-        app:layout_constraintTop_toTopOf="parent"
-
-        android:textColor="@color/colorPrimaryDark"/>
-
-    <TextView
-        android:id="@+id/multiplyFormula2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="32dp"
-        android:text="99 x 99 ="
-        android:textSize="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/multiplyAns2"
-        app:layout_constraintTop_toTopOf="parent"
-
-        android:textColor="@color/colorPrimaryDark"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/multiplyAns2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="32dp"
-        android:text="99"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_marginStart="48dp"
+        android:text="99"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/num2"
+        app:layout_constraintEnd_toEndOf="@+id/line2"
+        app:layout_constraintStart_toStartOf="@+id/line2" />
 
     <TextView
         android:id="@+id/num2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="8dp"
-        android:text="99"
-        android:textSize="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multiplyFormula2"
+        android:layout_marginBottom="24dp"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:text="99"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/line2"
+        app:layout_constraintEnd_toEndOf="@+id/line2"
+        app:layout_constraintStart_toStartOf="@+id/line2" />
 
     <TextView
         android:id="@+id/line2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="24dp"
-        android:text="___"
-        android:textSize="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multiplyFormula2"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="8dp"
+        android:text="___"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/compareLine"
+        app:layout_constraintStart_toEndOf="@+id/compareLine"
+        app:layout_constraintTop_toTopOf="@+id/compareLine" />
 
     <TextView
         android:id="@+id/denom2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="16dp"
-        android:text="99"
-        android:textSize="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num2"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:text="99"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/line2"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
 
     <TextView
         android:id="@+id/greaterSign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
         android:text=">"
-        android:textSize="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/denom1"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/equalSign"
+        app:layout_constraintEnd_toStartOf="@+id/equalSign"
+        app:layout_constraintTop_toTopOf="@+id/equalSign" />
 
     <TextView
         android:id="@+id/equalSign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="="
-        android:textSize="60dp"
-        app:layout_constraintEnd_toStartOf="@+id/lessSign"
-        app:layout_constraintStart_toEndOf="@+id/greaterSign"
-        app:layout_constraintTop_toBottomOf="@+id/compareLine"
+        android:layout_marginTop="48dp"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:text="="
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/compareLine"
+        app:layout_constraintStart_toStartOf="@+id/compareLine"
+        app:layout_constraintTop_toBottomOf="@+id/compareLine" />
 
     <TextView
         android:id="@+id/lessSign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="32dp"
-        android:text="&lt;"
-        android:textSize="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/denom2"
+        android:layout_marginStart="24dp"
 
-        android:textColor="@color/colorPrimaryDark"/>
+        android:text="&lt;"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/equalSign"
+        app:layout_constraintStart_toEndOf="@+id/equalSign"
+        app:layout_constraintTop_toTopOf="@+id/equalSign" />
 
     <TextView
         android:id="@+id/help"
@@ -218,6 +188,34 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/multiplyFormula1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="99 x 99 ="
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/multiplyFormula2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="99 x 99 ="
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
         android:textColor="@color/colorPrimaryDark"/>
 </android.support.constraint.ConstraintLayout>

@@ -14,7 +14,7 @@ public class SeatworkActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seatwork);
+        setContentView(R.layout.activity_seatwork2);
         Button comparing = (Button) findViewById(R.id.comparing);
         SaveState.get(this).clearAns();
         SaveState.get(this).startSeatwork();

@@ -1,6 +1,7 @@
 package com.master.math.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_menu);
         Util.setAsset(getAssets());
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/EraserDust.ttf");
 
@@ -44,12 +45,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void setSeatWorkClick(){
         if(SaveState.get(this).isSimilarNumeratorDone() && SaveState.get(this).isSimilarDenominatorDone() && SaveState.get(this).isDissimilarFractionDone()){
+            seatwork.setBackgroundColor(seatwork.getContext().getResources().getColor(R.color.colorPrimaryDark));
             seatwork.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(MainActivity.this, SeatworkActivity.class));
                 }
             });
+        } else {
+            seatwork.setBackgroundColor(seatwork.getContext().getResources().getColor(R.color.colorPrimaryDarkFaded));
         }
     }
     @Override

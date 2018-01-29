@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_menu.xml",
@@ -160,8 +160,16 @@
         "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_lcdmain.xml"
     },
     {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_seatwork2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_seatwork2.xml"
+    },
+    {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_addition.xml",
         "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_addition.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lesson2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_lesson2.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message.xml",
@@ -182,6 +190,10 @@
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_comparing2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_comparing2.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -252,16 +264,16 @@
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fraction2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_fraction2.xml"
+    },
+    {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login_register.xml",
         "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_login_register.xml"
-    },
-    {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_fraction2.xml",
-        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_fraction2.xml"
     },
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
@@ -282,5 +294,9 @@
     {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_stats2.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_stats2.xml"
     }
 ]

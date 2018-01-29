@@ -41,7 +41,11 @@
         <activity android:name=".activity.StatsActivity" />
         <activity android:name=".activity.Fraction2Activity" />
         <activity android:name=".activity.Form2Activity" />
-        <activity android:name=".Help2Activity"></activity>
+        <activity android:name=".Help2Activity" />
+        <activity android:name=".activity.Lesson2Activity" />
+        <activity android:name=".activity.Comparing2Activity" />
+        <activity android:name=".activity.Stats2Activity" />
+        <activity android:name=".activity.Seatwork2Activity"></activity>
     </application>
 
 </manifest>

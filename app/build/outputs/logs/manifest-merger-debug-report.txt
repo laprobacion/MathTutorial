@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:9:5-45:19
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:9:5-49:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.android\build-cache\a9342e197297649e6b450107d08d6d3d8f5de5be\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\8efc690a897f84a5f4adc899b655cf7d39ed7716\output\AndroidManifest.xml:29:5-20
@@ -142,9 +142,25 @@ ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:43:19-57
 activity#com.master.math.Help2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:44:9-60
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:44:9-51
 	android:name
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:44:19-48
+activity#com.master.math.activity.Lesson2Activity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:45:9-62
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:45:19-59
+activity#com.master.math.activity.Comparing2Activity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:46:9-65
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:46:19-62
+activity#com.master.math.activity.Stats2Activity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:47:9-61
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:47:19-58
+activity#com.master.math.activity.Seatwork2Activity
+ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:48:9-73
+	android:name
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:48:19-61
 uses-sdk
 INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.android\build-cache\a9342e197297649e6b450107d08d6d3d8f5de5be\output\AndroidManifest.xml:5:5-7:41

@@ -52,6 +52,10 @@
         <activity android:name="com.master.math.activity.Fraction2Activity" />
         <activity android:name="com.master.math.activity.Form2Activity" />
         <activity android:name="com.master.math.Help2Activity" />
+        <activity android:name="com.master.math.activity.Lesson2Activity" />
+        <activity android:name="com.master.math.activity.Comparing2Activity" />
+        <activity android:name="com.master.math.activity.Stats2Activity" />
+        <activity android:name="com.master.math.activity.Seatwork2Activity" />
     </application>
 
 </manifest>

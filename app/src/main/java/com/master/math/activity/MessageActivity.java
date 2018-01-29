@@ -77,6 +77,6 @@ public class MessageActivity extends AppCompatActivity {
                     }
                 }
             }
-        }, 2000);
+        },0);
     }
 }

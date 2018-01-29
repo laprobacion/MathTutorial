@@ -22,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.master.math.R;
+import com.master.math.activity.util.AppCache;
 import com.master.math.activity.util.Item;
 import com.master.math.activity.util.SaveState;
 
@@ -40,13 +41,15 @@ public class StatsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stats);
+        setContentView(R.layout.activity_stats2);
         TextView correctAnswers = (TextView) findViewById(R.id.correctAnswers);
         correctAnswers.setText("Number of correct answers: " + SaveState.get(this).getCorrectAnswerCount());
         TextView multiplicationMistakes = (TextView) findViewById(R.id.multiplicationMistakes);
         multiplicationMistakes.setText("Multiplication Mistakes: " + SaveState.get(this).getMultiplicationMistakeCount());
         TextView timeSpent = (TextView) findViewById(R.id.timeSpent);
         timeSpent.setText("Time Spent: " + SaveState.get(this).getTimeSpentString());
+        TextView userName = (TextView) findViewById(R.id.userName);
+        userName.setText(AppCache.getInstance().getUsername());
         final TextView message = (TextView) findViewById(R.id.message);
         Button capture = (Button) findViewById(R.id.capture);
         capture.setOnClickListener(new View.OnClickListener() {
@@ -68,9 +71,7 @@ public class StatsActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-
-
-
+                finish();
             }
         });
     }

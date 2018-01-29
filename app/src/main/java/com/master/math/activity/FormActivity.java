@@ -9,6 +9,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -28,7 +29,8 @@ import static com.master.math.activity.util.Util.showGif;
 public class FormActivity extends AppCompatActivity {
 
     RelativeLayout form;ConstraintLayout form2;
-    TextView formula,open,doneClick;
+    TextView formula,open;
+    Button doneClick;
     EditText userAns;
     private int num1;
     private int num2;
@@ -56,8 +58,10 @@ public class FormActivity extends AppCompatActivity {
         setContentView(R.layout.activity_form2);
         form = (RelativeLayout)findViewById(R.id.parentForm);//form2 = (ConstraintLayout) findViewById(R.id.parentForm);
         formula = Util.getTextViewWithFont(this,R.id.formula);
-        doneClick = Util.getTextViewWithFont(this, R.id.doneClick);
-        Util.showWithFadedText(doneClick,"OK");
+        doneClick = (Button)findViewById(R.id.doneClick);
+
+        //Util.showWithFadedText(doneClick,"OK");
+
         open = Util.getTextViewWithFontInvisible(this,R.id.open);
         userAns = Util.getEditTextWithFont(this,R.id.userAns);
         userAns.addTextChangedListener(new TextWatcher() {
@@ -68,15 +72,15 @@ public class FormActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                userAns.setTextColor(getColor(R.color.colorPrimaryDark));
             }
 
             @Override
             public void afterTextChanged(Editable s) {
                 if(userAns.getText().toString().trim().length() > 0){
-                    Util.showWithText(doneClick,"OK");
+                    //Util.showWithText(doneClick,"OK");
                 }else{
-                    Util.showWithFadedText(doneClick,"OK");
+                    //Util.showWithFadedText(doneClick,"OK");
                 }
             }
         });
@@ -99,7 +103,7 @@ public class FormActivity extends AppCompatActivity {
         }
 
         //XXX: IMPORTANT! - FOR FASTER DEMO PURPOSE ONLY. - COMMENT OUT THIS CODE WHEN GO LIVE.
-        setHint();
+        //setHint();
     }
     private void setPosition(){
         ((RelativeLayout.LayoutParams) userAns.getLayoutParams()).setMargins(720,450,0,0);
@@ -179,11 +183,12 @@ public class FormActivity extends AppCompatActivity {
         num2 = Integer.valueOf(intent.getStringExtra(MULTIPLY_NUM_2));
         Util.showWithText(formula, num1 + " x " + num2 + "  = ");
         //setFormClick();
-        if(intent.getStringExtra(MULTIPLY_NUM_1).length() == 2 || intent.getStringExtra(MULTIPLY_NUM_2).length() == 2){
+        /*if(intent.getStringExtra(MULTIPLY_NUM_1).length() == 2 || intent.getStringExtra(MULTIPLY_NUM_2).length() == 2){
             Util.showWithText(open,"Open Scratch.");
             open.setTextSize(30);
             setOpenOnClick();
-        }
+        }*/
+        setDoneClickOnClick();
     }
 
     private void setOpenOnClick(){
@@ -198,6 +203,13 @@ public class FormActivity extends AppCompatActivity {
                     showGif(0,FormActivity.this);
                 }
                 finish();
+            }
+        });
+    }
+    private void setDoneClickOnClick(){
+        doneClick.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                validate();
             }
         });
     }
@@ -273,12 +285,12 @@ public class FormActivity extends AppCompatActivity {
                 validate();
             }
         });
-        doneClick.setOnClickListener(new View.OnClickListener() {
+        /*doneClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 validate();
             }
-        });
+        });*/
     }
 
     private boolean isCorrect(){

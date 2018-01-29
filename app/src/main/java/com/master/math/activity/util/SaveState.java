@@ -51,7 +51,7 @@ public class SaveState implements Serializable{
         save(activity);
     }
     public boolean isComplete(String activityType, String lesson){
-        int lessonMax = 3;
+        int lessonMax = 4;
         int seatworkLesson1Max = 5;
         int seatworkLesson2Max = 5;
         int seatworkLesson3Max = 10;
@@ -176,7 +176,7 @@ public class SaveState implements Serializable{
         Date end = this.endTime;
         long diff = end.getTime() - start.getTime();
 
-        long diffSeconds = diff / 1000 % 60;
+        long diffSeconds = diff / 1000;
         long diffMinutes = diff / (60 * 1000) % 60;
         long diffHours = diff / (60 * 60 * 1000) % 24;
         long diffDays = diff / (24 * 60 * 60 * 1000);
