@@ -172,6 +172,7 @@ public class CompareFractionProcessor implements Processor{
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SaveState.get(activity.getApplicationContext()).incrementSkippedItems();
                 skip(false);
             }
         });
@@ -263,7 +264,6 @@ public class CompareFractionProcessor implements Processor{
         iMessage.putExtra(MessageActivity.MESSAGE, "Done");
         iMessage.putExtra(FractionActivity.ACTIVITY_LESSON, lesson);
         iMessage.putExtra(FractionActivity.ACTIVITY_TYPE, activityType);
-        SaveState.get(activity.getApplicationContext()).incrementSkippedItems();
         activity.startActivity(iMessage);
         SaveState.get(activity.getApplicationContext()).incrementCorrectAns();
         activity.finish();

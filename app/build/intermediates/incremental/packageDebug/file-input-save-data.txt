@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 30 17:27:12 SGT 2018
+#Tue Jan 30 21:37:21 SGT 2018
 20.base=D\:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\resources-debug.ap_
 143.base=D\:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\resources-debug.ap_
 340.file=D\:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_item_background_holo_dark.xml
