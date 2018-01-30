@@ -42,21 +42,27 @@ public class StatsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats2);
+
+        String lesson = getIntent().getStringExtra(FractionActivity.LESSON_3);
+        String activityType = getIntent().getStringExtra(FractionActivity.ACTIVITY_SEATWORK);
+
+        TextView userName = (TextView) findViewById(R.id.userName);
+        userName.setText(AppCache.getInstance().getUsername());
         TextView correctAnswers = (TextView) findViewById(R.id.correctAnswers);
-        correctAnswers.setText("Number of correct answers: " + SaveState.get(this).getCorrectAnswerCount());
+        correctAnswers.setText("Number of correct answers: " + SaveState.get(this).getCorrectAnswerCount() + " / " + SaveState.get(this).getSeatworkMax());
+        TextView skippedItems = (TextView) findViewById(R.id.skippedItems);
+        skippedItems.setText("No. of Skips: " + SaveState.get(this).getSkippedItemsCount());
         TextView multiplicationMistakes = (TextView) findViewById(R.id.multiplicationMistakes);
         multiplicationMistakes.setText("Multiplication Mistakes: " + SaveState.get(this).getMultiplicationMistakeCount());
         TextView timeSpent = (TextView) findViewById(R.id.timeSpent);
         timeSpent.setText("Time Spent: " + SaveState.get(this).getTimeSpentString());
-        TextView userName = (TextView) findViewById(R.id.userName);
-        userName.setText(AppCache.getInstance().getUsername());
         final TextView message = (TextView) findViewById(R.id.message);
         Button capture = (Button) findViewById(R.id.capture);
         capture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bitmap bitmap = null;
-                if(checkPermissionREAD_EXTERNAL_STORAGE(StatsActivity.this)){
+                if (checkPermissionREAD_EXTERNAL_STORAGE(StatsActivity.this)) {
                     try {
                         ByteArrayOutputStream bytearrayoutputstream = new ByteArrayOutputStream();
                         v.getRootView().setDrawingCacheEnabled(true);
@@ -67,7 +73,7 @@ public class StatsActivity extends AppCompatActivity {
                         fileoutputstream.write(bytearrayoutputstream.toByteArray());
                         fileoutputstream.close();
                         message.setText("Saved in " + file.getAbsolutePath());
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
@@ -75,6 +81,7 @@ public class StatsActivity extends AppCompatActivity {
             }
         });
     }
+
 
 
 

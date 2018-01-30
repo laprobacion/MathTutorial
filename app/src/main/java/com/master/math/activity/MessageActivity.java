@@ -9,6 +9,8 @@ import android.widget.TextView;
 import com.master.math.R;
 import com.master.math.activity.util.SaveState;
 
+import static com.master.math.activity.util.Util.showGif;
+
 public class MessageActivity extends AppCompatActivity {
     public static final String MESSAGE = "MESSAGE";
     @Override
@@ -47,6 +49,7 @@ public class MessageActivity extends AppCompatActivity {
                     if(lesson.equals(FractionActivity.LESSON_1)){
                         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
                             SaveState.get(MessageActivity.this).setSimilarDenominatorDone(MessageActivity.this);
+                            showGif(R.drawable.outro,MessageActivity.this);
                         }else{
                             SaveState.get(MessageActivity.this).setSimilarDenominatorDone_Seatwork();
                             Intent lesson1Intent = new Intent(MessageActivity.this, FractionActivity.class);
@@ -58,6 +61,7 @@ public class MessageActivity extends AppCompatActivity {
                     }else if(lesson.equals(FractionActivity.LESSON_2)){
                         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
                             SaveState.get(MessageActivity.this).setSimilarNumeratorDone(MessageActivity.this);
+                            showGif(R.drawable.outro,MessageActivity.this);
                         }else{
                             SaveState.get(MessageActivity.this).setSimilarNumeratorDone_Seatwork();
                             Intent lesson1Intent = new Intent(MessageActivity.this, FractionActivity.class);
@@ -69,6 +73,7 @@ public class MessageActivity extends AppCompatActivity {
                     }else{
                         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
                             SaveState.get(MessageActivity.this).setDissimilarFractionDone(MessageActivity.this);
+                            showGif(R.drawable.outro,MessageActivity.this);
                         }else{
                             SaveState.get(MessageActivity.this).setDissimilarFractionDone_Seatwork();
                             SaveState.get(MessageActivity.this).endSeatwork(MessageActivity.this);

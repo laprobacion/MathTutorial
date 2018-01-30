@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.master.math.R;
+import com.master.math.activity.util.SaveState;
 
 public class LessonActivity extends AppCompatActivity {
 
@@ -24,11 +25,15 @@ public class LessonActivity extends AppCompatActivity {
         });
 
         Button arranging = (Button) findViewById(R.id.arranging);
-        arranging.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LessonActivity.this, ArrangeFractionsActivity.class));
-            }
-        });
+        if(false) { //TO BE UPDATED
+            arranging.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(LessonActivity.this, ArrangeFractionsActivity.class));
+                }
+            });
+        } else {
+            arranging.setBackgroundColor(arranging.getContext().getResources().getColor(R.color.colorPrimaryDarkFaded));
+        }
     }
 }

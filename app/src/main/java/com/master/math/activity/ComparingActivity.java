@@ -39,7 +39,6 @@ public class ComparingActivity extends AppCompatActivity {
         similarDenominators.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showGif(R.drawable.outro,ComparingActivity.this);
                 Intent lesson1Intent = new Intent(ComparingActivity.this, FractionActivity.class);
                 lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,FractionActivity.ACTIVITY_LESSON);
                 lesson1Intent.putExtra(FractionActivity.ACTIVITY_LESSON,FractionActivity.LESSON_1);
@@ -56,7 +55,6 @@ public class ComparingActivity extends AppCompatActivity {
             similarNumerators.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    showGif(R.drawable.outro,ComparingActivity.this);
                     Intent lesson1Intent = new Intent(ComparingActivity.this, FractionActivity.class);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,FractionActivity.ACTIVITY_LESSON);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_LESSON,FractionActivity.LESSON_2);
@@ -76,7 +74,6 @@ public class ComparingActivity extends AppCompatActivity {
             dissimilarFractions.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    showGif(R.drawable.outro,ComparingActivity.this);
                     Intent lesson1Intent = new Intent(ComparingActivity.this, FractionActivity.class);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,FractionActivity.ACTIVITY_LESSON);
                     lesson1Intent.putExtra(FractionActivity.ACTIVITY_LESSON,FractionActivity.LESSON_3);

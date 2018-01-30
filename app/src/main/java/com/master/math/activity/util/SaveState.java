@@ -26,6 +26,9 @@ public class SaveState implements Serializable{
     private Map<String, String> storage;
     private int correctAns;
     private int multiplicationMistakes;
+    private int skippedItems;
+
+    private int seatworkMax;
     private List<Item> items;
     public Date startTime;
     public Date endTime;
@@ -35,9 +38,18 @@ public class SaveState implements Serializable{
     public List<Item> getItems(){
         return items;
     }
+
     private int getMultiplicationMistakes(){return multiplicationMistakes;}
+
+    private int getSkippedItems() {return skippedItems;}
+
+    public int getSeatworkMax(){ return this.seatworkMax;}
+    private void setSeatworkMax(int seatworkMax){
+        this.seatworkMax = seatworkMax;
+    }
     public void startSeatwork(){
         multiplicationMistakes = 0;
+        skippedItems = 0;
         items = new ArrayList<Item>();
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
@@ -52,12 +64,14 @@ public class SaveState implements Serializable{
     }
     public boolean isComplete(String activityType, String lesson){
         int lessonMax = 4;
-        int seatworkLesson1Max = 5;
-        int seatworkLesson2Max = 5;
-        int seatworkLesson3Max = 10;
+        int seatworkLesson1Max = 2;
+        int seatworkLesson2Max = 2;
+        int seatworkLesson3Max = 2;
+        int seatworkMax = seatworkLesson1Max + seatworkLesson2Max + seatworkLesson3Max;
+        setSeatworkMax(seatworkMax);
         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
             return lessonMax != getCorrectAns();
-        }else{
+        }else {
             if(lesson.equals(FractionActivity.LESSON_1)){
                 return seatworkLesson1Max != getCorrectAns();
             }else if(lesson.equals(FractionActivity.LESSON_2)){
@@ -72,6 +86,7 @@ public class SaveState implements Serializable{
 
     public void incrementCorrectAns() {        this.correctAns++;    }
     public void incrementMultiplicationMistakes() {        this.multiplicationMistakes++;    }
+    public void incrementSkippedItems() { this.skippedItems++; }
     public void clearAns() {        this.correctAns = 0;    }
     private SaveState(){}
     private boolean isSimilarDenominatorDone;
@@ -150,6 +165,12 @@ public class SaveState implements Serializable{
         }
         return 0;
     }
+    public int getSkippedItemsCount(){
+        if(this.storage.get("getSkippedItems") != null){
+            return Integer.valueOf(this.storage.get("getSkippedItems"));
+        }
+        return 0;
+    }
     public int getCorrectAnswerCount(){
         if(this.storage.get("getNumberOfCorrectAnswers") != null){
             return Integer.valueOf(this.storage.get("getNumberOfCorrectAnswers"));
@@ -194,6 +215,7 @@ public class SaveState implements Serializable{
             fos.write(String.valueOf("isDissimilarFractionDone;" + String.valueOf(isDissimilarFractionDone)+ "\n").getBytes());
             fos.write(String.valueOf("getNumberOfCorrectAnswers;" + String.valueOf(getNumberOfCorrectAnswers())+ "\n").getBytes());
             fos.write(String.valueOf("getMultiplicationMistakes;" + String.valueOf(getMultiplicationMistakes())+ "\n").getBytes());
+            fos.write(String.valueOf("getSkippedItems;" + String.valueOf(getSkippedItems())+ "\n").getBytes());
             fos.write(String.valueOf("getTimeSpent;" + getTimeSpent()).getBytes());
             fos.close();
         } catch (Exception e) {
