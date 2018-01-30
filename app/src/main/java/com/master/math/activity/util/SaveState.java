@@ -64,9 +64,9 @@ public class SaveState implements Serializable{
     }
     public boolean isComplete(String activityType, String lesson){
         int lessonMax = 4;
-        int seatworkLesson1Max = 2;
-        int seatworkLesson2Max = 2;
-        int seatworkLesson3Max = 2;
+        int seatworkLesson1Max = 5;
+        int seatworkLesson2Max = 5;
+        int seatworkLesson3Max = 10;
         int seatworkMax = seatworkLesson1Max + seatworkLesson2Max + seatworkLesson3Max;
         setSeatworkMax(seatworkMax);
         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
