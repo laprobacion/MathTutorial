@@ -16,7 +16,7 @@
 
         android:layout_marginBottom="128dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="8dp"
         android:text="TextView"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60dp"
@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
 
         android:layout_marginEnd="32dp"
-        android:layout_marginStart="8dp"
         android:backgroundTint="@color/colorPrimaryDark"
         android:inputType="number"
         android:maxLength="4"
