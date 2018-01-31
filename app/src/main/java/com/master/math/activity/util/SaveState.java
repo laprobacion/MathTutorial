@@ -48,8 +48,7 @@ public class SaveState implements Serializable{
         this.seatworkMax = seatworkMax;
     }
     public void startSeatwork(){
-        multiplicationMistakes = 0;
-        skippedItems = 0;
+        clearAllCount();
         items = new ArrayList<Item>();
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
@@ -59,14 +58,14 @@ public class SaveState implements Serializable{
     }
     public void endSeatwork(Activity activity){
         endTime = new Date();
-        clearAns();
         save(activity);
+        clearAllCount();
     }
     public boolean isComplete(String activityType, String lesson){
         int lessonMax = 4;
-        int seatworkLesson1Max = 5;
-        int seatworkLesson2Max = 5;
-        int seatworkLesson3Max = 10;
+        int seatworkLesson1Max = 1;
+        int seatworkLesson2Max = 1;
+        int seatworkLesson3Max = 1;
         int seatworkMax = seatworkLesson1Max + seatworkLesson2Max + seatworkLesson3Max;
         setSeatworkMax(seatworkMax);
         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
@@ -86,7 +85,14 @@ public class SaveState implements Serializable{
 
     public void incrementCorrectAns() {        this.correctAns++;    }
     public void incrementMultiplicationMistakes() {        this.multiplicationMistakes++;    }
-    public void incrementSkippedItems() { this.skippedItems++; }
+    public void incrementSkippedItems() {
+        this.skippedItems++;
+    }
+    private void clearAllCount(){
+        multiplicationMistakes = 0;
+        skippedItems = 0;
+        clearAns();
+    }
     public void clearAns() {        this.correctAns = 0;    }
     private SaveState(){}
     private boolean isSimilarDenominatorDone;

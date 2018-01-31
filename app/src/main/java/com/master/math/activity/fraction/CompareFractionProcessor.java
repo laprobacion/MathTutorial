@@ -43,6 +43,7 @@ public class CompareFractionProcessor implements Processor{
     private boolean isReady;
     private boolean isLesson;
     private CompareFractionValidator validator;
+    private int hiddenMultiply1,hiddenMultiply2;
     public boolean isReady() {        return isReady;    }
     public void setReady(boolean ready) {        isReady = ready;    }
 
@@ -174,6 +175,7 @@ public class CompareFractionProcessor implements Processor{
             public void onClick(View v) {
                 SaveState.get(activity.getApplicationContext()).incrementSkippedItems();
                 skip(false);
+                skip.setEnabled(false);
             }
         });
         compareLine = Util.getTextViewWithFont(activity, R.id.compareLine);
@@ -204,20 +206,30 @@ public class CompareFractionProcessor implements Processor{
             isFirst = isFirst(draggedItem);
             Intent intent = new Intent(activity, FormActivity.class);
             intent.putExtra(FormActivity.OPERATION,FormActivity.OPERATION_MULTIPLY);
+            intent.putExtra(FractionActivity.ACTIVITY_TYPE,activityType);
             intent.putExtra(FormActivity.MULTIPLY_NUM_1,draggedItem.getItem(0).getText().toString());
             intent.putExtra(FormActivity.MULTIPLY_NUM_2,draggedItem.getItem(1).getText().toString());
             autoHelp();
-            this.activity.startActivity(intent);
+            this.activity.startActivityForResult(intent,1);
             setReady(true);
         }else{
             int sign = 0;
-            if(Integer.valueOf(multiplyAns1.getText().toString()) > Integer.valueOf(multiplyAns2.getText().toString())){
+            int num1 = 0;
+            int num2 = 0;
+            if(activityType.equals(FractionActivity.ACTIVITY_SEATWORK) && lesson.equals(FractionActivity.LESSON_3)){
+                num1 = hiddenMultiply1;
+                num2 = hiddenMultiply2;
+            }else{
+                num1 = Integer.valueOf(multiplyAns1.getText().toString());
+                num2 = Integer.valueOf(multiplyAns2.getText().toString());
+            }
+            if(num1 > num2){
                 sign = R.id.greaterSign;
             }
-            if(Integer.valueOf(multiplyAns1.getText().toString()) < Integer.valueOf(multiplyAns2.getText().toString())){
+            if(num1 < num2){
                 sign = R.id.lessSign;
             }
-            if(Integer.valueOf(multiplyAns1.getText().toString()) == Integer.valueOf(multiplyAns2.getText().toString())){
+            if(num1 == num2){
                 sign = R.id.equalSign;
             }
             String message = "";
@@ -271,18 +283,23 @@ public class CompareFractionProcessor implements Processor{
     public int getStep(){
         return validator.getActionStep().getStep();
     }
-    public void execute(){
+    public void execute(String seatworkAnswer){
         String formula = draggedItem.getItem(0).getText().toString() + " x " + draggedItem.getItem(1).getText().toString() + " = ";
         try {
             int ans = Integer.valueOf(draggedItem.getItem(0).getText().toString()) * Integer.valueOf(draggedItem.getItem(1).getText().toString());
-
             if (MultiplyCache.getInstance().getFinalAns() == null) {
                 return;
             }
+
             if (isFirst) {
                 //Util.showWithText(multiplyFormula1, formula + String.valueOf(ans));
-                multiplyAns1.setText(String.valueOf(ans));
-                Util.showWithText(multiplyAns1, String.valueOf(ans));
+                if(activityType.equals(FractionActivity.ACTIVITY_SEATWORK)){
+                    hiddenMultiply1 = Integer.valueOf(ans);
+                    Util.showWithText(multiplyAns1, String.valueOf(seatworkAnswer));
+                }else{
+                    Util.showWithText(multiplyAns1,String.valueOf(ans));
+                }
+
                 //((RelativeLayout.LayoutParams) multiplyFormula1.getLayoutParams()).setMargins(110,100,0,0);
                 validator.getActionStep().increment();
                 multiplyFormula1.setOnClickListener(null);
@@ -290,8 +307,12 @@ public class CompareFractionProcessor implements Processor{
             } else {
                 //Util.showWithText(multiplyFormula2, formula + String.valueOf(ans));
                 //((RelativeLayout.LayoutParams) multiplyFormula2.getLayoutParams()).setMargins(600,100,0,0);
-                multiplyAns2.setText(String.valueOf(ans));
-                Util.showWithText(multiplyAns2, String.valueOf(ans));
+                if(activityType.equals(FractionActivity.ACTIVITY_SEATWORK)){
+                    hiddenMultiply2 = Integer.valueOf(ans);
+                    Util.showWithText(multiplyAns2, String.valueOf(seatworkAnswer));
+                }else{
+                    Util.showWithText(multiplyAns2, String.valueOf(ans));
+                }
                 validator.getActionStep().increment();
                 multiplyFormula2.setOnClickListener(null);
                 //Util.showGif(R.drawable.dfstep4,activity);
@@ -358,6 +379,7 @@ public class CompareFractionProcessor implements Processor{
                 draggedItem.add(0,num1);
                 draggedItem.add(1,denom2);
                 Intent intent = new Intent(activity, FormActivity.class);
+                intent.putExtra(FractionActivity.ACTIVITY_TYPE,activityType);
                 intent.putExtra(FormActivity.OPERATION,FormActivity.OPERATION_MULTIPLY);
                 intent.putExtra(FormActivity.MULTIPLY_NUM_1,num1.getText().toString());
                 intent.putExtra(FormActivity.MULTIPLY_NUM_2,denom2.getText().toString());
@@ -379,6 +401,7 @@ public class CompareFractionProcessor implements Processor{
                 draggedItem.add(0,num2);
                 draggedItem.add(1,denom1);
                 Intent intent = new Intent(activity, FormActivity.class);
+                intent.putExtra(FractionActivity.ACTIVITY_TYPE,activityType);
                 intent.putExtra(FormActivity.OPERATION,FormActivity.OPERATION_MULTIPLY);
                 intent.putExtra(FormActivity.MULTIPLY_NUM_1,num2.getText().toString());
                 intent.putExtra(FormActivity.MULTIPLY_NUM_2,denom1.getText().toString());

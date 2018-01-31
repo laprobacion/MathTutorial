@@ -78,6 +78,11 @@ public class MessageActivity extends AppCompatActivity {
                             SaveState.get(MessageActivity.this).setDissimilarFractionDone_Seatwork();
                             SaveState.get(MessageActivity.this).endSeatwork(MessageActivity.this);
                             SaveState.get(MessageActivity.this).clearAns();
+                            Intent i = new Intent(MessageActivity.this,MainActivity.class);
+                            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(i);
+                            startActivity(new Intent(MessageActivity.this,StatsActivity.class));
+
                         }
                     }
                 }

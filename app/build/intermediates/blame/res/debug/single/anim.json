@@ -1,50 +1,50 @@
 [
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_popup_enter.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\54b227c0b6183faa8bb74d8e10925971d750b4a6\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\anim\\design_snackbar_in.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\54b227c0b6183faa8bb74d8e10925971d750b4a6\\output\\res\\anim\\design_snackbar_out.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_fade_out.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\47a44f7e15ec5789668c44fe1280fc9f86b0213f\\output\\res\\anim\\design_snackbar_out.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\anim\\abc_fade_out.xml"
     }
 ]

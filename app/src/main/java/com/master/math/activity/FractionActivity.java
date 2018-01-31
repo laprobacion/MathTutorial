@@ -1,5 +1,6 @@
 package com.master.math.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
@@ -17,7 +18,7 @@ public class FractionActivity extends AppCompatActivity {
     public static final String LESSON_1 = "LESSON_1";
     public static final String LESSON_2 = "LESSON_2";
     public static final String LESSON_3 = "LESSON_3";
-
+    private String seatworkAnswer = "";
     CompareFractionProcessor processor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +50,16 @@ public class FractionActivity extends AppCompatActivity {
         super.onPostResume();
         if(this.processor != null && this.processor.isReady()){
             if(this.processor.getStep() == ActionStep.STEP_1 || this.processor.getStep() == ActionStep.STEP_2){
-                this.processor.execute();
+                this.processor.execute(seatworkAnswer);
             }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 1 && resultCode == RESULT_OK){
+            seatworkAnswer = data.getStringExtra(FormActivity.SEATWORK_ANSWER);
         }
     }
 }

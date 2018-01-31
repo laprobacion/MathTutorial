@@ -51,6 +51,7 @@ public class FormActivity extends AppCompatActivity {
     public static final String OPERATION_MULTIPLY = "MULTIPLY";
     public static final String OPERATION_DIVIDE = "DIVIDE";
     public static final String OPERATION_ADDITION = "ADDITION";
+    public static final String SEATWORK_ANSWER = "SEATWORK_ANSWER";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -257,6 +258,11 @@ public class FormActivity extends AppCompatActivity {
 
     }
     private void validate(){
+        if(getIntent().getStringExtra(FractionActivity.ACTIVITY_TYPE).equals(FractionActivity.ACTIVITY_SEATWORK)){
+            Intent i = new Intent(this,FractionActivity.class);
+            i.putExtra(SEATWORK_ANSWER,String.valueOf(getUserAns()));
+            setResult(RESULT_OK,i);
+        }
         if(isCorrect()){
             if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
                 MultiplyCache.getInstance().setFinalAns(String.valueOf(getUserAns()));
@@ -271,11 +277,16 @@ public class FormActivity extends AppCompatActivity {
             }
             finish();
         }else{
-            if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY)){
+            if(getIntent().getStringExtra(OPERATION).equals(OPERATION_MULTIPLY) && getIntent().getStringExtra(FractionActivity.ACTIVITY_TYPE).equals(FractionActivity.ACTIVITY_SEATWORK)){
                 SaveState.get(this).incrementMultiplicationMistakes();
+                MultiplyCache.getInstance().setFinalAns(String.valueOf(getUserAns()));
+                finish();
             }
-            userAns.setTextColor(Color.RED);
-            shakeError(userAns);
+            if(getIntent().getStringExtra(FractionActivity.ACTIVITY_TYPE).equals(FractionActivity.ACTIVITY_LESSON)){
+                userAns.setTextColor(Color.RED);
+                shakeError(userAns);
+            }
+
         }
     }
     private void setFormClick(){
