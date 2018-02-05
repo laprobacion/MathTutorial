@@ -1,15 +1,31 @@
 [
     {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout-v21\\notification_action.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout-v21\\notification_action.xml"
     },
     {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\5d5519ff8d63becdbd23480ffb583378769fada0\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",

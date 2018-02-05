@@ -28,7 +28,7 @@ public class MessageActivity extends AppCompatActivity {
                 finish();
                 String lesson = getIntent().getStringExtra(FractionActivity.ACTIVITY_LESSON);
                 String activityType = getIntent().getStringExtra(FractionActivity.ACTIVITY_TYPE);
-                if(SaveState.get(MessageActivity.this).isComplete(activityType,lesson)){
+                if(SaveState.get(MessageActivity.this).isComplete(activityType,lesson)){ // IS NOT COMPLETE
                     if(lesson.equals(FractionActivity.LESSON_1)){
                         Intent lesson1Intent = new Intent(MessageActivity.this, FractionActivity.class);
                         lesson1Intent.putExtra(FractionActivity.ACTIVITY_TYPE,activityType);

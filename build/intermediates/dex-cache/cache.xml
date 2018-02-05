@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.9_b27fb6a9e5092c6bb4dd37c21efb2ba72224fd64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\mysql-connector-java-5.1.23-bin.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c264e2114579474d13dd808a510fc74e762dda8c">
+        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\mysql-connector-java-5.1.23-bin_f8ba33159fe40dd9282008930aa7757cad6ba992.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\junit-4.10.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e4f1766ce7404a08f45d859fb9c226fc9e41a861">
+        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\junit-4.10_2ed25ff58e7dfa41e0f39dadcf667f0ac457896f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\commons-codec-1.10.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\commons-codec-1.10_04ba28d235c6afa888dacfc0fa413a97bebc16f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_6d8a47f7f9c5f14e0b542b412e30b534f4111058.jar" />
+    </item>
+
+</items>

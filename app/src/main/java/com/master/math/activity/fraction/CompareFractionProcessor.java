@@ -35,7 +35,7 @@ public class CompareFractionProcessor implements Processor{
 
     private TextView num1,denom1,line1,multiplyFormula1,multiplyAns1,
             num2,denom2,line2,multiplyFormula2,multiplyAns2,
-            compareLine,greaterSign,lessSign,equalSign,help,skip;
+            compareLine,greaterSign,lessSign,equalSign,help,skip,seatworkNumber;
     private Activity activity;
     private Initializer initializer;
     private boolean isFirst;
@@ -153,6 +153,7 @@ public class CompareFractionProcessor implements Processor{
         activityType = FractionActivity.ACTIVITY_SEATWORK;
         help.setVisibility(View.INVISIBLE);
         skip.setVisibility(View.VISIBLE);
+        seatworkNumber.setVisibility(View.VISIBLE);
     }
     public CompareFractionProcessor(final Activity activity,boolean isHide){
         this.activity = activity;

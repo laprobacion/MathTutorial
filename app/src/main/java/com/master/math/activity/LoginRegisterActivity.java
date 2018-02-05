@@ -18,8 +18,17 @@ import com.master.math.activity.util.Storage;
 
 import org.json.JSONObject;
 
-public class LoginRegisterActivity extends AppCompatActivity {
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 
+public class LoginRegisterActivity extends AppCompatActivity {
+    public static final String MODE = "MODE";
+
+    public static final String ONLINE_MODE = "ONLINE_MODE";
+    public static final String OFFLINE_MODE = "OFFLINE_MODE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,16 +36,55 @@ public class LoginRegisterActivity extends AppCompatActivity {
         final TextView signUsername = (TextView) findViewById(R.id.txtUsernameLogin);
         final TextView signPassword = (TextView) findViewById(R.id.txtPasswordLogin);
         final TextView signInErrMsg = (TextView) findViewById(R.id.loginError);
-        Button signInButton = (Button)findViewById(R.id.btnLogin);
-        signInButton.setOnClickListener(new Button.OnClickListener(){
-            public void onClick(View v){
+        final TextView title = (TextView) findViewById(R.id.txtTitle);
+        final Button signInButton = (Button) findViewById(R.id.btnLogin);
+        final Button modeButton = (Button) findViewById(R.id.btnMode);
+        final Button registerButton = (Button) findViewById(R.id.btnRegister);
+        modeButton.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View view) {
+                if (modeButton.getText()=="Offline\nMode") {
+                    // OFFLINE MODE
+                    modeButton.setText("Online\nMode");
+                    title.setText("Offline");
+                    signUsername.setHint("name");
+                    signPassword.setVisibility(View.INVISIBLE);
+                    signInButton.setText("Offline Mode");
+                    registerButton.setVisibility(View.INVISIBLE);
+
+                } else {
+                    modeButton.setText("Offline\nMode");
+                    title.setText("Login");
+                    signUsername.setHint("username");
+                    signPassword.setVisibility(View.VISIBLE);
+                    signInButton.setText("LOGIN");
+                    registerButton.setVisibility(View.VISIBLE);
+                }
+
+            }
+        });
+        signInButton.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
                 String err = validate(signUsername.getText().toString(), signPassword.getText().toString());
-                if( err == null){
+                if (title.getText()=="Offline") {
+                    err = validate(signUsername.getText().toString());
+                    if (err == null){
+                        AppCache.getInstance().setUsername(signUsername.getText().toString());
+                        Intent intent = new Intent(LoginRegisterActivity.this, MainActivity.class);
+                        startActivity(intent);
+
+                    } else {
+                        signInErrMsg.setTextColor(Color.RED);
+                        signInErrMsg.setVisibility(View.VISIBLE);
+                        signInErrMsg.setText(err);
+                    }
+                    return;
+                }
+                if (err == null) {
                     User user = new User();
                     user.setUsername(signUsername.getText().toString());
                     user.setPassword(signPassword.getText().toString());
                     login(user);
-                }else{
+                } else {
                     signInErrMsg.setTextColor(Color.RED);
                     signInErrMsg.setVisibility(View.VISIBLE);
                     signInErrMsg.setText(err);
@@ -62,6 +110,8 @@ public class LoginRegisterActivity extends AppCompatActivity {
                         user.setAdmin(resp.optInt("isAdmin") == 1);
                         Storage.save(LoginRegisterActivity.this.getApplicationContext(),user);
                         AppCache.getInstance().setUsername(resp.optString("username"));
+                        Intent intent = new Intent(LoginRegisterActivity.this, MainActivity.class);
+                        startActivity(intent);
                         finish();
                     }
                 }catch (Exception e){e.printStackTrace();}
@@ -80,17 +130,15 @@ public class LoginRegisterActivity extends AppCompatActivity {
         }
         return null;
     }
+    private String validate(String username) {
+        if (username.trim().equals("")) {
+            return "Username cannot be empty";
+        }
+        return null;
+    }
 
     public void register(View view) {
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
-    }
-
-    //go to another activity
-    @Override
-    public void finish() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        super.finish();
     }
 }
