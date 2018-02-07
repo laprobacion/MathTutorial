@@ -151,6 +151,9 @@ public class CompareFractionProcessor implements Processor{
             setFractions(String.valueOf(nums.get(0)),String.valueOf(nums.get(1)),String.valueOf(nums.get(2)),String.valueOf(nums.get(3)));
         }
         activityType = FractionActivity.ACTIVITY_SEATWORK;
+        seatworkNumber.setVisibility(View.VISIBLE);
+        seatworkNumber.setText(""+SaveState.get(activity).getSeatworkNumberCount() + "/" +  SaveState.get(activity).getSeatworkMax());
+        SaveState.get(activity).incrementSeatworkNumber();
         help.setVisibility(View.INVISIBLE);
         skip.setVisibility(View.VISIBLE);
         seatworkNumber.setVisibility(View.VISIBLE);
@@ -189,6 +192,8 @@ public class CompareFractionProcessor implements Processor{
         greaterSign = Util.getTextViewWithFont(activity, R.id.greaterSign);
         lessSign = Util.getTextViewWithFont(activity, R.id.lessSign);
         equalSign = Util.getTextViewWithFont(activity, R.id.equalSign);
+        seatworkNumber = Util.getTextViewWithFont(activity, R.id.seatworkNumber);
+        seatworkNumber.setVisibility(View.INVISIBLE);
         this.validator = new CompareFractionValidator(this,activity);
         this.initializer = new Initializer(new CompareFractionListener(this, validator));
         this.initializer.setDraggables(num1,num2,denom1,denom2,greaterSign,lessSign,equalSign,compareLine);
@@ -279,6 +284,8 @@ public class CompareFractionProcessor implements Processor{
         iMessage.putExtra(FractionActivity.ACTIVITY_TYPE, activityType);
         activity.startActivity(iMessage);
         SaveState.get(activity.getApplicationContext()).incrementCorrectAns();
+        //seatworkNumber.setText(""+SaveState.get(activity).getCorrectAnswerCount()); //-miguel
+
         activity.finish();
     }
     public int getStep(){

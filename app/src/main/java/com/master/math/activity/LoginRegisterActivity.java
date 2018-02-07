@@ -40,18 +40,20 @@ public class LoginRegisterActivity extends AppCompatActivity {
         final Button signInButton = (Button) findViewById(R.id.btnLogin);
         final Button modeButton = (Button) findViewById(R.id.btnMode);
         final Button registerButton = (Button) findViewById(R.id.btnRegister);
+        final String[] mode = {ONLINE_MODE};
         modeButton.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View view) {
-                if (modeButton.getText()=="Offline\nMode") {
+                if (mode[0] == OFFLINE_MODE) {
                     // OFFLINE MODE
+                    mode[0] = ONLINE_MODE;
                     modeButton.setText("Online\nMode");
                     title.setText("Offline");
                     signUsername.setHint("name");
                     signPassword.setVisibility(View.INVISIBLE);
                     signInButton.setText("Offline Mode");
                     registerButton.setVisibility(View.INVISIBLE);
-
                 } else {
+                    mode[0] = OFFLINE_MODE;
                     modeButton.setText("Offline\nMode");
                     title.setText("Login");
                     signUsername.setHint("username");
@@ -59,9 +61,9 @@ public class LoginRegisterActivity extends AppCompatActivity {
                     signInButton.setText("LOGIN");
                     registerButton.setVisibility(View.VISIBLE);
                 }
-
             }
         });
+        modeButton.performClick();
         signInButton.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 String err = validate(signUsername.getText().toString(), signPassword.getText().toString());

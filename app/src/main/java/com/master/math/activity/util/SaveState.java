@@ -28,7 +28,15 @@ public class SaveState implements Serializable{
     private int multiplicationMistakes;
     private int skippedItems;
 
-    private int seatworkMax;
+    private int seatworkNumber;
+
+    private int lessonMax = 4;
+    private int seatworkLesson1Max = 5;
+    private int seatworkLesson2Max = 5;
+    private int seatworkLesson3Max = 10;
+    private int seatworkMax = seatworkLesson1Max + seatworkLesson2Max + seatworkLesson3Max;
+    //setSeatworkMax(seatworkMax);
+
     private List<Item> items;
     public Date startTime;
     public Date endTime;
@@ -43,10 +51,10 @@ public class SaveState implements Serializable{
 
     private int getSkippedItems() {return skippedItems;}
 
+    private int getSeatworkNumber() {return seatworkNumber;}
+
     public int getSeatworkMax(){ return this.seatworkMax;}
-    private void setSeatworkMax(int seatworkMax){
-        this.seatworkMax = seatworkMax;
-    }
+    //private void setSeatworkMax(int seatworkMax){this.seatworkMax = seatworkMax;}
     public void startSeatwork(){
         clearAllCount();
         items = new ArrayList<Item>();
@@ -62,12 +70,6 @@ public class SaveState implements Serializable{
         clearAllCount();
     }
     public boolean isComplete(String activityType, String lesson){
-        int lessonMax = 4;
-        int seatworkLesson1Max = 1;
-        int seatworkLesson2Max = 1;
-        int seatworkLesson3Max = 1;
-        int seatworkMax = seatworkLesson1Max + seatworkLesson2Max + seatworkLesson3Max;
-        setSeatworkMax(seatworkMax);
         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
             return lessonMax != getCorrectAns();
         }else {
@@ -88,9 +90,11 @@ public class SaveState implements Serializable{
     public void incrementSkippedItems() {
         this.skippedItems++;
     }
+    public void incrementSeatworkNumber() {this.seatworkNumber++;}
     private void clearAllCount(){
         multiplicationMistakes = 0;
         skippedItems = 0;
+        seatworkNumber = 1;
         clearAns();
     }
     public void clearAns() {        this.correctAns = 0;    }
@@ -176,6 +180,9 @@ public class SaveState implements Serializable{
             return Integer.valueOf(this.storage.get("getSkippedItems"));
         }
         return 0;
+    }
+    public int getSeatworkNumberCount(){
+        return seatworkNumber;
     }
     public int getCorrectAnswerCount(){
         if(this.storage.get("getNumberOfCorrectAnswers") != null){
