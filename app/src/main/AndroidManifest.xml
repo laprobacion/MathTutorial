@@ -45,7 +45,8 @@
         <activity android:name=".activity.Lesson2Activity" />
         <activity android:name=".activity.Comparing2Activity" />
         <activity android:name=".activity.Stats2Activity" />
-        <activity android:name=".activity.Seatwork2Activity"></activity>
+        <activity android:name=".activity.Seatwork2Activity" />
+        <activity android:name=".TopScoresActivity"></activity>
     </application>
 
 </manifest>

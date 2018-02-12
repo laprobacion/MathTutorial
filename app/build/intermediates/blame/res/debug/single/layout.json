@@ -124,6 +124,10 @@
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_top_scores.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_top_scores.xml"
+    },
+    {
         "merged": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "C:\\Users\\Frank\\.android\\build-cache\\54b227c0b6183faa8bb74d8e10925971d750b4a6\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
