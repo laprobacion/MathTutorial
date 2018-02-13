@@ -57,6 +57,7 @@
         <activity android:name="com.master.math.activity.Stats2Activity" />
         <activity android:name="com.master.math.activity.Seatwork2Activity" />
         <activity android:name="com.master.math.TopScoresActivity" />
+        <activity android:name="com.master.math.activity.TopScoreActivity" />
     </application>
 
 </manifest>

@@ -110,7 +110,9 @@ public class LoginRegisterActivity extends AppCompatActivity {
                         user.setUsername(resp.optString("username"));
                         user.setActive(resp.optInt("isActive") == 1);
                         user.setAdmin(resp.optInt("isAdmin") == 1);
+                        user.setScore(resp.optInt("score"));
                         Storage.save(LoginRegisterActivity.this.getApplicationContext(),user);
+                        AppCache.getInstance().setUser(user);
                         AppCache.getInstance().setUsername(resp.optString("username"));
                         Intent intent = new Intent(LoginRegisterActivity.this, MainActivity.class);
                         startActivity(intent);

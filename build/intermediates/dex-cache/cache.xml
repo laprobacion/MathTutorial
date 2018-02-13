@@ -2,49 +2,67 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\android-async-http-1.4.9.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
-        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.9_b27fb6a9e5092c6bb4dd37c21efb2ba72224fd64.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\mysql-connector-java-5.1.23-bin.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="c264e2114579474d13dd808a510fc74e762dda8c">
-        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\mysql-connector-java-5.1.23-bin_f8ba33159fe40dd9282008930aa7757cad6ba992.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\junit-4.10.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Frank\AndroidStudioProjects\Math\app\libs\junit-4.10.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="e4f1766ce7404a08f45d859fb9c226fc9e41a861">
-        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\junit-4.10_2ed25ff58e7dfa41e0f39dadcf667f0ac457896f.jar" />
+        <dex dex="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\transforms\dex\debug\folders\1000\2\junit-4.10_87cd8a0d02356c95d8d45226c3f64dd5593df7fd\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\commons-codec-1.10.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Frank\AndroidStudioProjects\Math\app\libs\mysql-connector-java-5.1.23-bin.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
-        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\commons-codec-1.10_04ba28d235c6afa888dacfc0fa413a97bebc16f2.jar" />
+        sha1="c264e2114579474d13dd808a510fc74e762dda8c">
+        <dex dex="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\transforms\dex\debug\folders\1000\2\mysql-connector-java-5.1.23-bin_d7c27ba7d64450d2de256fc77b881eb761ea2ed7\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\libs\httpclient-4.3.6.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7892536dd3c9e5b43d926848bf66879e944fb521">
+        <dex dex="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_83edeb3955017d6a37d1d12e406128fefd258493\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Frank\AndroidStudioProjects\Math\app\libs\httpclient-4.3.6.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
-        <dex dex="D:\Migs\SCHOOL DOCS\App\MathTutorial\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_6d8a47f7f9c5f14e0b542b412e30b534f4111058.jar" />
+        <dex dex="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-4.3.6_8610e4170938245e4023d1e5dd236ce5d4fe3541\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Frank\AndroidStudioProjects\Math\app\libs\commons-codec-1.10.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\transforms\dex\debug\folders\1000\2\commons-codec-1.10_1771ed6c43f8ae8f400c000dea01a38aabcd3ba1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Frank\AndroidStudioProjects\Math\app\libs\android-async-http-1.4.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-async-http-1.4.9_9a13d3297fd29f3237545b453d53ae16e33e0960\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Frank\AndroidStudioProjects\Math\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d8ff628c1f40d79d2a094874c54dee5270f047f3\classes.dex" />
     </item>
 
 </items>

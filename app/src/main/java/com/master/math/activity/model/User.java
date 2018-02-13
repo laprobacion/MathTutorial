@@ -6,6 +6,10 @@ public class User extends BaseModel{
     private String age;
     private String gender;
     private boolean isAdmin;
+    private int score;
+
+    public int getScore() {        return score;    }
+    public void setScore(int score) {        this.score = score;    }
 
     public String getUsername() {
         return username;

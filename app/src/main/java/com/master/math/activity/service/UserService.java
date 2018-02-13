@@ -39,4 +39,19 @@ public class UserService {
         service.get(url, params);
         service.execute();
     }
+    public static void updateScore(final User user, Service service){
+        RequestParams params = new RequestParams();
+        params.put("username", user.getUsername());
+        params.put("score", user.getScore());
+        String url = "http://jabahan.com/storybook/user/updateScore.php?username="+user.getUsername()+"&score="+user.getScore();
+        service.get(url, params);
+        service.execute();
+    }
+
+    public static void searchTopUsers(Service service){
+        RequestParams params = new RequestParams();
+        String url = "http://jabahan.com/storybook/user/searchTopUsers.php";
+        service.get(url, params);
+        service.execute();
+    }
 }

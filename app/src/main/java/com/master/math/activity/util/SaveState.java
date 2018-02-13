@@ -4,8 +4,20 @@ package com.master.math.activity.util;
 import android.app.Activity;
 import android.app.FragmentManagerNonConfig;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.view.View;
+import android.widget.TextView;
 
+import com.master.math.R;
 import com.master.math.activity.FractionActivity;
+import com.master.math.activity.LoginRegisterActivity;
+import com.master.math.activity.MainActivity;
+import com.master.math.activity.service.Service;
+import com.master.math.activity.service.ServiceResponse;
+import com.master.math.activity.service.UserService;
+
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -31,9 +43,9 @@ public class SaveState implements Serializable{
     private int seatworkNumber;
 
     private int lessonMax = 4;
-    private int seatworkLesson1Max = 5;
-    private int seatworkLesson2Max = 5;
-    private int seatworkLesson3Max = 10;
+    private int seatworkLesson1Max = 1;//5;
+    private int seatworkLesson2Max = 1;//5;
+    private int seatworkLesson3Max = 1;//10;
     private int seatworkMax = seatworkLesson1Max + seatworkLesson2Max + seatworkLesson3Max;
     //setSeatworkMax(seatworkMax);
 
@@ -66,8 +78,25 @@ public class SaveState implements Serializable{
     }
     public void endSeatwork(Activity activity){
         endTime = new Date();
-        save(activity);
+        int score = save(activity);
+        updateScore(score, activity);
         clearAllCount();
+    }
+    private void updateScore(int score, Activity activity){
+        final TextView errorMsg = (TextView) activity.findViewById(R.id.loginError);
+        Service service = new Service("Saving...", activity, new ServiceResponse() {
+            @Override
+            public void postExecute(JSONObject resp) {
+                try {
+                String s = "";
+                }catch (Exception e){e.printStackTrace();}
+            }
+        });
+        if(score > AppCache.getInstance().getUser().getScore()){
+            AppCache.getInstance().getUser().setScore(score);
+            UserService.updateScore(AppCache.getInstance().getUser(), service);
+        }
+
     }
     public boolean isComplete(String activityType, String lesson){
         if(activityType.equals(FractionActivity.ACTIVITY_LESSON)){
@@ -218,15 +247,16 @@ public class SaveState implements Serializable{
         return " " + Math.abs(diffSeconds) + " seconds";
     }
 
-    public void save(Context context) {
+    public int save(Context context) {
+        int score = 0;
         load(context);
         try {
             FileOutputStream fos = context.getApplicationContext().openFileOutput(FILENAME, Context.MODE_PRIVATE);
-
+            score = getNumberOfCorrectAnswers();
             fos.write(String.valueOf("isSimilarDenominatorDone;" + String.valueOf(isSimilarDenominatorDone) + "\n").getBytes());
             fos.write(String.valueOf("isSimilarNumeratorDone;" + String.valueOf(isSimilarNumeratorDone)+ "\n").getBytes());
             fos.write(String.valueOf("isDissimilarFractionDone;" + String.valueOf(isDissimilarFractionDone)+ "\n").getBytes());
-            fos.write(String.valueOf("getNumberOfCorrectAnswers;" + String.valueOf(getNumberOfCorrectAnswers())+ "\n").getBytes());
+            fos.write(String.valueOf("getNumberOfCorrectAnswers;" + String.valueOf(score)+ "\n").getBytes());
             fos.write(String.valueOf("getMultiplicationMistakes;" + String.valueOf(getMultiplicationMistakes())+ "\n").getBytes());
             fos.write(String.valueOf("getSkippedItems;" + String.valueOf(getSkippedItems())+ "\n").getBytes());
             fos.write(String.valueOf("getTimeSpent;" + getTimeSpent()).getBytes());
@@ -234,6 +264,7 @@ public class SaveState implements Serializable{
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return score;
     }
 
     public Map<String, String> load(Context context) {

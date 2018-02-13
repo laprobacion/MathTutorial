@@ -12,7 +12,7 @@ import com.master.math.activity.util.SaveState;
 import com.master.math.activity.util.Util;
 //MAIN MENU ACTIVITY
 public class MainMenu extends AppCompatActivity {
-    Button seatwork, stats;
+    Button seatwork, stats,topScore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +30,7 @@ public class MainMenu extends AppCompatActivity {
 
         seatwork = (Button) findViewById(R.id.seatwork);
         stats = (Button) findViewById(R.id.stats);
+        topScore = (Button) findViewById(R.id.topScore);
         setSeatWorkClick();
 
         stats.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +39,13 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(new Intent(MainMenu.this, StatsActivity.class));
             }
         });
+        topScore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenu.this, TopScoreActivity.class));
+            }
+        });
+
     }
 
     public void setSeatWorkClick(){
