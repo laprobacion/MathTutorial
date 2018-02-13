@@ -43,9 +43,9 @@ public class SaveState implements Serializable{
     private int seatworkNumber;
 
     private int lessonMax = 4;
-    private int seatworkLesson1Max = 1;//5;
-    private int seatworkLesson2Max = 1;//5;
-    private int seatworkLesson3Max = 1;//10;
+    private int seatworkLesson1Max = 5;
+    private int seatworkLesson2Max = 5;
+    private int seatworkLesson3Max = 10;
     private int seatworkMax = seatworkLesson1Max + seatworkLesson2Max + seatworkLesson3Max;
     //setSeatworkMax(seatworkMax);
 

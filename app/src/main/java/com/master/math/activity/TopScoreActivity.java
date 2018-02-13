@@ -23,6 +23,7 @@ import java.util.List;
 public class TopScoreActivity extends AppCompatActivity {
     RelativeLayout topScoreLayout;
     int top = 200;
+    int maxList = 10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +38,14 @@ public class TopScoreActivity extends AppCompatActivity {
             @Override
             public void postExecute(JSONObject resp) {
                 try {
+                    int counter = 0;
                     for(User u : createTopUsers(resp)){
-                        renderList(u);
+                        counter++;
+                        if(counter <= maxList){
+                            renderList(u);
+                        }else{
+                            break;
+                        }
                     }
                 }catch (Exception e){e.printStackTrace();}
             }
