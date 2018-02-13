@@ -28,13 +28,13 @@ public class TopScoreActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top_score);
-        updateScore(this);
+        retScores(this);
         topScoreLayout = (RelativeLayout) findViewById(R.id.topScoreLayout);
     }
 
-    private void updateScore(Activity activity){
+    private void retScores(Activity activity){
         final TextView errorMsg = (TextView) activity.findViewById(R.id.loginError);
-        Service service = new Service("Saving...", activity, new ServiceResponse() {
+        Service service = new Service("Loading list...", activity, new ServiceResponse() {
             @Override
             public void postExecute(JSONObject resp) {
                 try {
