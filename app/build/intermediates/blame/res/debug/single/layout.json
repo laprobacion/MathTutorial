@@ -236,6 +236,10 @@
         "source": "C:\\Users\\Frank\\AndroidStudioProjects\\Math\\app\\src\\main\\res\\layout\\activity_addition.xml"
     },
     {
+        "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_top_score.xml",
+        "source": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\src\\main\\res\\layout\\activity_top_score.xml"
+    },
+    {
         "merged": "D:\\Migs\\SCHOOL DOCS\\App\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\Laher\\.android\\build-cache\\8efc690a897f84a5f4adc899b655cf7d39ed7716\\output\\res\\layout\\abc_select_dialog_material.xml"
     },

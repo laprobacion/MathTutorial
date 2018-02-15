@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Math.iml" filepath="$PROJECT_DIR$/Math.iml" />
-      <module fileurl="file://D:/Migs/SCHOOL DOCS/App/MathTutorial/Math.iml" filepath="D:/Migs/SCHOOL DOCS/App/MathTutorial/Math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MathTutorial.iml" filepath="$PROJECT_DIR$/MathTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

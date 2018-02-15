@@ -1,8 +1,13 @@
 package com.master.math.activity;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -22,14 +27,28 @@ import java.util.List;
 
 public class TopScoreActivity extends AppCompatActivity {
     RelativeLayout topScoreLayout;
+    private ListView listTopScores;
+    private ArrayAdapter<String> adapter;
+    private ArrayList<String> arrayTopScores;
+    private int rankNumber;
     int top = 200;
     int maxList = 10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_top_score);
+        setContentView(R.layout.activity_top_scores);
         retScores(this);
-        topScoreLayout = (RelativeLayout) findViewById(R.id.topScoreLayout);
+        listTopScores = (ListView) findViewById(R.id.listTopScores);
+        arrayTopScores = new ArrayList<String>();
+        adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayTopScores){
+            public View getView(int position, View convertView, ViewGroup parent){
+                View view = super.getView(position, convertView, parent);
+                TextView tv = (TextView) view.findViewById(android.R.id.text1);
+                tv.setTextColor(getColor(R.color.colorPrimaryDark));
+                return view;
+            }
+        };
+        listTopScores.setAdapter(adapter);
     }
 
     private void retScores(Activity activity){
@@ -42,6 +61,7 @@ public class TopScoreActivity extends AppCompatActivity {
                     for(User u : createTopUsers(resp)){
                         counter++;
                         if(counter <= maxList){
+                            rankNumber++;
                             renderList(u);
                         }else{
                             break;
@@ -54,8 +74,8 @@ public class TopScoreActivity extends AppCompatActivity {
 
     }
     private void renderList(User user){
-        Util.createTextView(0,user.getUsername() + " = " + user.getScore(),20,top,100,false,topScoreLayout,this).setTextColor(getResources().getColor(R.color.colorPrimaryDark));
-        top += 60;
+        arrayTopScores.add("#" + rankNumber + " " + user.getUsername() + " = " + user.getScore());
+        adapter.notifyDataSetChanged();
     }
     private List<User> createTopUsers(JSONObject resp){
         List<User> users = new ArrayList<User>();
