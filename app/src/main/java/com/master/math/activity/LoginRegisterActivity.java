@@ -45,6 +45,7 @@ public class LoginRegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (mode[0] == OFFLINE_MODE) {
                     // OFFLINE MODE
+                    AppCache.getInstance().setMode(mode[0]);
                     mode[0] = ONLINE_MODE;
                     modeButton.setText("Online\nMode");
                     title.setText("Offline");
@@ -53,6 +54,7 @@ public class LoginRegisterActivity extends AppCompatActivity {
                     signInButton.setText("Offline Mode");
                     registerButton.setVisibility(View.INVISIBLE);
                 } else {
+                    AppCache.getInstance().setMode(mode[0]);
                     mode[0] = OFFLINE_MODE;
                     modeButton.setText("Offline\nMode");
                     title.setText("Login");

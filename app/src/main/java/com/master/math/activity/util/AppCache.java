@@ -21,6 +21,7 @@ public class AppCache {
 
     private User user;
     private String username;
+    private String mode;
 
     public static AppCache getInstance(){
         if(_this == null){
@@ -38,4 +39,7 @@ public class AppCache {
 
     public void setUsername(String username) {this.username = username; }
     public String getUsername() { return  this.username; }
+
+    public void setMode(String mode) {this.mode = mode; }
+    public String getMode() { return this.mode;}
 }

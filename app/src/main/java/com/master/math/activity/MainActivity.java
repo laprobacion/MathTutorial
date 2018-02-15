@@ -10,8 +10,11 @@ import android.view.Window;
 import android.widget.Button;
 
 import com.master.math.R;
+import com.master.math.activity.util.AppCache;
 import com.master.math.activity.util.SaveState;
 import com.master.math.activity.util.Util;
+
+import static com.master.math.activity.LoginRegisterActivity.ONLINE_MODE;
 
 public class MainActivity extends AppCompatActivity {
     Button seatwork, stats, topScore;
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         stats = (Button) findViewById(R.id.stats);
         topScore = (Button) findViewById(R.id.topScore);
         setSeatWorkClick();
+        topScoreClick();
 
         stats.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,12 +46,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, StatsActivity.class));
             }
         });
-        topScore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TopScoreActivity.class));
-            }
-        });
+    }
+
+    private void topScoreClick() {
+        if(AppCache.getInstance().getMode() == ONLINE_MODE) {
+            topScore.setBackgroundColor(seatwork.getContext().getResources().getColor(R.color.colorPrimaryDark));
+            topScore.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(MainActivity.this, TopScoreActivity.class));
+                }
+            });
+        } else {
+            topScore.setBackgroundColor(seatwork.getContext().getResources().getColor(R.color.colorPrimaryDarkFaded));
+        }
     }
 
     public void setSeatWorkClick(){

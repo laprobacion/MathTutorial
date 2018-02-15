@@ -1,18 +1,40 @@
 -- Merging decision tree log ---
 manifest
 ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:2:1-11:12
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\4d6d9e2ae37f31c88afef5249c96366d\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:17:1-31:12
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:5:5-81
 	android:name
@@ -27,28 +49,40 @@ ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:7:22-64
 application
 ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:9:5-51:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.android\build-cache\a9342e197297649e6b450107d08d6d3d8f5de5be\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\8efc690a897f84a5f4adc899b655cf7d39ed7716\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\13d3054686c92830141e1c2afba04c0e67d605e4\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\869fe6c7c98b119c77eccfbe32e862e0a4fac73c\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\5138f51487a6d8c164845366fa91241040390541\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\5a9dc00c110b0bc153c3d17fd3f33a171b7ec0eb\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\490178641d1332363ad24107e38b57b1d8b9b690\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\a1b8b362bd12e9e66a59b545e1f5a476ac9512a4\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\65bebe1d366bd6a3b8da8662a25d0c5f4ed7348d\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\158f7c946feebc47dd868a997c224f6d99064cd6\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\cf183e49d116b6d6f297bbb9e8f841be4f815125\output\AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:12:9-41
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:13:9-54
-	android:allowBackup
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:10:9-35
 	android:icon
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:15:9-59
 activity#com.master.math.activity.MainActivity
@@ -171,42 +205,73 @@ ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:50:19-60
 uses-sdk
 INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.android\build-cache\a9342e197297649e6b450107d08d6d3d8f5de5be\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\8efc690a897f84a5f4adc899b655cf7d39ed7716\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\13d3054686c92830141e1c2afba04c0e67d605e4\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\869fe6c7c98b119c77eccfbe32e862e0a4fac73c\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\e1c3c065151e6a05850f7b7972ba934e814232e6\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\5138f51487a6d8c164845366fa91241040390541\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\5a9dc00c110b0bc153c3d17fd3f33a171b7ec0eb\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\490178641d1332363ad24107e38b57b1d8b9b690\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\a1b8b362bd12e9e66a59b545e1f5a476ac9512a4\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\65bebe1d366bd6a3b8da8662a25d0c5f4ed7348d\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\158f7c946feebc47dd868a997c224f6d99064cd6\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\cf183e49d116b6d6f297bbb9e8f841be4f815125\output\AndroidManifest.xml:21:5-23:58
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Laher\.android\build-cache\9bda8f22707a146bab2e20b28c04575ceb6da682\output\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:5:5-7:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\4d6d9e2ae37f31c88afef5249c96366d\AndroidManifest.xml:7:5-9:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\4d6d9e2ae37f31c88afef5249c96366d\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\8efc690a897f84a5f4adc899b655cf7d39ed7716\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\13d3054686c92830141e1c2afba04c0e67d605e4\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\869fe6c7c98b119c77eccfbe32e862e0a4fac73c\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\e1c3c065151e6a05850f7b7972ba934e814232e6\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\5138f51487a6d8c164845366fa91241040390541\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\5a9dc00c110b0bc153c3d17fd3f33a171b7ec0eb\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\490178641d1332363ad24107e38b57b1d8b9b690\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\a1b8b362bd12e9e66a59b545e1f5a476ac9512a4\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\65bebe1d366bd6a3b8da8662a25d0c5f4ed7348d\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\158f7c946feebc47dd868a997c224f6d99064cd6\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\cf183e49d116b6d6f297bbb9e8f841be4f815125\output\AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.android\build-cache\47a44f7e15ec5789668c44fe1280fc9f86b0213f\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:26:9-47
