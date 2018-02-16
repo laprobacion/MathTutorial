@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="56dp"
         android:text="Comparing Fractions"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
@@ -26,47 +26,49 @@
 
     <Button
         android:id="@+id/similarDenominators"
-        android:layout_width="0dp"
+        android:layout_width="267dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="88dp"
         android:background="@color/colorPrimaryDark"
         android:text="SIMILAR DENOMINATORS"
         android:textColor="@color/colorAccent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
         android:id="@+id/similarNumerators"
-        android:layout_width="0dp"
+        android:layout_width="267dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@color/colorPrimaryDark"
         android:text="SIMILAR NUMERATORS"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/similarDenominators" />
 
     <Button
         android:id="@+id/dissimilarFractions"
-        android:layout_width="0dp"
+        android:layout_width="267dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="DISSIMILAR FRACTIONS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/similarNumerators"
-
+        android:layout_marginTop="24dp"
         android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorAccent"/>
+        android:text="DISSIMILAR FRACTIONS"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/similarNumerators" />
 </android.support.constraint.ConstraintLayout>

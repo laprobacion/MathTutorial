@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_search_url_text.xml"
     },
     {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_borderless_text_material.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
@@ -42,6 +46,10 @@
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_switch_thumb.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_message.xml.flat",
@@ -120,8 +128,16 @@
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_btn_checkable.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_name.png.flat",
         "source": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\src\\main\\res\\drawable-xhdpi\\ic_stat_name.png"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_spinner.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_tint_spinner.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -378,6 +394,10 @@
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -912,6 +932,10 @@
         "source": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\src\\main\\res\\drawable\\dfstep4.gif"
     },
     {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_stats.xml.flat",
         "source": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\src\\main\\res\\layout\\activity_stats.xml"
     },
@@ -1092,6 +1116,10 @@
         "source": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\src\\main\\res\\layout\\activity_lcdmain.xml"
     },
     {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_switch_track.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_tint_switch_track.xml"
+    },
+    {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_clear_material.xml.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\drawable\\abc_ic_clear_material.xml"
     },
@@ -1118,6 +1146,10 @@
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_default.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_tint_default.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11_notification_template_big_media_narrow.xml.flat",
@@ -1270,6 +1302,10 @@
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_design_tint_password_toggle.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-alpha1.aar\\2910cac759776f30204284b1b00fb38d\\res\\color\\design_tint_password_toggle.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
@@ -1702,6 +1738,10 @@
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_text_material.xml.flat",
+        "source": "C:\\Users\\Jay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\21094d96d404700c985f332a8bdfc104\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
         "merged": "C:\\Users\\Jay\\Desktop\\Avatar\\Icon button\\MathTutorial\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",

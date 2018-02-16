@@ -34,7 +34,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Register"
+        android:text="Sign Up "
+        android:drawableRight="@drawable/ic_001_login"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +89,7 @@
 
 
         android:background="@color/colorPrimaryDark"
-        android:text="Register"
+        android:text="Sign Up"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -148,7 +149,8 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/colorPrimaryDark"
             android:buttonTint="@color/colorPrimaryDark"
-            android:text="Male"
+            android:text="Male "
+            android:drawableRight="@drawable/ic_002_boy"
 
             android:textColor="@color/colorPrimaryDark"
             android:textColorHint="@color/colorPrimaryDarkFaded"
@@ -164,7 +166,8 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/colorPrimaryDark"
             android:buttonTint="@color/colorPrimaryDark"
-            android:text="Female"
+            android:text="Female "
+            android:drawableRight="@drawable/ic_003_girl"
 
             android:textColor="@color/colorPrimaryDark"
             android:textColorHint="@color/colorPrimaryDarkFaded"

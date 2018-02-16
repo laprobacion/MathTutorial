@@ -15,8 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Main Menu"
+        android:layout_marginTop="64dp"
+        android:text="LearnFractions"
+
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,66 +27,68 @@
 
     <Button
         android:id="@+id/lesson"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="262dp"
+        android:layout_height="58dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="52dp"
         android:background="@color/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_lesson"
 
         android:text="LESSONS"
         android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/seatwork"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="262dp"
+        android:layout_height="58dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="SEATWORK"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lesson"
-
+        android:layout_marginTop="12dp"
         android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorAccent"/>
+        android:text="SEATWORK"
+        android:drawableTop="@drawable/ic_seat"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lesson" />
 
     <Button
         android:id="@+id/stats"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="262dp"
+        android:layout_height="58dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="SEATWORK STATISTICS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seatwork"
-
+        android:layout_marginTop="20dp"
         android:background="@color/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_stats"
+        android:text="SEATWORK STATISTICS"
+
         android:textColor="@color/colorAccent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatwork" />
 
     <Button
         android:id="@+id/topScore"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="262dp"
+        android:layout_height="58dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="28dp"
         android:background="@color/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_chevron"
         android:text="Top Scores"
         android:textColor="@color/colorAccent"
-        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seatwork"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/stats" />
 
 
 </android.support.constraint.ConstraintLayout>
