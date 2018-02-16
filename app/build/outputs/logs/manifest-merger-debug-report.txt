@@ -1,277 +1,277 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:2:1-11:12
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\4d6d9e2ae37f31c88afef5249c96366d\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:17:1-31:12
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21094d96d404700c985f332a8bdfc104\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f2025b4c9fda84a0cfd6fbec47672a1b\AndroidManifest.xml:2:1-11:12
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\1fc54bfad176c1ca23992610bfefa4cd\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\eef2a62b4075700e2e4f4cbba37fc223\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\67c8989d0eae3d50b7c5485d86824147\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\8d5f169341c4a546cc96189e20886c3a\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\15b2798e3a6b559705ceeb440f5b70f2\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\8476138d6b68aa7514b049395f407894\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\084e56894d96cf05e2925b68828476aa\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\94500911b839ecd857d54923b46fe54e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\07e2bb0f0b2ab88f694924eb73761e98\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\47af42720a1cc6b6a47ac7ecfbd3ba31\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c24e42ae60682cca1f561dc74e71e66b\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
 	package
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:3:5-30
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:5:5-81
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:5:22-78
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:5:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:6:22-77
 uses-permission#android.permission.INTERNET
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:9:5-51:19
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:29:5-20
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:9:5-51:19
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21094d96d404700c985f332a8bdfc104\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21094d96d404700c985f332a8bdfc104\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f2025b4c9fda84a0cfd6fbec47672a1b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f2025b4c9fda84a0cfd6fbec47672a1b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\eef2a62b4075700e2e4f4cbba37fc223\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\eef2a62b4075700e2e4f4cbba37fc223\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\67c8989d0eae3d50b7c5485d86824147\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\67c8989d0eae3d50b7c5485d86824147\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\15b2798e3a6b559705ceeb440f5b70f2\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\15b2798e3a6b559705ceeb440f5b70f2\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\8476138d6b68aa7514b049395f407894\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\8476138d6b68aa7514b049395f407894\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\084e56894d96cf05e2925b68828476aa\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\084e56894d96cf05e2925b68828476aa\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\94500911b839ecd857d54923b46fe54e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\94500911b839ecd857d54923b46fe54e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\07e2bb0f0b2ab88f694924eb73761e98\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\07e2bb0f0b2ab88f694924eb73761e98\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\47af42720a1cc6b6a47ac7ecfbd3ba31\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\47af42720a1cc6b6a47ac7ecfbd3ba31\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c24e42ae60682cca1f561dc74e71e66b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c24e42ae60682cca1f561dc74e71e66b\AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:15:9-59
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:15:9-59
 activity#com.master.math.activity.MainActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:16:9-59
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:16:9-59
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:16:19-56
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:16:19-56
 activity#com.master.math.activity.MultiplyActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:17:9-63
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:17:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:17:19-60
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:17:19-60
 activity#com.master.math.activity.FractionActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:18:9-21:66
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:18:9-21:66
 	android:label
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:20:13-60
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:20:13-60
 	android:theme
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:21:13-63
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:21:13-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:19:13-54
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:19:13-54
 activity#com.master.math.activity.AdditionActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:22:9-63
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:22:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:22:19-60
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:22:19-60
 activity#com.master.math.activity.FormActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:23:9-59
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:23:9-59
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:23:19-56
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:23:19-56
 activity#com.master.math.activity.LCDMainActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:24:9-62
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:24:9-62
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:24:19-59
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:24:19-59
 activity#com.master.math.activity.LCDActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:25:9-58
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:25:9-58
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:25:19-55
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:25:19-55
 activity#com.master.math.activity.ArrangeFractionsActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:26:9-71
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:26:9-71
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:26:19-68
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:26:19-68
 activity#com.master.math.activity.DivideActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:27:9-61
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:27:9-61
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:27:19-58
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:27:19-58
 activity#com.master.math.activity.LessonActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:28:9-61
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:28:9-61
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:28:19-58
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:28:19-58
 activity#com.master.math.activity.LoginRegisterActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:29:9-35:20
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:29:19-65
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:29:19-65
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.master.math.activity.RegisterActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:36:9-63
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:36:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:36:19-60
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:36:19-60
 activity#com.master.math.activity.ComparingActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:37:9-64
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:37:9-64
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:37:19-61
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:37:19-61
 activity#com.master.math.activity.HelpActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:38:9-59
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:38:9-59
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:38:19-56
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:38:19-56
 activity#com.master.math.activity.MessageActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:39:9-62
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:39:9-62
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:39:19-59
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:39:19-59
 activity#com.master.math.activity.SeatworkActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:40:9-63
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:40:9-63
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:40:19-60
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:40:19-60
 activity#com.master.math.activity.StatsActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:41:9-60
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:41:9-60
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:41:19-57
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:41:19-57
 activity#com.master.math.activity.Fraction2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:42:9-64
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:42:9-64
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:42:19-61
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:42:19-61
 activity#com.master.math.activity.Form2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:43:9-60
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:43:9-60
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:43:19-57
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:43:19-57
 activity#com.master.math.Help2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:44:9-51
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:44:9-51
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:44:19-48
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:44:19-48
 activity#com.master.math.activity.Lesson2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:45:9-62
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:45:9-62
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:45:19-59
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:45:19-59
 activity#com.master.math.activity.Comparing2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:46:9-65
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:46:9-65
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:46:19-62
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:46:19-62
 activity#com.master.math.activity.Stats2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:47:9-61
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:47:9-61
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:47:19-58
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:47:19-58
 activity#com.master.math.activity.Seatwork2Activity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:48:9-64
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:48:9-64
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:48:19-61
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:48:19-61
 activity#com.master.math.TopScoresActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:49:9-55
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:49:9-55
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:49:19-52
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:49:19-52
 activity#com.master.math.activity.TopScoreActivity
-ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:50:9-72
+ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:50:9-72
 	android:name
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml:50:19-60
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml:50:19-60
 uses-sdk
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\236b34802091d43a8327f398765ffd1c\AndroidManifest.xml:5:5-7:41
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\4d6d9e2ae37f31c88afef5249c96366d\AndroidManifest.xml:7:5-9:41
-MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\4d6d9e2ae37f31c88afef5249c96366d\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:21:5-23:58
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21094d96d404700c985f332a8bdfc104\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21094d96d404700c985f332a8bdfc104\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f2025b4c9fda84a0cfd6fbec47672a1b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f2025b4c9fda84a0cfd6fbec47672a1b\AndroidManifest.xml:5:5-7:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\1fc54bfad176c1ca23992610bfefa4cd\AndroidManifest.xml:7:5-9:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.17] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\android-gif-drawable-1.1.17.aar\1fc54bfad176c1ca23992610bfefa4cd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\eef2a62b4075700e2e4f4cbba37fc223\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\eef2a62b4075700e2e4f4cbba37fc223\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\67c8989d0eae3d50b7c5485d86824147\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\67c8989d0eae3d50b7c5485d86824147\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\8d5f169341c4a546cc96189e20886c3a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\8d5f169341c4a546cc96189e20886c3a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\15b2798e3a6b559705ceeb440f5b70f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\15b2798e3a6b559705ceeb440f5b70f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\8476138d6b68aa7514b049395f407894\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\8476138d6b68aa7514b049395f407894\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\084e56894d96cf05e2925b68828476aa\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\084e56894d96cf05e2925b68828476aa\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\94500911b839ecd857d54923b46fe54e\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\94500911b839ecd857d54923b46fe54e\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\07e2bb0f0b2ab88f694924eb73761e98\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\07e2bb0f0b2ab88f694924eb73761e98\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\47af42720a1cc6b6a47ac7ecfbd3ba31\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\47af42720a1cc6b6a47ac7ecfbd3ba31\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c24e42ae60682cca1f561dc74e71e66b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c24e42ae60682cca1f561dc74e71e66b\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		ADDED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Migs\SCHOOL DOCS\App\MathTutorial\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Jay\Desktop\Avatar\Icon button\MathTutorial\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\01f6f1034485088ec011e30749891031\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\461d81d414724222f548f2dd9c511436\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\9d32ed6fa6192152a26b679e94a2e890\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\487cdea309e2e6cba65074e2e1b7340d\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\f1e016aa2d47127be789eeb55fea9a2b\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\46fe71d24a9658987f9a0e870e3765cb\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\c2558e39bf02b9cfd817c8df8b9d3bb3\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\ace33370146b912fdcc938b81698b4a3\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\c844af1057ab3266df4d84ba78787b53\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6ff6039bc2ff79b40777c52103b59abd\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\911ea7e822cad7db9462e071397bb018\AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21094d96d404700c985f332a8bdfc104\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\21094d96d404700c985f332a8bdfc104\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\eef2a62b4075700e2e4f4cbba37fc223\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\eef2a62b4075700e2e4f4cbba37fc223\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\67c8989d0eae3d50b7c5485d86824147\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\67c8989d0eae3d50b7c5485d86824147\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\8d5f169341c4a546cc96189e20886c3a\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\8d5f169341c4a546cc96189e20886c3a\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\15b2798e3a6b559705ceeb440f5b70f2\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\15b2798e3a6b559705ceeb440f5b70f2\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\8476138d6b68aa7514b049395f407894\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\8476138d6b68aa7514b049395f407894\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\084e56894d96cf05e2925b68828476aa\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\084e56894d96cf05e2925b68828476aa\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\94500911b839ecd857d54923b46fe54e\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\94500911b839ecd857d54923b46fe54e\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\07e2bb0f0b2ab88f694924eb73761e98\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\07e2bb0f0b2ab88f694924eb73761e98\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\47af42720a1cc6b6a47ac7ecfbd3ba31\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\47af42720a1cc6b6a47ac7ecfbd3ba31\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c24e42ae60682cca1f561dc74e71e66b\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\c24e42ae60682cca1f561dc74e71e66b\AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Laher\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\0c3ff4f905306f11be56116c2dd4e7c5\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Jay\.gradle\caches\transforms-1\files-1.1\design-26.0.0-alpha1.aar\2910cac759776f30204284b1b00fb38d\AndroidManifest.xml:26:9-47
